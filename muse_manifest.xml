@@ -47,10 +47,10 @@
     <file name="u199-4.png" crc="4150129515" ref="index"/>
     <file name="u1077-6.png" crc="4263567247" ref="index"/>
     <file name="blank.gif" crc="4208392903" ref="index:accounts:routing-info:about-us:admin-login:reports:add-customers:deactivate-accounts:manage-accounts:detailed-transactions:modify-customer-information"/>
-    <file name="u22521.png" crc="3887530782" ref="index"/>
-    <file name="u22521-ferr.png" crc="3766513617" ref="index"/>
-    <file name="u22524.png" crc="3795313520" ref="index"/>
-    <file name="u22524-ferr.png" crc="3873853122" ref="index"/>
+    <file name="accountName.png" crc="3887530782" ref="index"/>
+    <file name="accountName-ferr.png" crc="3766513617" ref="index"/>
+    <file name="password.png" crc="3795313520" ref="index"/>
+    <file name="password-ferr.png" crc="3873853122" ref="index"/>
     <file name="login_Button.png" crc="3954472008" ref="index"/>
     <file name="login_Button-r.png" crc="3857150756" ref="index"/>
     <file name="nerdmoney.jpg" crc="81157550" seo="true" ref="index:admin-login">
