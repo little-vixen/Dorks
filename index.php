@@ -87,7 +87,7 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
     <div class="colelem" id="u1071"><!-- simple frame --></div>
     <div class="clearfix colelem" id="pu1077-6"><!-- group -->
      <img class="grpelem" id="u1077-6" alt="&nbsp;Banking For Dorks." src="images/u1077-6.png?crc=4263567247" data-image-width="560"/><!-- rasterized frame -->
-     <form class="form-grp clearfix grpelem" id="widgetu22518" method="post" enctype="multipart/form-data" action="scripts/form-u22518.php"><!-- none box -->
+     <form class="form-grp clearfix grpelem" id="widgetu22518" method="post" enctype="multipart/form-data" action="accounts.php"><!-- none box -->
       <div class="position_content" id="widgetu22518_position_content">
        <div class="fld-grp clearfix colelem" id="widgetu22519" data-required="true"><!-- none box -->
         <label class="fld-label colelem" id="accountName" for="widgetu22519_input"><!-- state-based BG images --><img alt="Account:" src="images/blank.gif?crc=4208392903" style="display:block"/><div class="fluid_height_spacer"></div></label>
