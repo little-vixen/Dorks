@@ -1,0 +1,461 @@
+<manifest alg="2" build="2018.0.0.379" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="satoshi.cis.uncw.edu/~crf3913,satoshi.cis.uncw.edu/~my2277,satoshi.cis.uncw.edu/~ccw4231,satoshi.cis.uncw.edu/~wtl5367" resolutions="1x" timestamp="1524251322187">
+  <folder name="css">
+    <file name="site_global.css" crc="444006867"/>
+    <file name="add-customers.css" crc="501056417" ref="add-customers"/>
+    <file name="index.css" crc="4213875078" ref="index"/>
+    <file name="routing-info.css" crc="4181494273" ref="routing-info"/>
+    <file name="help.css" crc="303956745" ref="help"/>
+    <file name="manage-accounts.css" crc="3762958634" ref="manage-accounts"/>
+    <file name="accounts.css" crc="4284997300" ref="accounts"/>
+    <file name="modify-customer-information.css" crc="4081905894" ref="modify-customer-information"/>
+    <file name="admin-login.css" crc="3830279917" ref="admin-login"/>
+    <file name="reports.css" crc="3815552157" ref="reports"/>
+    <file name="deactivate-accounts.css" crc="4063956653" ref="deactivate-accounts"/>
+    <file name="about-us.css" crc="3860575664" ref="about-us"/>
+    <file name="detailed-transactions.css" crc="104116212" ref="detailed-transactions"/>
+  </folder>
+  <folder name="assets">
+    <file name="accounts.php" crc="226535205" seo="true" mt="1523486253000"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="209076791" ref="index:accounts:routing-info:help:about-us:admin-login:reports:add-customers:deactivate-accounts:manage-accounts:detailed-transactions:modify-customer-information"/>
+    <file name="museutils.js" crc="3803043152" ref="index:accounts:routing-info:help:about-us:admin-login:reports:add-customers:deactivate-accounts:manage-accounts:detailed-transactions:modify-customer-information"/>
+    <file name="whatinput.js" crc="86476730" ref="index:accounts:routing-info:help:about-us:admin-login:reports:add-customers:deactivate-accounts:manage-accounts:detailed-transactions:modify-customer-information"/>
+    <file name="museconfig.js" crc="380897831" ref="index:accounts:routing-info:help:about-us:admin-login:reports:add-customers:deactivate-accounts:manage-accounts:detailed-transactions:modify-customer-information"/>
+    <file name="jquery.musemenu.js" crc="3784699396" ref="index:accounts:routing-info:about-us:admin-login:reports:add-customers:deactivate-accounts:manage-accounts:detailed-transactions:modify-customer-information"/>
+    <file name="webpro.js" crc="242022427" ref="index:admin-login:reports:add-customers:modify-customer-information"/>
+    <file name="form_check.php" crc="147359589" ref="index"/>
+    <file name="form_throttle.php" crc="93986428" ref="index"/>
+    <file name="form_process.php" crc="3851993751" ref="index"/>
+    <file name="form-u22518.php" crc="158323645" ref="index"/>
+    <file name="jquery.watch.js" crc="99325471" ref="index:accounts:routing-info:help:about-us:admin-login:reports:add-customers:deactivate-accounts:manage-accounts:detailed-transactions:modify-customer-information"/>
+    <file name="html5shiv.js" crc="4241844378" ref="index:accounts:routing-info:help:about-us:admin-login:reports:add-customers:deactivate-accounts:manage-accounts:detailed-transactions:modify-customer-information"/>
+    <file name="require.js" crc="4157109226" ref="index:accounts:routing-info:help:about-us:admin-login:reports:add-customers:deactivate-accounts:manage-accounts:detailed-transactions:modify-customer-information"/>
+    <file name="form-u4548.php" crc="39096641" ref="admin-login"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="4148998990" ref="reports:add-customers:modify-customer-information"/>
+    <file name="form-u9006.php" crc="284324148" ref="reports"/>
+    <file name="form-u9184.php" crc="422983306" ref="add-customers"/>
+    <file name="form-u11345.php" crc="351069954" ref="modify-customer-information"/>
+  </folder>
+  <folder name="images">
+    <file name="cash-change-coins-106152.jpg" crc="3877446195" seo="true" ref="index:help:about-us:admin-login">
+      <caption webpage="index" alt=""/>
+      <caption webpage="help" alt=""/>
+      <caption webpage="about-us" alt=""/>
+      <caption webpage="admin-login" alt=""/>
+    </file>
+    <file name="u199-4.png" crc="4150129515" ref="index"/>
+    <file name="blank.gif" crc="4208392903" ref="index:accounts:routing-info:about-us:admin-login:reports:add-customers:deactivate-accounts:manage-accounts:detailed-transactions:modify-customer-information"/>
+    <file name="u22592-4-a.png" crc="241653679" ref="index"/>
+    <file name="arrowmenudown.png" crc="262559161" ref="index:accounts:routing-info:about-us:admin-login:reports:add-customers:deactivate-accounts:manage-accounts:detailed-transactions:modify-customer-information">
+      <caption webpage="accounts" alt=""/>
+      <caption webpage="accounts" alt=""/>
+      <caption webpage="accounts" alt=""/>
+      <caption webpage="accounts" alt=""/>
+      <caption webpage="accounts" alt=""/>
+      <caption webpage="accounts" alt=""/>
+      <caption webpage="accounts" alt=""/>
+      <caption webpage="accounts" alt=""/>
+      <caption webpage="accounts" alt=""/>
+      <caption webpage="accounts" alt=""/>
+      <caption webpage="accounts" alt=""/>
+      <caption webpage="accounts" alt=""/>
+      <caption webpage="manage-accounts" alt=""/>
+      <caption webpage="manage-accounts" alt=""/>
+      <caption webpage="manage-accounts" alt=""/>
+      <caption webpage="manage-accounts" alt=""/>
+      <caption webpage="manage-accounts" alt=""/>
+      <caption webpage="manage-accounts" alt=""/>
+      <caption webpage="manage-accounts" alt=""/>
+      <caption webpage="manage-accounts" alt=""/>
+      <caption webpage="manage-accounts" alt=""/>
+      <caption webpage="manage-accounts" alt=""/>
+      <caption webpage="manage-accounts" alt=""/>
+      <caption webpage="manage-accounts" alt=""/>
+      <caption webpage="detailed-transactions" alt=""/>
+      <caption webpage="detailed-transactions" alt=""/>
+      <caption webpage="detailed-transactions" alt=""/>
+      <caption webpage="detailed-transactions" alt=""/>
+      <caption webpage="detailed-transactions" alt=""/>
+      <caption webpage="detailed-transactions" alt=""/>
+      <caption webpage="detailed-transactions" alt=""/>
+      <caption webpage="detailed-transactions" alt=""/>
+      <caption webpage="detailed-transactions" alt=""/>
+      <caption webpage="detailed-transactions" alt=""/>
+      <caption webpage="detailed-transactions" alt=""/>
+      <caption webpage="detailed-transactions" alt=""/>
+      <caption webpage="admin-login" alt=""/>
+      <caption webpage="admin-login" alt=""/>
+      <caption webpage="admin-login" alt=""/>
+      <caption webpage="admin-login" alt=""/>
+      <caption webpage="admin-login" alt=""/>
+      <caption webpage="admin-login" alt=""/>
+      <caption webpage="admin-login" alt=""/>
+      <caption webpage="admin-login" alt=""/>
+      <caption webpage="admin-login" alt=""/>
+      <caption webpage="admin-login" alt=""/>
+      <caption webpage="admin-login" alt=""/>
+      <caption webpage="admin-login" alt=""/>
+      <caption webpage="modify-customer-information" alt=""/>
+      <caption webpage="modify-customer-information" alt=""/>
+      <caption webpage="modify-customer-information" alt=""/>
+      <caption webpage="modify-customer-information" alt=""/>
+      <caption webpage="modify-customer-information" alt=""/>
+      <caption webpage="modify-customer-information" alt=""/>
+      <caption webpage="modify-customer-information" alt=""/>
+      <caption webpage="modify-customer-information" alt=""/>
+      <caption webpage="modify-customer-information" alt=""/>
+      <caption webpage="modify-customer-information" alt=""/>
+      <caption webpage="modify-customer-information" alt=""/>
+      <caption webpage="modify-customer-information" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="about-us" alt=""/>
+      <caption webpage="about-us" alt=""/>
+      <caption webpage="about-us" alt=""/>
+      <caption webpage="about-us" alt=""/>
+      <caption webpage="about-us" alt=""/>
+      <caption webpage="about-us" alt=""/>
+      <caption webpage="about-us" alt=""/>
+      <caption webpage="about-us" alt=""/>
+      <caption webpage="about-us" alt=""/>
+      <caption webpage="about-us" alt=""/>
+      <caption webpage="about-us" alt=""/>
+      <caption webpage="about-us" alt=""/>
+      <caption webpage="routing-info" alt=""/>
+      <caption webpage="routing-info" alt=""/>
+      <caption webpage="routing-info" alt=""/>
+      <caption webpage="routing-info" alt=""/>
+      <caption webpage="routing-info" alt=""/>
+      <caption webpage="routing-info" alt=""/>
+      <caption webpage="routing-info" alt=""/>
+      <caption webpage="routing-info" alt=""/>
+      <caption webpage="routing-info" alt=""/>
+      <caption webpage="routing-info" alt=""/>
+      <caption webpage="routing-info" alt=""/>
+      <caption webpage="routing-info" alt=""/>
+      <caption webpage="reports" alt=""/>
+      <caption webpage="reports" alt=""/>
+      <caption webpage="reports" alt=""/>
+      <caption webpage="reports" alt=""/>
+      <caption webpage="reports" alt=""/>
+      <caption webpage="reports" alt=""/>
+      <caption webpage="reports" alt=""/>
+      <caption webpage="reports" alt=""/>
+      <caption webpage="reports" alt=""/>
+      <caption webpage="reports" alt=""/>
+      <caption webpage="reports" alt=""/>
+      <caption webpage="reports" alt=""/>
+      <caption webpage="add-customers" alt=""/>
+      <caption webpage="add-customers" alt=""/>
+      <caption webpage="deactivate-accounts" alt=""/>
+      <caption webpage="deactivate-accounts" alt=""/>
+      <caption webpage="deactivate-accounts" alt=""/>
+      <caption webpage="deactivate-accounts" alt=""/>
+      <caption webpage="deactivate-accounts" alt=""/>
+      <caption webpage="deactivate-accounts" alt=""/>
+      <caption webpage="deactivate-accounts" alt=""/>
+      <caption webpage="deactivate-accounts" alt=""/>
+      <caption webpage="deactivate-accounts" alt=""/>
+      <caption webpage="deactivate-accounts" alt=""/>
+      <caption webpage="deactivate-accounts" alt=""/>
+      <caption webpage="deactivate-accounts" alt=""/>
+    </file>
+    <file name="u22675.png" crc="382963148" ref="index"/>
+    <file name="u22675-a.png" crc="3877443148" ref="index"/>
+    <file name="u22670.png" crc="4194065261" ref="index"/>
+    <file name="u22670-a.png" crc="4294399681" ref="index"/>
+    <file name="nerdMoney.png" crc="4263567247" ref="index"/>
+    <file name="u22521.png" crc="3887530782" ref="index"/>
+    <file name="u22521-ferr.png" crc="3766513617" ref="index"/>
+    <file name="u22524.png" crc="3795313520" ref="index"/>
+    <file name="u22524-ferr.png" crc="3873853122" ref="index"/>
+    <file name="u22528.png" crc="3954472008" ref="index"/>
+    <file name="u22528-r.png" crc="3857150756" ref="index"/>
+    <file name="nerdmoney.jpg" crc="81157550" seo="true" ref="index:admin-login">
+      <caption webpage="index" alt=""/>
+      <caption webpage="admin-login" alt=""/>
+    </file>
+    <file name="u1630-4.png" crc="3992780049" ref="index"/>
+    <file name="cash-change-coins-banner-crop-u2165.jpg" crc="4139890737" seo="true" ref="accounts">
+      <caption webpage="accounts" alt=""/>
+    </file>
+    <file name="u16191.png" crc="3791391395" ref="accounts"/>
+    <file name="u16191-a.png" crc="16518529" ref="accounts"/>
+    <file name="u16150.png" crc="3836622888" ref="accounts"/>
+    <file name="u16150-a.png" crc="433590631" ref="accounts"/>
+    <file name="u16233.png" crc="13683621" ref="accounts"/>
+    <file name="u16233-a.png" crc="4220538814" ref="accounts"/>
+    <file name="u407-4.png" crc="3766499476" ref="accounts"/>
+    <file name="u1781-4.png" crc="209820837" ref="accounts"/>
+    <file name="u2149-5.png" crc="3876900525" ref="accounts"/>
+    <file name="u2279-4.png" crc="63206294" ref="accounts"/>
+    <file name="cash-change-coins-banner-crop-u2661.jpg" crc="4139890737" seo="true" ref="routing-info">
+      <caption webpage="routing-info" alt=""/>
+    </file>
+    <file name="u16467.png" crc="3791391395" ref="routing-info"/>
+    <file name="u16467-a.png" crc="16518529" ref="routing-info"/>
+    <file name="u16426.png" crc="3836622888" ref="routing-info"/>
+    <file name="u16426-a.png" crc="433590631" ref="routing-info"/>
+    <file name="u16509.png" crc="358814546" ref="routing-info"/>
+    <file name="u16509-a.png" crc="4108582367" ref="routing-info"/>
+    <file name="u2651-4.png" crc="3766499476" ref="routing-info"/>
+    <file name="u2652-4.png" crc="209820837" ref="routing-info"/>
+    <file name="u2668-5.png" crc="3818140609" ref="routing-info"/>
+    <file name="u11056-7.png" crc="4270172530" ref="routing-info"/>
+    <file name="u2737-4.png" crc="4150129515" ref="help"/>
+    <file name="u2742-4.png" crc="3964653516" ref="help"/>
+    <file name="u11059-4.png" crc="95227641" ref="help"/>
+    <file name="u11062-6.png" crc="28096881" ref="help"/>
+    <file name="u3021-4.png" crc="4150129515" ref="about-us"/>
+    <file name="u3019-4.png" crc="94848379" ref="about-us"/>
+    <file name="u3017.png" crc="427734914" ref="about-us"/>
+    <file name="u3017-a.png" crc="241653679" ref="about-us"/>
+    <file name="u11927.png" crc="382963148" ref="about-us"/>
+    <file name="u11927-a.png" crc="3877443148" ref="about-us"/>
+    <file name="u11945.png" crc="4194065261" ref="about-us"/>
+    <file name="u11945-a.png" crc="4294399681" ref="about-us"/>
+    <file name="u3161-4.png" crc="484616043" ref="about-us"/>
+    <file name="layer 0.png" crc="3821988508" seo="true" ref="about-us">
+      <caption webpage="about-us" alt=""/>
+    </file>
+    <file name="u3301-4.png" crc="3783268973" ref="about-us"/>
+    <file name="layer 02.png" crc="3938654375" seo="true" ref="about-us">
+      <caption webpage="about-us" alt=""/>
+    </file>
+    <file name="u3304-4.png" crc="478048157" ref="about-us"/>
+    <file name="layer 03.png" crc="3805087096" seo="true" ref="about-us">
+      <caption webpage="about-us" alt=""/>
+    </file>
+    <file name="u3307-4.png" crc="84303219" ref="about-us"/>
+    <file name="layer 04.png" crc="205385605" seo="true" ref="about-us">
+      <caption webpage="about-us" alt=""/>
+    </file>
+    <file name="u3310-4.png" crc="4080835989" ref="about-us"/>
+    <file name="layer 0-crop-u3192.png" crc="151980495" seo="true" ref="about-us">
+      <caption webpage="about-us" alt=""/>
+    </file>
+    <file name="u3319-4.png" crc="130604737" ref="about-us"/>
+    <file name="layer 0-crop-u3232.png" crc="402739452" seo="true" ref="about-us">
+      <caption webpage="about-us" alt=""/>
+    </file>
+    <file name="u3328-6.png" crc="430958278" ref="about-us"/>
+    <file name="u4588-4.png" crc="4150129515" ref="admin-login"/>
+    <file name="u17019.png" crc="427734914" ref="admin-login"/>
+    <file name="u17019-a.png" crc="241653679" ref="admin-login"/>
+    <file name="u16978.png" crc="382963148" ref="admin-login"/>
+    <file name="u16978-a.png" crc="3877443148" ref="admin-login"/>
+    <file name="u17061-4-a.png" crc="4294399681" ref="admin-login"/>
+    <file name="u4551.png" crc="4106823546" ref="admin-login"/>
+    <file name="u4551-ferr.png" crc="3992102913" ref="admin-login"/>
+    <file name="u4561.png" crc="4128044030" ref="admin-login"/>
+    <file name="u4561-ferr.png" crc="3781576870" ref="admin-login"/>
+    <file name="u4563.png" crc="11577246" ref="admin-login"/>
+    <file name="u4563-r.png" crc="3935051554" ref="admin-login"/>
+    <file name="u4547-6.png" crc="4263567247" ref="admin-login"/>
+    <file name="u4581-4.png" crc="3992780049" ref="admin-login"/>
+    <file name="cash-change-coins-banner-crop-u5938.jpg" crc="4139890737" seo="true" ref="reports">
+      <caption webpage="reports" alt=""/>
+    </file>
+    <file name="u17571.png" crc="3791391395" ref="reports"/>
+    <file name="u17571-a.png" crc="16518529" ref="reports"/>
+    <file name="u17530.png" crc="3836622888" ref="reports"/>
+    <file name="u17530-a.png" crc="433590631" ref="reports"/>
+    <file name="u17613.png" crc="358814546" ref="reports"/>
+    <file name="u17613-a.png" crc="4108582367" ref="reports"/>
+    <file name="u5824-4.png" crc="3766499476" ref="reports"/>
+    <file name="u5825-4.png" crc="209820837" ref="reports"/>
+    <file name="u6009-5.png" crc="39469779" ref="reports"/>
+    <file name="checkboxunchecked.jpg" crc="495023700" ref="reports">
+      <caption webpage="reports" alt=""/>
+    </file>
+    <file name="checkboxuncheckedrollover.jpg" crc="4076496830" ref="reports">
+      <caption webpage="reports" alt=""/>
+    </file>
+    <file name="checkboxuncheckedmousedown.jpg" crc="361678653" ref="reports">
+      <caption webpage="reports" alt=""/>
+    </file>
+    <file name="checkboxchecked.jpg" crc="477278992" ref="reports">
+      <caption webpage="reports" alt=""/>
+    </file>
+    <file name="checkboxcheckedrollover.jpg" crc="435737969" ref="reports">
+      <caption webpage="reports" alt=""/>
+    </file>
+    <file name="checkboxcheckedmousedown.jpg" crc="4004261994" ref="reports">
+      <caption webpage="reports" alt=""/>
+    </file>
+    <file name="u9011.png" crc="4270217858" ref="reports"/>
+    <file name="u9011-r.png" crc="9074630" ref="reports"/>
+    <file name="u5932-4.png" crc="514553110" ref="reports"/>
+    <file name="cash-change-coins-banner-crop-u6938.jpg" crc="4139890737" seo="true" ref="add-customers">
+      <caption webpage="add-customers" alt=""/>
+    </file>
+    <file name="u6946.png" crc="3950216234" ref="add-customers"/>
+    <file name="u6946-r.png" crc="236248790" ref="add-customers"/>
+    <file name="u6946-m.png" crc="197706796" ref="add-customers"/>
+    <file name="u6946-a.png" crc="204485992" ref="add-customers"/>
+    <file name="arrowmenuright.png" crc="41086373" ref="add-customers">
+      <caption webpage="add-customers" alt=""/>
+    </file>
+    <file name="u7011.png" crc="84809196" ref="add-customers"/>
+    <file name="u7011-r.png" crc="336670616" ref="add-customers"/>
+    <file name="u7011-m.png" crc="132987032" ref="add-customers"/>
+    <file name="u7011-a.png" crc="4118732458" ref="add-customers"/>
+    <file name="u6990.png" crc="525732969" ref="add-customers"/>
+    <file name="u6990-r.png" crc="501018251" ref="add-customers"/>
+    <file name="u6990-m.png" crc="458698402" ref="add-customers"/>
+    <file name="u6990-a.png" crc="475616015" ref="add-customers"/>
+    <file name="u6916-4.png" crc="3766499476" ref="add-customers"/>
+    <file name="u6917-4.png" crc="209820837" ref="add-customers"/>
+    <file name="u6920-4.png" crc="270126902" ref="add-customers"/>
+    <file name="u9227.png" crc="9504106" ref="add-customers"/>
+    <file name="u9227-ferr.png" crc="400137501" ref="add-customers"/>
+    <file name="u9223.png" crc="225275820" ref="add-customers"/>
+    <file name="u9223-ferr.png" crc="432628417" ref="add-customers"/>
+    <file name="u9200.png" crc="3961166510" ref="add-customers"/>
+    <file name="u9200-ferr.png" crc="329174086" ref="add-customers"/>
+    <file name="u9218.png" crc="3791360122" ref="add-customers"/>
+    <file name="u9218-ferr.png" crc="389535245" ref="add-customers"/>
+    <file name="u9209.png" crc="330072589" ref="add-customers"/>
+    <file name="u9209-r.png" crc="262655820" ref="add-customers"/>
+    <file name="u9238.png" crc="70597423" ref="add-customers"/>
+    <file name="u9238-ferr.png" crc="156688855" ref="add-customers"/>
+    <file name="u9211.png" crc="4190538131" ref="add-customers"/>
+    <file name="u9211-ferr.png" crc="535536118" ref="add-customers"/>
+    <file name="u9231.png" crc="282965172" ref="add-customers"/>
+    <file name="u9231-ferr.png" crc="4242002409" ref="add-customers"/>
+    <file name="u9242.png" crc="3925743361" ref="add-customers"/>
+    <file name="u9242-ferr.png" crc="439685048" ref="add-customers"/>
+    <file name="u9206.png" crc="358682568" ref="add-customers"/>
+    <file name="u9206-ferr.png" crc="290584959" ref="add-customers"/>
+    <file name="u9235.png" crc="4076241916" ref="add-customers"/>
+    <file name="u9235-ferr.png" crc="429753847" ref="add-customers"/>
+    <file name="u9189.png" crc="298345361" ref="add-customers"/>
+    <file name="u9189-ferr.png" crc="4207921964" ref="add-customers"/>
+    <file name="radiobuttonunchecked.png" crc="3976871150" ref="add-customers:modify-customer-information">
+      <caption webpage="add-customers" alt=""/>
+    </file>
+    <file name="radiobuttonuncheckedrollover.png" crc="4276313674" ref="add-customers:modify-customer-information">
+      <caption webpage="add-customers" alt=""/>
+    </file>
+    <file name="radiobuttonuncheckedmousedown.png" crc="54863585" ref="add-customers:modify-customer-information">
+      <caption webpage="add-customers" alt=""/>
+    </file>
+    <file name="radiobuttonchecked.png" crc="4193302265" ref="add-customers:modify-customer-information">
+      <caption webpage="add-customers" alt=""/>
+    </file>
+    <file name="radiobuttoncheckedrollover.png" crc="88928956" ref="add-customers:modify-customer-information">
+      <caption webpage="add-customers" alt=""/>
+    </file>
+    <file name="radiobuttoncheckedmousedown.png" crc="4280357799" ref="add-customers:modify-customer-information">
+      <caption webpage="add-customers" alt=""/>
+    </file>
+    <file name="u9195.png" crc="327808140" ref="add-customers"/>
+    <file name="u9195-ferr.png" crc="4002687073" ref="add-customers"/>
+    <file name="u9192.png" crc="327808140" ref="add-customers"/>
+    <file name="u9192-ferr.png" crc="4002687073" ref="add-customers"/>
+    <file name="cash-change-coins-banner-crop-u7368.jpg" crc="4139890737" seo="true" ref="deactivate-accounts">
+      <caption webpage="deactivate-accounts" alt=""/>
+    </file>
+    <file name="u18399.png" crc="3791391395" ref="deactivate-accounts"/>
+    <file name="u18399-a.png" crc="16518529" ref="deactivate-accounts"/>
+    <file name="u18358.png" crc="3836622888" ref="deactivate-accounts"/>
+    <file name="u18358-a.png" crc="433590631" ref="deactivate-accounts"/>
+    <file name="u18441.png" crc="358814546" ref="deactivate-accounts"/>
+    <file name="u18441-a.png" crc="4108582367" ref="deactivate-accounts"/>
+    <file name="u7387-4.png" crc="3766499476" ref="deactivate-accounts"/>
+    <file name="u7386-4.png" crc="209820837" ref="deactivate-accounts"/>
+    <file name="u7154-5.png" crc="3860375550" ref="deactivate-accounts"/>
+    <file name="u7363-4.png" crc="4076034499" ref="deactivate-accounts"/>
+    <file name="u11654.png" crc="401460363" ref="deactivate-accounts"/>
+    <file name="u11654-r.png" crc="401460363" ref="deactivate-accounts"/>
+    <file name="cash-change-coins-banner-crop-u7570.jpg" crc="4139890737" seo="true" ref="manage-accounts">
+      <caption webpage="manage-accounts" alt=""/>
+    </file>
+    <file name="u18675.png" crc="3791391395" ref="manage-accounts"/>
+    <file name="u18675-a.png" crc="16518529" ref="manage-accounts"/>
+    <file name="u18634.png" crc="3836622888" ref="manage-accounts"/>
+    <file name="u18634-a.png" crc="433590631" ref="manage-accounts"/>
+    <file name="u18717.png" crc="358814546" ref="manage-accounts"/>
+    <file name="u18717-a.png" crc="4108582367" ref="manage-accounts"/>
+    <file name="u7546-4.png" crc="3766499476" ref="manage-accounts"/>
+    <file name="u7547-4.png" crc="209820837" ref="manage-accounts"/>
+    <file name="u7668-5.png" crc="425599520" ref="manage-accounts"/>
+    <file name="u7555-4.png" crc="63206294" ref="manage-accounts"/>
+    <file name="cash-change-coins-banner-crop-u10043.jpg" crc="4139890737" seo="true" ref="detailed-transactions">
+      <caption webpage="detailed-transactions" alt=""/>
+    </file>
+    <file name="u16743.png" crc="3791391395" ref="detailed-transactions"/>
+    <file name="u16743-a.png" crc="16518529" ref="detailed-transactions"/>
+    <file name="u16702.png" crc="3836622888" ref="detailed-transactions"/>
+    <file name="u16702-a.png" crc="433590631" ref="detailed-transactions"/>
+    <file name="u16785.png" crc="358814546" ref="detailed-transactions"/>
+    <file name="u16785-a.png" crc="4108582367" ref="detailed-transactions"/>
+    <file name="u9892-4.png" crc="3766499476" ref="detailed-transactions"/>
+    <file name="u9893-4.png" crc="209820837" ref="detailed-transactions"/>
+    <file name="u10149-5.png" crc="3876900525" ref="detailed-transactions"/>
+    <file name="u10037-4.png" crc="63206294" ref="detailed-transactions"/>
+    <file name="cash-change-coins-banner-crop-u11412.jpg" crc="4139890737" seo="true" ref="modify-customer-information">
+      <caption webpage="modify-customer-information" alt=""/>
+    </file>
+    <file name="u17847.png" crc="3791391395" ref="modify-customer-information"/>
+    <file name="u17847-a.png" crc="16518529" ref="modify-customer-information"/>
+    <file name="u17806.png" crc="3836622888" ref="modify-customer-information"/>
+    <file name="u17806-a.png" crc="433590631" ref="modify-customer-information"/>
+    <file name="u17889.png" crc="358814546" ref="modify-customer-information"/>
+    <file name="u17889-a.png" crc="4108582367" ref="modify-customer-information"/>
+    <file name="u11431-4.png" crc="3766499476" ref="modify-customer-information"/>
+    <file name="u11430-4.png" crc="209820837" ref="modify-customer-information"/>
+    <file name="u11407-4.png" crc="4232762882" ref="modify-customer-information"/>
+    <file name="u11361.png" crc="9504106" ref="modify-customer-information"/>
+    <file name="u11361-ferr.png" crc="400137501" ref="modify-customer-information"/>
+    <file name="u11377.png" crc="225275820" ref="modify-customer-information"/>
+    <file name="u11377-ferr.png" crc="432628417" ref="modify-customer-information"/>
+    <file name="u11349.png" crc="3961166510" ref="modify-customer-information"/>
+    <file name="u11349-ferr.png" crc="329174086" ref="modify-customer-information"/>
+    <file name="u11351.png" crc="3791360122" ref="modify-customer-information"/>
+    <file name="u11351-ferr.png" crc="389535245" ref="modify-customer-information"/>
+    <file name="u11391.png" crc="3971053426" ref="modify-customer-information"/>
+    <file name="u11391-r.png" crc="3870359806" ref="modify-customer-information"/>
+    <file name="u11405.png" crc="70597423" ref="modify-customer-information"/>
+    <file name="u11405-ferr.png" crc="156688855" ref="modify-customer-information"/>
+    <file name="u11356.png" crc="4190538131" ref="modify-customer-information"/>
+    <file name="u11356-ferr.png" crc="535536118" ref="modify-customer-information"/>
+    <file name="u11373.png" crc="282965172" ref="modify-customer-information"/>
+    <file name="u11373-ferr.png" crc="4242002409" ref="modify-customer-information"/>
+    <file name="u11400.png" crc="3925743361" ref="modify-customer-information"/>
+    <file name="u11400-ferr.png" crc="439685048" ref="modify-customer-information"/>
+    <file name="u11396.png" crc="358682568" ref="modify-customer-information"/>
+    <file name="u11396-ferr.png" crc="290584959" ref="modify-customer-information"/>
+    <file name="u11368.png" crc="4076241916" ref="modify-customer-information"/>
+    <file name="u11368-ferr.png" crc="429753847" ref="modify-customer-information"/>
+    <file name="u11390.png" crc="298345361" ref="modify-customer-information"/>
+    <file name="u11390-ferr.png" crc="4207921964" ref="modify-customer-information"/>
+    <file name="u11386.png" crc="327808140" ref="modify-customer-information"/>
+    <file name="u11386-ferr.png" crc="4002687073" ref="modify-customer-information"/>
+    <file name="u11383.png" crc="327808140" ref="modify-customer-information"/>
+    <file name="u11383-ferr.png" crc="4002687073" ref="modify-customer-information"/>
+  </folder>
+  <file name="index.html" crc="125797692" seo="true" mt="1524250922440" redirect="true"/>
+  <file name="accounts.html" crc="76145586" seo="true" mt="1524169473440" redirect="true"/>
+  <file name="routing-info.html" crc="231581740" seo="true" mt="1524163957781" redirect="true"/>
+  <file name="help.html" crc="9834020" seo="true" mt="1524181394089" redirect="true"/>
+  <file name="about-us.html" crc="382112757" seo="true" mt="1524190525093" redirect="true"/>
+  <file name="admin-login.html" crc="116616615" seo="true" mt="1524248850427" redirect="true"/>
+  <file name="reports.html" crc="359915151" seo="true" mt="1524169671256" redirect="true"/>
+  <file name="add-customers.html" crc="3953464986" seo="true" mt="1524104617139" redirect="true"/>
+  <file name="deactivate-accounts.html" crc="4139149683" seo="true" mt="1524169770666" redirect="true"/>
+  <file name="manage-accounts.html" crc="188692706" seo="true" mt="1524169799468" redirect="true"/>
+  <file name="detailed-transactions.html" crc="272802351" seo="true" mt="1524163949149" redirect="true"/>
+  <file name="modify-customer-information.html" crc="3994435106" seo="true" mt="1524169693347" redirect="true"/>
+</manifest>
