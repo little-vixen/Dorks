@@ -1,3 +1,41 @@
+<?php
+//added to allow db Connections unless you //are Connor
+
+if(isset($_POST['submit'])){
+	$errors = array(); //I guess so-  going to store these so i can display and embarass Connor
+	if(empty($_POST['accountName'])){
+		$errors[] = 'You are hopeless....Where is your account name?';//LOOKING AT YOU CONNOR LOL
+		}else{
+		$un =trim($_POST['username']);//we are sanitizing data-checking for hackers and whitespace etc.  We don't want any other evil doers 								/stealing our stolen monies
+	}
+	if(empty($_POST['password'])){
+		$errors[] = 'You are not receiving this message because we used your money to go to fiji last week, you forgot your password!';//does not tell the customer what we do with their monies
+	}else{
+		$pw = trim($_POST['password']);//yep, checking for hackers and cohorts...and yeah whitespace again whatevs
+	}
+	if (empty($errors)){
+		
+		require_once ('../pdo_config.php'); //connection to db (not you Connor).
+	
+
+$sql = "SELECT cid, cPassword FROM `customer`
+		WHERE cid = '$un'";//pull the records we want to compare
+$run = @(mysqli_query($conn,$sql));
+
+if(mysqli_num_rows($run)==1){
+	$row = mysqli_fetch_array($run,MYSQLI_ASSOC);
+	if($row['cPassword']== MHASH_SHA1($pw)){
+		echo('Welcome Dork');
+		exit();
+	}else{
+	echo('You are not welcome, ACCESS DENIED');
+	}
+}if (mysqli_num_rows($run)==0){
+echo('YOU ARE WRONG, TRY AGAIN.');
+}
+}
+}
+?>
 <!DOCTYPE html>
 <html class="nojs html css_verticalspacer" lang="en-GB">
  <head>
@@ -14,7 +52,7 @@ document.documentElement.className = document.documentElement.className.replace(
 if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required":["museutils.js", "museconfig.js", "webpro.js", "jquery.watch.js", "require.js", "index.css"], "outOfDate":[]};
 </script>
   
-  <title>Dork's BankLoginWe Like Your Money As Much As You Do</title>
+  <title>We Like Your Money As Much As You Do</title>
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="css/site_global.css?crc=444006867"/>
   <link rel="stylesheet" type="text/css" href="css/index.css?crc=4100718796" id="pagesheet"/>
@@ -52,22 +90,22 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
      <form class="form-grp clearfix grpelem" id="widgetu22518" method="post" enctype="multipart/form-data" action="scripts/form-u22518.php"><!-- none box -->
       <div class="position_content" id="widgetu22518_position_content">
        <div class="fld-grp clearfix colelem" id="widgetu22519" data-required="true"><!-- none box -->
-        <label class="fld-label colelem" id="u22521" for="widgetu22519_input"><!-- state-based BG images --><img alt="Account:" src="images/blank.gif?crc=4208392903" style="display:block"/><div class="fluid_height_spacer"></div></label>
+        <label class="fld-label colelem" id="accountName" for="widgetu22519_input"><!-- state-based BG images --><img alt="Account:" src="images/blank.gif?crc=4208392903" style="display:block"/><div class="fluid_height_spacer"></div></label>
         <span class="fld-input NoWrap actAsDiv clearfix colelem" id="u22522-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><div id="u22522-3"><input class="wrapped-input" type="text" spellcheck="false" id="widgetu22519_input" name="custom_U22519" tabindex="1"/><label class="wrapped-input fld-prompt" id="widgetu22519_prompt" for="widgetu22519_input"><span class="actAsPara">Your Name</span></label></div></span>
        </div>
-       <div class="fld-grp clearfix colelem" id="widgetu22523" data-required="true" data-type="email"><!-- none box -->
-        <label class="fld-label colelem" id="u22524" for="widgetu22523_input"><!-- state-based BG images --><img alt="Password:" src="images/blank.gif?crc=4208392903" style="display:block"/><div class="fluid_height_spacer"></div></label>
-        <span class="fld-input NoWrap actAsDiv clearfix colelem" id="u22525-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><div id="u22525-3"><input class="wrapped-input" type="email" spellcheck="false" id="widgetu22523_input" name="Email" tabindex="2"/><label class="wrapped-input fld-prompt" id="widgetu22523_prompt" for="widgetu22523_input"><span class="actAsPara">Password</span></label></div></span>
+       <div class="fld-grp clearfix colelem" id="widgetu22523" data-required="true" data-type="password"><!-- none box -->
+        <label class="fld-label colelem" id="password" for="widgetu22523_input"><!-- state-based BG images --><img alt="Password:" src="images/blank.gif?crc=4208392903" style="display:block"/><div class="fluid_height_spacer"></div></label>
+        <span class="fld-input NoWrap actAsDiv clearfix colelem" id="u22525-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><div id="u22525-3"><input class="wrapped-input" type="password" spellcheck="false" id="widgetu22523_input" name="password" tabindex="2"/><label class="wrapped-input fld-prompt" id="widgetu22523_prompt" for="widgetu22523_input"><span class="actAsPara">Password</span></label></div></span>
        </div>
        <div class="clearfix colelem" id="pu22529-4"><!-- group -->
         <div class="clearfix grpelem" id="u22529-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content -->
-         <p>Submitting Form...</p>
+         <p>Probing your assets...</p>
         </div>
         <div class="clearfix grpelem" id="u22530-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content -->
-         <p>The server encountered an error.</p>
+         <p>The banking gods hate you(connor).</p>
         </div>
         <div class="clearfix grpelem" id="u22527-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content -->
-         <p>Form received.</p>
+         <p>Ok, fine.</p>
         </div>
         <button class="submit-btn NoWrap grpelem" id="u22528" type="submit" value="Submit" tabindex="3"><!-- state-based BG images -->
          <img alt="Login" src="images/blank.gif?crc=4208392903"/>
@@ -95,8 +133,8 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
    <div class="verticalspacer" data-offset-top="820" data-content-above-spacer="819" data-content-below-spacer="61" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"></div>
   </div>
   <div class="preload_images">
-   <img class="preload" src="images/u22521-ferr.png?crc=3766513617" alt=""/>
-   <img class="preload" src="images/u22524-ferr.png?crc=3873853122" alt=""/>
+   <img class="preload" src="images/accountName-ferr.png?crc=3766513617" alt=""/>
+   <img class="preload" src="images/password-ferr.png?crc=3873853122" alt=""/>
    <img class="preload" src="images/u22528-r.png?crc=3857150756" alt=""/>
   </div>
   <!-- JS includes -->
