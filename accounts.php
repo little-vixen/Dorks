@@ -11,7 +11,7 @@
 document.documentElement.className = document.documentElement.className.replace(/\bnojs\b/g, 'js');
 
 // Check that all required assets are uploaded and up-to-date
-if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required":["museutils.js", "museconfig.js", "jquery.musemenu.js", "jquery.watch.js", "require.js", "accounts.css"], "outOfDate":[]};
+if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required":["museutils.js", "museconfig.js", "jquery.watch.js", "require.js", "jquery.musemenu.js", "accounts.css"], "outOfDate":[]};
 </script>
   
   <title>Dork's BankAccountsWe Like Your Money As Much As You Do</title>
@@ -28,7 +28,7 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
   <div class="clearfix borderbox" id="page"><!-- column -->
    <div class="clearfix colelem" id="u2152"><!-- group -->
     <div class="clip_frame grpelem" id="u2165"><!-- image -->
-     <img class="block" id="u2165_img" src="images/cash-change-coins-banner-crop-u2165.jpg?crc=4139890737" alt="" data-heightwidthratio="0.13279132791327913" data-image-width="1107" data-image-height="147"/>
+     <img class="block" id="u2165_img" src="images/cash-change-coins-banner-crop-u2165.jpg?crc=4018664245" alt="" data-heightwidthratio="0.13279132791327913" data-image-width="1107" data-image-height="147"/>
     </div>
     <nav class="MenuBar gradient clearfix grpelem" id="menuu16143"><!-- horizontal box -->
      <div class="MenuItemContainer clearfix grpelem" id="u16151"><!-- vertical box -->

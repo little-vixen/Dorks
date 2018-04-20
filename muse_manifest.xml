@@ -1,8 +1,8 @@
-<manifest alg="2" build="2018.0.0.379" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="satoshi.cis.uncw.edu/~crf3913,satoshi.cis.uncw.edu/~my2277,satoshi.cis.uncw.edu/~ccw4231,satoshi.cis.uncw.edu/~wtl5367" resolutions="1x" timestamp="1524251322187">
+<manifest alg="2" build="2018.0.0.379" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="satoshi.cis.uncw.edu/~crf3913" resolutions="1x" timestamp="1524249006209">
   <folder name="css">
     <file name="site_global.css" crc="444006867"/>
     <file name="add-customers.css" crc="501056417" ref="add-customers"/>
-    <file name="index.css" crc="4213875078" ref="index"/>
+    <file name="index.css" crc="4100718796" ref="index"/>
     <file name="routing-info.css" crc="4181494273" ref="routing-info"/>
     <file name="help.css" crc="303956745" ref="help"/>
     <file name="manage-accounts.css" crc="3762958634" ref="manage-accounts"/>
@@ -22,15 +22,15 @@
     <file name="museutils.js" crc="3803043152" ref="index:accounts:routing-info:help:about-us:admin-login:reports:add-customers:deactivate-accounts:manage-accounts:detailed-transactions:modify-customer-information"/>
     <file name="whatinput.js" crc="86476730" ref="index:accounts:routing-info:help:about-us:admin-login:reports:add-customers:deactivate-accounts:manage-accounts:detailed-transactions:modify-customer-information"/>
     <file name="museconfig.js" crc="380897831" ref="index:accounts:routing-info:help:about-us:admin-login:reports:add-customers:deactivate-accounts:manage-accounts:detailed-transactions:modify-customer-information"/>
-    <file name="jquery.musemenu.js" crc="3784699396" ref="index:accounts:routing-info:about-us:admin-login:reports:add-customers:deactivate-accounts:manage-accounts:detailed-transactions:modify-customer-information"/>
     <file name="webpro.js" crc="242022427" ref="index:admin-login:reports:add-customers:modify-customer-information"/>
     <file name="form_check.php" crc="147359589" ref="index"/>
     <file name="form_throttle.php" crc="93986428" ref="index"/>
     <file name="form_process.php" crc="3851993751" ref="index"/>
     <file name="form-u22518.php" crc="158323645" ref="index"/>
     <file name="jquery.watch.js" crc="99325471" ref="index:accounts:routing-info:help:about-us:admin-login:reports:add-customers:deactivate-accounts:manage-accounts:detailed-transactions:modify-customer-information"/>
-    <file name="html5shiv.js" crc="4241844378" ref="index:accounts:routing-info:help:about-us:admin-login:reports:add-customers:deactivate-accounts:manage-accounts:detailed-transactions:modify-customer-information"/>
     <file name="require.js" crc="4157109226" ref="index:accounts:routing-info:help:about-us:admin-login:reports:add-customers:deactivate-accounts:manage-accounts:detailed-transactions:modify-customer-information"/>
+    <file name="jquery.musemenu.js" crc="3784699396" ref="accounts:routing-info:about-us:admin-login:reports:add-customers:deactivate-accounts:manage-accounts:detailed-transactions:modify-customer-information"/>
+    <file name="html5shiv.js" crc="4241844378" ref="accounts:routing-info:help:about-us:admin-login:reports:add-customers:deactivate-accounts:manage-accounts:detailed-transactions:modify-customer-information"/>
     <file name="form-u4548.php" crc="39096641" ref="admin-login"/>
     <file name="jquery.musepolyfill.bgsize.js" crc="4148998990" ref="reports:add-customers:modify-customer-information"/>
     <file name="form-u9006.php" crc="284324148" ref="reports"/>
@@ -45,153 +45,136 @@
       <caption webpage="admin-login" alt=""/>
     </file>
     <file name="u199-4.png" crc="4150129515" ref="index"/>
+    <file name="u1077-6.png" crc="4263567247" ref="index"/>
     <file name="blank.gif" crc="4208392903" ref="index:accounts:routing-info:about-us:admin-login:reports:add-customers:deactivate-accounts:manage-accounts:detailed-transactions:modify-customer-information"/>
-    <file name="u22592-4-a.png" crc="241653679" ref="index"/>
-    <file name="arrowmenudown.png" crc="262559161" ref="index:accounts:routing-info:about-us:admin-login:reports:add-customers:deactivate-accounts:manage-accounts:detailed-transactions:modify-customer-information">
-      <caption webpage="accounts" alt=""/>
-      <caption webpage="accounts" alt=""/>
-      <caption webpage="accounts" alt=""/>
-      <caption webpage="accounts" alt=""/>
-      <caption webpage="accounts" alt=""/>
-      <caption webpage="accounts" alt=""/>
-      <caption webpage="accounts" alt=""/>
-      <caption webpage="accounts" alt=""/>
-      <caption webpage="accounts" alt=""/>
-      <caption webpage="accounts" alt=""/>
-      <caption webpage="accounts" alt=""/>
-      <caption webpage="accounts" alt=""/>
-      <caption webpage="manage-accounts" alt=""/>
-      <caption webpage="manage-accounts" alt=""/>
-      <caption webpage="manage-accounts" alt=""/>
-      <caption webpage="manage-accounts" alt=""/>
-      <caption webpage="manage-accounts" alt=""/>
-      <caption webpage="manage-accounts" alt=""/>
-      <caption webpage="manage-accounts" alt=""/>
-      <caption webpage="manage-accounts" alt=""/>
-      <caption webpage="manage-accounts" alt=""/>
-      <caption webpage="manage-accounts" alt=""/>
-      <caption webpage="manage-accounts" alt=""/>
-      <caption webpage="manage-accounts" alt=""/>
-      <caption webpage="detailed-transactions" alt=""/>
-      <caption webpage="detailed-transactions" alt=""/>
-      <caption webpage="detailed-transactions" alt=""/>
-      <caption webpage="detailed-transactions" alt=""/>
-      <caption webpage="detailed-transactions" alt=""/>
-      <caption webpage="detailed-transactions" alt=""/>
-      <caption webpage="detailed-transactions" alt=""/>
-      <caption webpage="detailed-transactions" alt=""/>
-      <caption webpage="detailed-transactions" alt=""/>
-      <caption webpage="detailed-transactions" alt=""/>
-      <caption webpage="detailed-transactions" alt=""/>
-      <caption webpage="detailed-transactions" alt=""/>
-      <caption webpage="admin-login" alt=""/>
-      <caption webpage="admin-login" alt=""/>
-      <caption webpage="admin-login" alt=""/>
-      <caption webpage="admin-login" alt=""/>
-      <caption webpage="admin-login" alt=""/>
-      <caption webpage="admin-login" alt=""/>
-      <caption webpage="admin-login" alt=""/>
-      <caption webpage="admin-login" alt=""/>
-      <caption webpage="admin-login" alt=""/>
-      <caption webpage="admin-login" alt=""/>
-      <caption webpage="admin-login" alt=""/>
-      <caption webpage="admin-login" alt=""/>
-      <caption webpage="modify-customer-information" alt=""/>
-      <caption webpage="modify-customer-information" alt=""/>
-      <caption webpage="modify-customer-information" alt=""/>
-      <caption webpage="modify-customer-information" alt=""/>
-      <caption webpage="modify-customer-information" alt=""/>
-      <caption webpage="modify-customer-information" alt=""/>
-      <caption webpage="modify-customer-information" alt=""/>
-      <caption webpage="modify-customer-information" alt=""/>
-      <caption webpage="modify-customer-information" alt=""/>
-      <caption webpage="modify-customer-information" alt=""/>
-      <caption webpage="modify-customer-information" alt=""/>
-      <caption webpage="modify-customer-information" alt=""/>
-      <caption webpage="index" alt=""/>
-      <caption webpage="index" alt=""/>
-      <caption webpage="index" alt=""/>
-      <caption webpage="index" alt=""/>
-      <caption webpage="index" alt=""/>
-      <caption webpage="index" alt=""/>
-      <caption webpage="index" alt=""/>
-      <caption webpage="index" alt=""/>
-      <caption webpage="index" alt=""/>
-      <caption webpage="index" alt=""/>
-      <caption webpage="index" alt=""/>
-      <caption webpage="index" alt=""/>
-      <caption webpage="about-us" alt=""/>
-      <caption webpage="about-us" alt=""/>
-      <caption webpage="about-us" alt=""/>
-      <caption webpage="about-us" alt=""/>
-      <caption webpage="about-us" alt=""/>
-      <caption webpage="about-us" alt=""/>
-      <caption webpage="about-us" alt=""/>
-      <caption webpage="about-us" alt=""/>
-      <caption webpage="about-us" alt=""/>
-      <caption webpage="about-us" alt=""/>
-      <caption webpage="about-us" alt=""/>
-      <caption webpage="about-us" alt=""/>
-      <caption webpage="routing-info" alt=""/>
-      <caption webpage="routing-info" alt=""/>
-      <caption webpage="routing-info" alt=""/>
-      <caption webpage="routing-info" alt=""/>
-      <caption webpage="routing-info" alt=""/>
-      <caption webpage="routing-info" alt=""/>
-      <caption webpage="routing-info" alt=""/>
-      <caption webpage="routing-info" alt=""/>
-      <caption webpage="routing-info" alt=""/>
-      <caption webpage="routing-info" alt=""/>
-      <caption webpage="routing-info" alt=""/>
-      <caption webpage="routing-info" alt=""/>
-      <caption webpage="reports" alt=""/>
-      <caption webpage="reports" alt=""/>
-      <caption webpage="reports" alt=""/>
-      <caption webpage="reports" alt=""/>
-      <caption webpage="reports" alt=""/>
-      <caption webpage="reports" alt=""/>
-      <caption webpage="reports" alt=""/>
-      <caption webpage="reports" alt=""/>
-      <caption webpage="reports" alt=""/>
-      <caption webpage="reports" alt=""/>
-      <caption webpage="reports" alt=""/>
-      <caption webpage="reports" alt=""/>
-      <caption webpage="add-customers" alt=""/>
-      <caption webpage="add-customers" alt=""/>
-      <caption webpage="deactivate-accounts" alt=""/>
-      <caption webpage="deactivate-accounts" alt=""/>
-      <caption webpage="deactivate-accounts" alt=""/>
-      <caption webpage="deactivate-accounts" alt=""/>
-      <caption webpage="deactivate-accounts" alt=""/>
-      <caption webpage="deactivate-accounts" alt=""/>
-      <caption webpage="deactivate-accounts" alt=""/>
-      <caption webpage="deactivate-accounts" alt=""/>
-      <caption webpage="deactivate-accounts" alt=""/>
-      <caption webpage="deactivate-accounts" alt=""/>
-      <caption webpage="deactivate-accounts" alt=""/>
-      <caption webpage="deactivate-accounts" alt=""/>
-    </file>
-    <file name="u22675.png" crc="382963148" ref="index"/>
-    <file name="u22675-a.png" crc="3877443148" ref="index"/>
-    <file name="u22670.png" crc="4194065261" ref="index"/>
-    <file name="u22670-a.png" crc="4294399681" ref="index"/>
-    <file name="nerdMoney.png" crc="4263567247" ref="index"/>
     <file name="u22521.png" crc="3887530782" ref="index"/>
     <file name="u22521-ferr.png" crc="3766513617" ref="index"/>
     <file name="u22524.png" crc="3795313520" ref="index"/>
     <file name="u22524-ferr.png" crc="3873853122" ref="index"/>
-    <file name="u22528.png" crc="3954472008" ref="index"/>
-    <file name="u22528-r.png" crc="3857150756" ref="index"/>
+    <file name="login_Button.png" crc="3954472008" ref="index"/>
+    <file name="login_Button-r.png" crc="3857150756" ref="index"/>
     <file name="nerdmoney.jpg" crc="81157550" seo="true" ref="index:admin-login">
       <caption webpage="index" alt=""/>
       <caption webpage="admin-login" alt=""/>
     </file>
     <file name="u1630-4.png" crc="3992780049" ref="index"/>
-    <file name="cash-change-coins-banner-crop-u2165.jpg" crc="4139890737" seo="true" ref="accounts">
+    <file name="cash-change-coins-banner-crop-u2165.jpg" crc="4018664245" seo="true" ref="accounts">
       <caption webpage="accounts" alt=""/>
     </file>
     <file name="u16191.png" crc="3791391395" ref="accounts"/>
     <file name="u16191-a.png" crc="16518529" ref="accounts"/>
+    <file name="arrowmenudown.png" crc="262559161" ref="accounts:routing-info:about-us:admin-login:reports:add-customers:deactivate-accounts:manage-accounts:detailed-transactions:modify-customer-information">
+      <caption webpage="manage-accounts" alt=""/>
+      <caption webpage="manage-accounts" alt=""/>
+      <caption webpage="manage-accounts" alt=""/>
+      <caption webpage="manage-accounts" alt=""/>
+      <caption webpage="manage-accounts" alt=""/>
+      <caption webpage="manage-accounts" alt=""/>
+      <caption webpage="manage-accounts" alt=""/>
+      <caption webpage="manage-accounts" alt=""/>
+      <caption webpage="manage-accounts" alt=""/>
+      <caption webpage="manage-accounts" alt=""/>
+      <caption webpage="manage-accounts" alt=""/>
+      <caption webpage="manage-accounts" alt=""/>
+      <caption webpage="detailed-transactions" alt=""/>
+      <caption webpage="detailed-transactions" alt=""/>
+      <caption webpage="detailed-transactions" alt=""/>
+      <caption webpage="detailed-transactions" alt=""/>
+      <caption webpage="detailed-transactions" alt=""/>
+      <caption webpage="detailed-transactions" alt=""/>
+      <caption webpage="detailed-transactions" alt=""/>
+      <caption webpage="detailed-transactions" alt=""/>
+      <caption webpage="detailed-transactions" alt=""/>
+      <caption webpage="detailed-transactions" alt=""/>
+      <caption webpage="detailed-transactions" alt=""/>
+      <caption webpage="detailed-transactions" alt=""/>
+      <caption webpage="admin-login" alt=""/>
+      <caption webpage="admin-login" alt=""/>
+      <caption webpage="admin-login" alt=""/>
+      <caption webpage="admin-login" alt=""/>
+      <caption webpage="admin-login" alt=""/>
+      <caption webpage="admin-login" alt=""/>
+      <caption webpage="admin-login" alt=""/>
+      <caption webpage="admin-login" alt=""/>
+      <caption webpage="admin-login" alt=""/>
+      <caption webpage="admin-login" alt=""/>
+      <caption webpage="admin-login" alt=""/>
+      <caption webpage="admin-login" alt=""/>
+      <caption webpage="modify-customer-information" alt=""/>
+      <caption webpage="modify-customer-information" alt=""/>
+      <caption webpage="modify-customer-information" alt=""/>
+      <caption webpage="modify-customer-information" alt=""/>
+      <caption webpage="modify-customer-information" alt=""/>
+      <caption webpage="modify-customer-information" alt=""/>
+      <caption webpage="modify-customer-information" alt=""/>
+      <caption webpage="modify-customer-information" alt=""/>
+      <caption webpage="modify-customer-information" alt=""/>
+      <caption webpage="modify-customer-information" alt=""/>
+      <caption webpage="modify-customer-information" alt=""/>
+      <caption webpage="modify-customer-information" alt=""/>
+      <caption webpage="accounts" alt=""/>
+      <caption webpage="accounts" alt=""/>
+      <caption webpage="accounts" alt=""/>
+      <caption webpage="accounts" alt=""/>
+      <caption webpage="accounts" alt=""/>
+      <caption webpage="accounts" alt=""/>
+      <caption webpage="accounts" alt=""/>
+      <caption webpage="accounts" alt=""/>
+      <caption webpage="accounts" alt=""/>
+      <caption webpage="accounts" alt=""/>
+      <caption webpage="accounts" alt=""/>
+      <caption webpage="accounts" alt=""/>
+      <caption webpage="about-us" alt=""/>
+      <caption webpage="about-us" alt=""/>
+      <caption webpage="about-us" alt=""/>
+      <caption webpage="about-us" alt=""/>
+      <caption webpage="about-us" alt=""/>
+      <caption webpage="about-us" alt=""/>
+      <caption webpage="about-us" alt=""/>
+      <caption webpage="about-us" alt=""/>
+      <caption webpage="about-us" alt=""/>
+      <caption webpage="about-us" alt=""/>
+      <caption webpage="about-us" alt=""/>
+      <caption webpage="about-us" alt=""/>
+      <caption webpage="routing-info" alt=""/>
+      <caption webpage="routing-info" alt=""/>
+      <caption webpage="routing-info" alt=""/>
+      <caption webpage="routing-info" alt=""/>
+      <caption webpage="routing-info" alt=""/>
+      <caption webpage="routing-info" alt=""/>
+      <caption webpage="routing-info" alt=""/>
+      <caption webpage="routing-info" alt=""/>
+      <caption webpage="routing-info" alt=""/>
+      <caption webpage="routing-info" alt=""/>
+      <caption webpage="routing-info" alt=""/>
+      <caption webpage="routing-info" alt=""/>
+      <caption webpage="reports" alt=""/>
+      <caption webpage="reports" alt=""/>
+      <caption webpage="reports" alt=""/>
+      <caption webpage="reports" alt=""/>
+      <caption webpage="reports" alt=""/>
+      <caption webpage="reports" alt=""/>
+      <caption webpage="reports" alt=""/>
+      <caption webpage="reports" alt=""/>
+      <caption webpage="reports" alt=""/>
+      <caption webpage="reports" alt=""/>
+      <caption webpage="reports" alt=""/>
+      <caption webpage="reports" alt=""/>
+      <caption webpage="add-customers" alt=""/>
+      <caption webpage="add-customers" alt=""/>
+      <caption webpage="deactivate-accounts" alt=""/>
+      <caption webpage="deactivate-accounts" alt=""/>
+      <caption webpage="deactivate-accounts" alt=""/>
+      <caption webpage="deactivate-accounts" alt=""/>
+      <caption webpage="deactivate-accounts" alt=""/>
+      <caption webpage="deactivate-accounts" alt=""/>
+      <caption webpage="deactivate-accounts" alt=""/>
+      <caption webpage="deactivate-accounts" alt=""/>
+      <caption webpage="deactivate-accounts" alt=""/>
+      <caption webpage="deactivate-accounts" alt=""/>
+      <caption webpage="deactivate-accounts" alt=""/>
+      <caption webpage="deactivate-accounts" alt=""/>
+    </file>
     <file name="u16150.png" crc="3836622888" ref="accounts"/>
     <file name="u16150-a.png" crc="433590631" ref="accounts"/>
     <file name="u16233.png" crc="13683621" ref="accounts"/>
@@ -446,16 +429,16 @@
     <file name="u11383.png" crc="327808140" ref="modify-customer-information"/>
     <file name="u11383-ferr.png" crc="4002687073" ref="modify-customer-information"/>
   </folder>
-  <file name="index.html" crc="125797692" seo="true" mt="1524250922440" redirect="true"/>
-  <file name="accounts.html" crc="76145586" seo="true" mt="1524169473440" redirect="true"/>
-  <file name="routing-info.html" crc="231581740" seo="true" mt="1524163957781" redirect="true"/>
+  <file name="index.html" crc="86418141" seo="true" mt="1524248908068" redirect="true"/>
+  <file name="accounts.html" crc="325029817" seo="true" mt="1524169473440" redirect="true"/>
+  <file name="routing-info.html" crc="235254266" seo="true" mt="1524163957781" redirect="true"/>
   <file name="help.html" crc="9834020" seo="true" mt="1524181394089" redirect="true"/>
-  <file name="about-us.html" crc="382112757" seo="true" mt="1524190525093" redirect="true"/>
-  <file name="admin-login.html" crc="116616615" seo="true" mt="1524248850427" redirect="true"/>
-  <file name="reports.html" crc="359915151" seo="true" mt="1524169671256" redirect="true"/>
-  <file name="add-customers.html" crc="3953464986" seo="true" mt="1524104617139" redirect="true"/>
-  <file name="deactivate-accounts.html" crc="4139149683" seo="true" mt="1524169770666" redirect="true"/>
-  <file name="manage-accounts.html" crc="188692706" seo="true" mt="1524169799468" redirect="true"/>
-  <file name="detailed-transactions.html" crc="272802351" seo="true" mt="1524163949149" redirect="true"/>
-  <file name="modify-customer-information.html" crc="3994435106" seo="true" mt="1524169693347" redirect="true"/>
+  <file name="about-us.html" crc="4000903056" seo="true" mt="1524190525093" redirect="true"/>
+  <file name="admin-login.html" crc="3999213029" seo="true" mt="1524248850427" redirect="true"/>
+  <file name="reports.html" crc="4279010637" seo="true" mt="1524169671256" redirect="true"/>
+  <file name="add-customers.html" crc="4224322427" seo="true" mt="1524104617139" redirect="true"/>
+  <file name="deactivate-accounts.html" crc="385788896" seo="true" mt="1524169770666" redirect="true"/>
+  <file name="manage-accounts.html" crc="331694113" seo="true" mt="1524169799468" redirect="true"/>
+  <file name="detailed-transactions.html" crc="3837034175" seo="true" mt="1524163949149" redirect="true"/>
+  <file name="modify-customer-information.html" crc="3925937200" seo="true" mt="1524169693347" redirect="true"/>
 </manifest>

@@ -11,17 +11,13 @@
 document.documentElement.className = document.documentElement.className.replace(/\bnojs\b/g, 'js');
 
 // Check that all required assets are uploaded and up-to-date
-if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required":["museutils.js", "museconfig.js", "jquery.musemenu.js", "webpro.js", "jquery.watch.js", "require.js", "index.css"], "outOfDate":[]};
+if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required":["museutils.js", "museconfig.js", "webpro.js", "jquery.watch.js", "require.js", "index.css"], "outOfDate":[]};
 </script>
   
   <title>Dork's BankLoginWe Like Your Money As Much As You Do</title>
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="css/site_global.css?crc=444006867"/>
-  <link rel="stylesheet" type="text/css" href="css/index.css?crc=4213875078" id="pagesheet"/>
-  <!-- JS includes -->
-  <!--[if lt IE 9]>
-  <script src="scripts/html5shiv.js?crc=4241844378" type="text/javascript"></script>
-  <![endif]-->
+  <link rel="stylesheet" type="text/css" href="css/index.css?crc=4100718796" id="pagesheet"/>
    </head>
  <body>
 
@@ -45,37 +41,8 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
    </div>
    <div class="rgba-background clearfix grpelem" id="u1210"><!-- group -->
     <img class="grpelem" id="u199-4" alt="Dork's Bank" src="images/u199-4.png?crc=4150129515" data-image-width="458"/><!-- rasterized frame -->
-    <div class="clearfix grpelem" id="pu22286-3"><!-- column -->
-     <div class="clearfix colelem" id="u22286-3" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content -->
-      <p>&nbsp;</p>
-     </div>
-     <nav class="MenuBar gradient clearfix colelem" id="menuu22587"><!-- horizontal box -->
-      <div class="MenuItemContainer clearfix grpelem" id="u22588"><!-- vertical box -->
-       <a class="nonblock nontext MenuItem MenuItemWithSubMenu MuseMenuActive borderbox transition clearfix colelem" id="u22589" href="index.php"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem" id="u22592-4"><!-- rasterized frame --><div id="u22592-4_clip"><img alt="Login" src="images/u22592-4-a.png?crc=241653679" data-image-width="199"/></div></div><div class="grpelem" id="u22590"><!-- content --></div></a>
-       <div class="SubMenu MenuLevel1 clearfix" id="u22593"><!-- vertical box -->
-        <ul class="SubMenuView clearfix colelem" id="u22594"><!-- vertical box -->
-         <li class="MenuItemContainer clearfix colelem" id="u22609"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem" id="u22626" href="accounts.php"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u22629-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><div id="u22629-3"><p>Accounts</p></div></div><div class="grpelem" id="u22628"><!-- content --></div></a><div class="SubMenu MenuLevel2 clearfix" id="u22610"><!-- vertical box --><ul class="SubMenuView clearfix colelem" id="u22611"><!-- vertical box --><li class="MenuItemContainer clearfix colelem" id="u22612"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem" id="u22613" href="routing-info.php"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u22614-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><div id="u22614-3"><p>Routing Info</p></div></div><div class="grpelem" id="u22615"><!-- content --></div></a></li><li class="MenuItemContainer clearfix colelem" id="u22619"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem" id="u22620" href="detailed-transactions.php"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u22622-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><div id="u22622-3"><p>Detailed Transactions</p></div></div><div class="grpelem" id="u22623"><!-- content --></div></a></li></ul></div></li>
-         <li class="MenuItemContainer clearfix colelem" id="u22595"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem" id="u22596" href="help.php"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u22597-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><div id="u22597-3"><p>Help</p></div></div><div class="grpelem" id="u22598"><!-- content --></div></a></li>
-         <li class="MenuItemContainer clearfix colelem" id="u22602"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem" id="u22603" href="about-us.php"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u22604-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><div id="u22604-3"><p>About Us</p></div></div><div class="grpelem" id="u22605"><!-- content --></div></a></li>
-        </ul>
-       </div>
-      </div>
-      <div class="MenuItemContainer clearfix grpelem" id="u22672"><!-- vertical box -->
-       <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox transition clearfix colelem" id="u22673" href="create-account.php"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem" id="u22675"><!-- state-based BG images --><img alt="Create Account" src="images/blank.gif?crc=4208392903"/><div class="fluid_height_spacer"></div></div><div class="grpelem" id="u22674"><!-- content --></div></a>
-      </div>
-      <div class="MenuItemContainer clearfix grpelem" id="u22630"><!-- vertical box -->
-       <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox transition clearfix colelem" id="u22668" href="admin-login.php"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem" id="u22670"><!-- state-based BG images --><img alt="Admin Login" src="images/blank.gif?crc=4208392903"/><div class="fluid_height_spacer"></div></div><div class="grpelem" id="u22671"><!-- content --></div></a>
-       <div class="SubMenu MenuLevel1 clearfix" id="u22631"><!-- vertical box -->
-        <ul class="SubMenuView clearfix colelem" id="u22632"><!-- vertical box -->
-         <li class="MenuItemContainer clearfix colelem" id="u22633"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem" id="u22636" href="reports.php"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u22639-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><div id="u22639-3"><p>Reports</p></div></div><div class="grpelem" id="u22637"><!-- content --></div></a></li>
-         <li class="MenuItemContainer clearfix colelem" id="u22654"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem" id="u22657" href="add-customers.php"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u22659-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><div id="u22659-3"><p>Add Customers</p></div></div><div class="grpelem" id="u22660"><!-- content --></div></a></li>
-         <li class="MenuItemContainer clearfix colelem" id="u22640"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem" id="u22641" href="modify-customer-information.php"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u22644-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><div id="u22644-3"><p>Modify Customer Information</p></div></div><div class="grpelem" id="u22643"><!-- content --></div></a></li>
-         <li class="MenuItemContainer clearfix colelem" id="u22661"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem" id="u22662" href="deactivate-accounts.php"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u22664-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><div id="u22664-3"><p>Deactivate Accounts</p></div></div><div class="grpelem" id="u22665"><!-- content --></div></a></li>
-         <li class="MenuItemContainer clearfix colelem" id="u22647"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem" id="u22650" href="manage-accounts.php"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u22652-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><div id="u22652-3"><p>Manage Accounts</p></div></div><div class="grpelem" id="u22653"><!-- content --></div></a></li>
-        </ul>
-       </div>
-      </div>
-     </nav>
+    <div class="clearfix grpelem" id="u22286-3" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content -->
+     <p>&nbsp;</p>
     </div>
    </div>
    <div class="rgba-background clearfix grpelem" id="u1074"><!-- column -->
@@ -117,7 +84,7 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
    </div>
    <div class="size_fixed grpelem" id="u3434" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- custom html -->
     
-<div class="fb-like" data-href="http://satoshi.cis.uncw.edu/~crf3913/index.php" data-send="true" data-width="344" data-show-faces="false" data-colorscheme="dark" data-layout="button_count" data-action="like"></div>
+<div class="fb-like" data-href="http://DorksBank.php/index.php" data-send="true" data-width="344" data-show-faces="false" data-colorscheme="dark" data-layout="button_count" data-action="like"></div>
 
    </div>
    <div class="size_fixed grpelem" id="u3444" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- custom html -->
@@ -128,9 +95,6 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
    <div class="verticalspacer" data-offset-top="820" data-content-above-spacer="819" data-content-below-spacer="61" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"></div>
   </div>
   <div class="preload_images">
-   <img class="preload" src="images/arrowmenudown.png?crc=262559161" alt=""/>
-   <img class="preload" src="images/u22675-a.png?crc=3877443148" alt=""/>
-   <img class="preload" src="images/u22670-a.png?crc=4294399681" alt=""/>
    <img class="preload" src="images/u22521-ferr.png?crc=3766513617" alt=""/>
    <img class="preload" src="images/u22524-ferr.png?crc=3873853122" alt=""/>
    <img class="preload" src="images/u22528-r.png?crc=3857150756" alt=""/>
@@ -153,12 +117,11 @@ var suppressMissingFileError = false
 l[1]:null,l=l&&l[2]?l[2]:null;switch(l.toLowerCase()){case "css":k=k.replace(/\W/gi,"_").replace(/^([^a-z])/gi,"_$1");f.className+=" "+k;k=a(c(f,"color"));l=a(c(f,"backgroundColor"));k!=0||l!=0?(Muse.assets.required.splice(h,1),"undefined"!=typeof b[i]&&(k!=b[i]>>>24||l!=(b[i]&16777215))&&Muse.assets.outOfDate.push(i)):h++;f.className="version";break;case "js":h++;break;default:throw Error("Unsupported file type: "+l);}}d?d().jquery!="1.8.3"&&Muse.assets.outOfDate.push("jquery-1.8.3.min.js"):Muse.assets.required.push("jquery-1.8.3.min.js");
 f.parentNode.removeChild(f);if(Muse.assets.outOfDate.length||Muse.assets.required.length)f="Some files on the server may be missing or incorrect. Clear browser cache and try again. If the problem persists please contact website author.",g&&Muse.assets.outOfDate.length&&(f+="\nOut of date: "+Muse.assets.outOfDate.join(",")),g&&Muse.assets.required.length&&(f+="\nMissing: "+Muse.assets.required.join(",")),suppressMissingFileError?(f+="\nUse SuppressMissingFileError key in AppPrefs.xml to show missing file error pop up.",console.log(f)):alert(f)};location&&location.search&&location.search.match&&location.search.match(/muse_debug/gi)?
 setTimeout(function(){g(!0)},5E3):g()}};
-var muse_init=function(){require.config({baseUrl:""});require(["jquery","museutils","whatinput","jquery.musemenu","webpro","jquery.watch"],function(d){var $ = d;$(document).ready(function(){try{
+var muse_init=function(){require.config({baseUrl:""});require(["jquery","museutils","whatinput","webpro","jquery.watch"],function(d){var $ = d;$(document).ready(function(){try{
 window.Muse.assets.check($);/* body */
 Muse.Utils.transformMarkupToFixBrowserProblemsPreInit();/* body */
 Muse.Utils.prepHyperlinks(true);/* body */
 Muse.Utils.makeButtonsVisibleAfterSettingMinWidth();/* body */
-Muse.Utils.initWidget('.MenuBar', ['#bp_infinity'], function(elem) { return $(elem).museMenu(); });/* unifiedNavBar */
 Muse.Utils.initWidget('#widgetu22518', ['#bp_infinity'], function(elem) { return new WebPro.Widget.Form(elem, {validationEvent:'submit',errorStateSensitivity:'high',fieldWrapperClass:'fld-grp',formSubmittedClass:'frm-sub-st',formErrorClass:'frm-subm-err-st',formDeliveredClass:'frm-subm-ok-st',notEmptyClass:'non-empty-st',focusClass:'focus-st',invalidClass:'fld-err-st',requiredClass:'fld-err-st',ajaxSubmit:true}); });/* #widgetu22518 */
 Muse.Utils.fullPage('#page');/* 100% height page */
 Muse.Utils.showWidgetsWhenReady();/* body */

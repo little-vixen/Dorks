@@ -11,7 +11,7 @@
 document.documentElement.className = document.documentElement.className.replace(/\bnojs\b/g, 'js');
 
 // Check that all required assets are uploaded and up-to-date
-if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required":["museutils.js", "museconfig.js", "jquery.musemenu.js", "webpro.js", "jquery.watch.js", "require.js", "jquery.musepolyfill.bgsize.js", "add-customers.css"], "outOfDate":[]};
+if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required":["museutils.js", "museconfig.js", "webpro.js", "jquery.watch.js", "require.js", "jquery.musemenu.js", "jquery.musepolyfill.bgsize.js", "add-customers.css"], "outOfDate":[]};
 </script>
   
   <title>Dork's BankAdd CustomersWe Like Your Money As Much As You Do</title>
