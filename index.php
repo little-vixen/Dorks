@@ -1,40 +1,45 @@
-<?php
-//added to allow db Connections unless you //are Connor
-
-if(isset($_POST['submit'])){
-	$errors = array(); //I guess so-  going to store these so i can display and embarass Connor
-	if(empty($_POST['accountName'])){
-		$errors[] = 'You are hopeless....Where is your account name?';//LOOKING AT YOU CONNOR LOL
-		}else{
-		$un =trim($_POST['username']);//we are sanitizing data-checking for hackers and whitespace etc.  We don't want any other evil doers 								/stealing our stolen monies
+<?php 
+	if (isset($_POST['send'])) {
+		$missing = array();
+		$errors = array();
+		$username = trim(filter_input(INPUT_POST, 'username', FILTER_SANITIZE_STRING));
+		$password = trim(filter_input(INPUT_POST, 'password', FILTER_SANITIZE_STRING));
+		if (empty($username)) {
+			$missing[] = 'username';
+			
+		}
+		if (empty($password)) {
+			$missing[] = 'password';
+			
+		}
+		while (!$missing && !$errors) {
+			try {
+				require_once ('../pdo_config.php');
+				$sql = "select cid,fn,ln,cPassword from customer where cid = :cid and cPassword = Password(:password)";
+				$stmt = $conn -> prepare($sql);
+				$stmt->bindValue(':cid', $username);
+				$stmt->bindValue(':password', $password);
+				$stmt->execute();
+				$rows = $stmt->rowCount();
+				if ($rows==0) { //cid not found
+					$errors[] = 'username';
+					$errors[] = 'password';
+				} else { //cid found, validate password
+					$result = $stmt->fetch();
+					$username = $result['cid'];
+					session_start();
+					$_SESSION['cid'] = $username;
+					$_SESSION['fn'] = $result['fn'];
+					$_SESSION['ln'] = $result['ln'];
+					header('Location: login_direct.php');
+					exit;
+				}
+			} catch (Exception $e) { 
+				echo $e->getMessage(); 
+			}
+		}			
 	}
-	if(empty($_POST['password'])){
-		$errors[] = 'You are not receiving this message because we used your money to go to fiji last week, you forgot your password!';//does not tell the customer what we do with their monies
-	}else{
-		$pw = trim($_POST['password']);//yep, checking for hackers and cohorts...and yeah whitespace again whatevs
-	}
-	if (empty($errors)){
-		
-		require_once ('../pdo_config.php'); //connection to db (not you Connor).
-	
-
-$sql = "SELECT cid, cPassword FROM `customer`
-		WHERE cid = '$un'";//pull the records we want to compare
-$run = @(mysqli_query($conn,$sql));
-
-if(mysqli_num_rows($run)==1){
-	$row = mysqli_fetch_array($run,MYSQLI_ASSOC);
-	if($row['cPassword']== MHASH_SHA1($pw)){
-		echo('Welcome Dork');
-		exit();
-	}else{
-	echo('You are not welcome, ACCESS DENIED');
-	}
-}if (mysqli_num_rows($run)==0){
-echo('YOU ARE WRONG, TRY AGAIN.');
-}
-}
-}
+	//require './includes/header.php';
 ?>
 <!DOCTYPE html>
 <html class="nojs html css_verticalspacer" lang="en-GB">
@@ -47,7 +52,6 @@ echo('YOU ARE WRONG, TRY AGAIN.');
   <script type="text/javascript">
    // Update the 'nojs'/'js' class on the html node
 document.documentElement.className = document.documentElement.className.replace(/\bnojs\b/g, 'js');
-
 // Check that all required assets are uploaded and up-to-date
 if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required":["museutils.js", "museconfig.js", "webpro.js", "jquery.watch.js", "require.js", "index.css"], "outOfDate":[]};
 </script>
@@ -87,14 +91,14 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
     <div class="colelem" id="u1071"><!-- simple frame --></div>
     <div class="clearfix colelem" id="pu1077-6"><!-- group -->
      <img class="grpelem" id="u1077-6" alt="&nbsp;Banking For Dorks." src="images/u1077-6.png?crc=4263567247" data-image-width="560"/><!-- rasterized frame -->
-     <form class="form-grp clearfix grpelem" id="widgetu22518" method="post" enctype="multipart/form-data" action="accounts.php"><!-- none box -->
+     <form class="form-grp clearfix grpelem" id="widgetu22518" method="post" enctype="multipart/form-data" action="index.php"><!-- none box -->
       <div class="position_content" id="widgetu22518_position_content">
        <div class="fld-grp clearfix colelem" id="widgetu22519" data-required="true"><!-- none box -->
-        <label class="fld-label colelem" id="accountName" for="widgetu22519_input"><!-- state-based BG images --><img alt="Account:" src="images/blank.gif?crc=4208392903" style="display:block"/><div class="fluid_height_spacer"></div></label>
+        <label class="fld-label colelem" id="accountName" name ="username" for="widgetu22519_input"><!-- state-based BG images --><img alt="Account:" src="images/blank.gif?crc=4208392903" style="display:block"/><div class="fluid_height_spacer"></div></label>
         <span class="fld-input NoWrap actAsDiv clearfix colelem" id="u22522-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><div id="u22522-3"><input class="wrapped-input" type="text" spellcheck="false" id="widgetu22519_input" name="custom_U22519" tabindex="1"/><label class="wrapped-input fld-prompt" id="widgetu22519_prompt" for="widgetu22519_input"><span class="actAsPara">Your Name</span></label></div></span>
        </div>
        <div class="fld-grp clearfix colelem" id="widgetu22523" data-required="true" data-type="password"><!-- none box -->
-        <label class="fld-label colelem" id="password" for="widgetu22523_input"><!-- state-based BG images --><img alt="Password:" src="images/blank.gif?crc=4208392903" style="display:block"/><div class="fluid_height_spacer"></div></label>
+        <label class="fld-label colelem" id="password" name = "password" for="widgetu22523_input"><!-- state-based BG images --><img alt="Password:" src="images/blank.gif?crc=4208392903" style="display:block"/><div class="fluid_height_spacer"></div></label>
         <span class="fld-input NoWrap actAsDiv clearfix colelem" id="u22525-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><div id="u22525-3"><input class="wrapped-input" type="password" spellcheck="false" id="widgetu22523_input" name="password" tabindex="2"/><label class="wrapped-input fld-prompt" id="widgetu22523_prompt" for="widgetu22523_input"><span class="actAsPara">Password</span></label></div></span>
        </div>
        <div class="clearfix colelem" id="pu22529-4"><!-- group -->
@@ -107,7 +111,7 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
         <div class="clearfix grpelem" id="u22527-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content -->
          <p>Ok, fine.</p>
         </div>
-        <button class="submit-btn NoWrap grpelem" id="u22528" type="submit" value="Submit" tabindex="3"><!-- state-based BG images -->
+        <button class="submit-btn NoWrap grpelem" id="u22528" name = "send" type="submit" value="Login" tabindex="3"><!-- state-based BG images -->
          <img alt="Login" src="images/blank.gif?crc=4208392903"/>
          <div class="fluid_height_spacer"></div>
         </button>
@@ -165,7 +169,6 @@ Muse.Utils.fullPage('#page');/* 100% height page */
 Muse.Utils.showWidgetsWhenReady();/* body */
 Muse.Utils.transformMarkupToFixBrowserProblems();/* body */
 }catch(b){if(b&&"function"==typeof b.notify?b.notify():Muse.Assert.fail("Error calling selector function: "+b),false)throw b;}})})};
-
 </script>
   <!-- RequireJS script -->
   <script src="scripts/require.js?crc=4157109226" type="text/javascript" async data-main="scripts/museconfig.js?crc=380897831" onload="if (requirejs) requirejs.onError = function(requireType, requireModule) { if (requireType && requireType.toString && requireType.toString().indexOf && 0 <= requireType.toString().indexOf('#scripterror')) window.Muse.assets.check(); }" onerror="window.Muse.assets.check();"></script>

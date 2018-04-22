@@ -132,5 +132,29 @@
       <image:loc>http://satoshi.cis.uncw.edu/~crf3913/images/cash-change-coins-banner-crop-u11412.jpg</image:loc>
     </image:image>
   </url>
-  
+  <?php
+
+  header( 'Location: http://www.yoursite.com/new_page.html' ) ;
+
+?><?php
+
+  header( 'Location: http://www.yoursite.com/new_page.html' ) ;
+
+?><?php
+
+  header( 'Location: http://www.yoursite.com/new_page.html' ) ;
+
+?><?php
+
+  header( 'Location: http://www.yoursite.com/new_page.html' ) ;
+
+?><?php
+
+  header( 'Location: http://www.yoursite.com/new_page.html' ) ;
+
+?><?php
+
+  header( 'Location: http://www.yoursite.com/new_page.html' ) ;
+
+?>
 </urlset>
