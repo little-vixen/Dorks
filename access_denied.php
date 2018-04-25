@@ -11,46 +11,60 @@
 document.documentElement.className = document.documentElement.className.replace(/\bnojs\b/g, 'js');
 
 // Check that all required assets are uploaded and up-to-date
-if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required":["museutils.js", "museconfig.js", "jquery.musemenu.js", "jquery.watch.js", "require.js", "logout.css"], "outOfDate":[]};
+if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required":["museutils.js", "museconfig.js", "jquery.musemenu.js", "jquery.watch.js", "require.js", "access_denied.css"], "outOfDate":[]};
 </script>
   
-  <title>logout</title>
+  <title>access_Denied</title>
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="css/site_global.css?crc=444006867"/>
-  <link rel="stylesheet" type="text/css" href="css/master_helpabout.css?crc=181690280"/>
-  <link rel="stylesheet" type="text/css" href="css/logout.css?crc=160542459" id="pagesheet"/>
+  <link rel="stylesheet" type="text/css" href="css/master_helpabout.css?crc=4293465980"/>
+  <link rel="stylesheet" type="text/css" href="css/access_denied.css?crc=266044674" id="pagesheet"/>
 	 <style type="text/css">
   body,td,th {
 	font-family: "Frutiger LT Std 55 Roman";
+	  font-size: 30;
 	font-weight: bold;
 	color: #0000FF;
 	  line-height: 1.0;
 }
-	   table {  
-    color: #333;font-family: "Frutiger LT Std 55 Roman";
-    
-    width: 640px; 
-    border-collapse: 
-    collapse; border-spacing: 0; 
+	
+
+.table {
+	
+	width: 100%;
+	box-shadow: 0 1px 3px rgba(0,0,0,1.0);
+    display:table;
+    font-family: "Frutiger LT Std 55 Roman";
+	font-size: 30;
 }
 
-td, th {  
-    border: 1px solid transparent; /* No more visible border */
-    height: 30px; 
-	width: 900px;
-    transition: all 0.3s;  /* Simple transition for hover effect */
+.row {
+	display:table-row;
+}
+	
+.row-header {
+	display:table-row;
+	font-weight: 900;
+	color: #ffffff;
+	background: #2196F3;
 }
 
-th {  
-    background: #DFDFDF;  /* Darken header a bit */
-    font-weight: bold;
+.cell {
+	padding: 6px 12px;
+	display: table-cell;
+	float:center;
+	width:70px;
+	background: #2196F3;
 }
 
-td {  
-    background: #FAFAFA;
-    text-align: center;
+.cell-r {
+	padding: 6px 12px;
+	display: table-cell;
+	float:center;
+	width:70px;
+	background:rgba(127,127,127,0.5);
+	color:white;
 }
-
 /* Cells in even rows (2,4,6...) are one color */        
 tr:nth-child(even) td { background:#8C8AEE; }   
 
@@ -59,7 +73,8 @@ tr:nth-child(odd) td { background:#5F6E83; }
 
 tr td:hover { background: #666; color:#000F0F; }  
 /* Hover cell effect! */
-  </style>
+
+  </style> 
   <!-- JS includes -->
   <!--[if lt IE 9]>
   <script src="scripts/html5shiv.js?crc=4241844378" type="text/javascript"></script>
@@ -81,21 +96,6 @@ tr td:hover { background: #666; color:#000F0F; }
       </div>
       <div class="MenuItemContainer clearfix grpelem" id="u27158"><!-- vertical box -->
        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox transition clearfix colelem" id="u27182" href="account_info.php"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem" id="u27185"><!-- state-based BG images --><img alt="Account" src="images/blank.gif?crc=4208392903"/><div class="fluid_height_spacer"></div></div><div class="grpelem" id="u27184"><!-- content --></div></a>
-       <div class="SubMenu MenuLevel1 clearfix" id="u27159"><!-- vertical box -->
-        <ul class="SubMenuView clearfix colelem" id="u27160"><!-- vertical box -->
-         <li class="MenuItemContainer clearfix colelem" id="u27175"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem" id="u27176" href="checking.php"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u27178-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><div id="u27178-3"><p>Checking</p></div></div><div class="grpelem" id="u27179"><!-- content --></div></a></li>
-         <li class="MenuItemContainer clearfix colelem" id="u27168"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem" id="u27171" href="saving.php"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u27173-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><div id="u27173-3"><p>Savings</p></div></div><div class="grpelem" id="u27174"><!-- content --></div></a></li>
-         <li class="MenuItemContainer clearfix colelem" id="u27161"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem" id="u27162" href="loan.php"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u27165-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><div id="u27165-3"><p>Loan</p></div></div><div class="grpelem" id="u27163"><!-- content --></div></a></li>
-        </ul>
-       </div>
-      </div>
-      <div class="MenuItemContainer clearfix grpelem" id="u27186"><!-- vertical box -->
-       <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox transition clearfix colelem" id="u27196" href="routing-info.php"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem" id="u27197"><!-- state-based BG images --><img alt="Manage" src="images/blank.gif?crc=4208392903"/><div class="fluid_height_spacer"></div></div><div class="grpelem" id="u27199"><!-- content --></div></a>
-       <div class="SubMenu MenuLevel1 clearfix" id="u27187"><!-- vertical box -->
-        <ul class="SubMenuView clearfix colelem" id="u27188"><!-- vertical box -->
-         <li class="MenuItemContainer clearfix colelem" id="u27189"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem" id="u27190" href="withdraw.php"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u27192-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><div id="u27192-3"><p>Withdraw</p></div></div><div class="grpelem" id="u27191"><!-- content --></div></a></li>
-        </ul>
-       </div>
       </div>
       <div class="MenuItemContainer clearfix grpelem" id="u27151"><!-- vertical box -->
        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox transition clearfix colelem" id="u27154" href="assets/logout.php"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem" id="u27156"><!-- state-based BG images --><img alt="Logout" src="images/blank.gif?crc=4208392903"/><div class="fluid_height_spacer"></div></div><div class="grpelem" id="u27157"><!-- content --></div></a>
@@ -105,37 +105,23 @@ tr td:hover { background: #666; color:#000F0F; }
    </div>
    <div class="grpelem" id="u24070"><!-- simple frame -->
 	  <?php
-	require_once './includes/reg_conn.php';
-	require './includes/header.php';
 	/*
-	logout.php
+	access_Denied.php
 	
 	Dork's Bank
 	
-	Logs users out. Destroys session variables.
+	This file is used as an access denied page for pages that regular users should not be able to access.
 	*/
-	if (isset($_SESSION['cid']) || isset($_SESSION['aid'])) {
-		$username = $_SESSION['cid'];
-		$first = $_SESSION['fn'];
-		$last = $_SESSION['ln'];
-		$_SESSION = array();
-		session_destroy();
-		echo "<main><center><label style='font-size: 250%;color: #0000FF;text-shadow: -1px -1px 0 #fff,1px -1px 0 #fff,-1px 1px 0 #fff,1px 1px 0 #fff;'>You are now logged out $first $last .</label>
-		<br>
-		<label style='font-size: 250%;color: #0000FF;text-shadow: -1px -1px 0 #fff,1px -1px 0 #fff,-1px 1px 0 #fff,1px 1px 0 #fff;'>See you next time.</label></center></main>";
-		$username = '';
-	} else {
-		echo "<main><center><label style='font-size: 250%;color: #0000FF;text-shadow: -1px -1px 0 #fff,1px -1px 0 #fff,-1px 1px 0 #fff,1px 1px 0 #fff;'>Cannot log out, no one is logged in.</label></center></main>";
-	}
-	include './includes/footer.php'; 
+	require './includes/header.php';
+	echo "<main><center><label style='font-size: 250%; color: #0000FF; text-shadow: -1px -1px 0 #fff,1px -1px 0 #fff,-1px 1px 0 #fff,1px 1px 0 #fff;'>The page you requested has been DENIED due to inefficient permissions.<br> Go away.</label></center></main>";
+	
 ?></div>
    <div class="verticalspacer" data-offset-top="0" data-content-above-spacer="1033" data-content-below-spacer="1033" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"></div>
   </div>
   <div class="preload_images">
-   <img class="preload" src="images/u27204-a.png?crc=531298600" alt=""/>
-   <img class="preload" src="images/u27185-a.png?crc=4277563850" alt=""/>
-   <img class="preload" src="images/u27197-a.png?crc=248012649" alt=""/>
-   <img class="preload" src="images/u27156-a.png?crc=4110645747" alt=""/>
+   <img class="preload" src="images/u27204-a.png?crc=4030221534" alt=""/>
+   <img class="preload" src="images/u27185-a.png?crc=4253957548" alt=""/>
+   <img class="preload" src="images/u27156-a.png?crc=4230292151" alt=""/>
   </div>
   <!-- Other scripts -->
   <script type="text/javascript">

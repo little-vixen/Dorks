@@ -1,58 +1,70 @@
 <?php 
 	/*
-	index.php
+	admin_login.php
 	
 	Dork's Bank
 	
-	Main Page for logins, session ID for customers will be set once successfully logged in.
+	Admin Login, anyone may access this, will set the session variable
+	signifying the logged in user is an admin.
 	*/
 	if (isset($_POST['send'])) {
 		$missing = array();
 		$errors = array();
-		$username = trim(filter_input(INPUT_POST, 'username', FILTER_SANITIZE_STRING));
+		
+		$username = trim(filter_input(INPUT_POST, 'username', FILTER_SANITIZE_STRING)); //returns a string or null if empty or false if not valid	
+			
 		$password = trim(filter_input(INPUT_POST, 'password', FILTER_SANITIZE_STRING));
-		if (empty($username)) {
-			$missing[] = 'username';
-			
-		}
-		if (empty($password)) {
+		
+		// Check for a password:
+		if (empty($password))
 			$missing[] = 'password';
-			
-		}
-		while (!$missing && !$errors) {
-			try {
-				require_once ('../pdo_config.php');
+		if (empty($username))
+			$missing[] = 'username';
+		while (!$missing && !$errors){ 
+		    try {
+				require_once ('../pdo_config.php'); // Connect to the db.
 				/*
-				Returns Account information Customer Table
-				Input:	- ':cid' : Customer ID
-						- ':password' : Customer Password
-				Output: Redirect to Login verification
+				Finds if user is an admin based off input username and password.
+				Input:	- ':aid':	Admin Username
+						- ':password':	Admin Password
+				Output:	Returns all accounts that are found with the combination (Should only be 1)
 				*/
-				$sql = "select cid,fn,ln,cPassword from customer where cid = :cid and cPassword = Password(:password) and active = 1";
-				$stmt = $conn -> prepare($sql);
-				$stmt->bindValue(':cid', $username);
+				$sql = "SELECT * FROM admin WHERE aid = :aid and aPassword = :password";
+				$stmt = $conn->prepare($sql);
+				$stmt->bindValue(':aid', $username);
 				$stmt->bindValue(':password', $password);
 				$stmt->execute();
 				$rows = $stmt->rowCount();
-				if ($rows==0) { //cid not found
+				$result = $stmt->fetch();
+				if ($rows==0) { //username not found
 					$errors[] = 'username';
-					$errors[] = 'password';
-				} else { //cid found, validate password
-					$result = $stmt->fetch();
-					$username = $result['cid'];
-					session_start();
-					$_SESSION['cid'] = $username;
-					$_SESSION['fn'] = $result['fn'];
-					$_SESSION['ln'] = $result['ln'];
-					header('Location: login_direct.php');
-					exit;
 				}
-			} catch (Exception $e) { 
+				if ($result['active'] != '1') { //user is not admin role
+					$errors[] = 'active';
+				}
+				else { // username found, admin role verified, validate password
+					$res = $result['aPassword'];
+					
+					if($res == $password) {
+						$username = $result['aid'];
+						session_start();
+						$_SESSION['aid'] = $username;
+						$_SESSION['admin'] = 'true'; //Only set if user is admin
+						header('Location: login_direct.php'); //redirect for cookies
+						
+						exit;
+					}
+					else {
+						$errors[]='password';
+					}
+				} 
+		    }  
+		    catch (Exception $e) { 
 				echo $e->getMessage(); 
 			}
-		}			
+		}
 	}
-	require './includes/header.php';
+require './includes/header.php'; 
 ?>
 <!DOCTYPE html>
 <html class="nojs html css_verticalspacer" lang="en-GB" >
@@ -118,22 +130,40 @@
     </div>
     <!-- MAIN FORM-->
 		
-     <form method="post" action="index.php" style="margin-top:40px;
+     <form method="post" action="admin-login.php" style="margin-top:40px;
 	   margin-left:100px;">
 			
-			<!--CUSTOMER ID-->
+			<!--Admin ID-->
 			<img class="grpelem" id="u23149-6" alt="&nbsp;Banking For Dorks." src="images/u23149-6.png?crc=4263567247" data-image-width="560"/>
 			<p><img class="grpelem" id="u23152-4" alt="We've got your money." src="images/u23152-4.png?crc=3992780049" data-image-width="427"/>
-				<label style=" font-size: 200%;color: #0000FF;margin-bottom: 45;">Customer ID:</label>
-				<br><br><br>
-				<input name="username" type="text" style = "height: 30px;">
+			  <label style=" font-size: 200%;color: #0000FF;margin-bottom: 45;font-family: ">Admin ID:</label>
+				
+				<?php if ($missing && in_array('username', $missing)) { ?>
+                        <span class="warning" style="font-size: 90%;">A dorkname is required</span><br>
+                    <?php } ?>
+				<?php if ($errors && in_array('username', $errors)) { ?>
+					<br><span class="warning" style="font-size: 90%;">The dorkname is not associated with an account</span><br>
+				<?php } ?>
+				<?php if ($errors && in_array('role', $errors)) { ?>
+					<br><span class="warning" style="font-size: 90%;">Dork is not an employee.</span><br>
+				<?php } ?>
+				
+			  <br><br><br>
+				<input name="username" type="text" style = "height: 30px;"<?php if (isset($username) && !$errors['username']) {
+                    echo 'value="' . htmlspecialchars($username) . '"';
+                } ?>>>
 				<br><br>
 			</p>
 <br>
 			<!--PASSWORD-->
 			
 			<p>
-<label style="font-size: 200%;color: #0000FF; margin-top:45;">Password:<br></label>
+				<?php if ($errors && in_array('password', $errors)) { ?>
+                        <span class="warning" style="font-size: 90%;">The password supplied does not match the password for this dork. Please try again.</span>
+                    <?php } ?>
+<label style="font-size: 200%;color: #0000FF; margin-top:45;">Password:<br>	<?php if ($missing && in_array('password', $missing)) { ?>
+                        <span class="warning" style="font-size: 90%;">Please enter a password</span>
+                    <?php } ?> </label>
 				<br><br>
 				<input name="password" id="pw" type="password" style = "height: 30px;">
 				<br><br><br><br>
@@ -159,3 +189,4 @@
   </div>
   
 </html>
+	<?php include './includes/footer.php'; ?>
