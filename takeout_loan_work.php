@@ -97,6 +97,7 @@
 	}
 	require './includes/header.php';
 ?>
+
 <!DOCTYPE html>
 <html class="nojs html css_verticalspacer" lang="en-GB">
  <head>
@@ -110,15 +111,16 @@
 document.documentElement.className = document.documentElement.className.replace(/\bnojs\b/g, 'js');
 
 // Check that all required assets are uploaded and up-to-date
-if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required":["museutils.js", "museconfig.js", "jquery.musemenu.js", "jquery.watch.js", "require.js", "takeout_loan_work.css"], "outOfDate":[]};
+if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required":["museutils.js", "museconfig.js", "jquery.musemenu.js", "jquery.watch.js", "jquery.museresponsive.js", "require.js", "takeout_loan_work.css"], "outOfDate":[]};
 </script>
   
   <title>takeout_loan_work</title>
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="css/site_global.css?crc=444006867"/>
-  <link rel="stylesheet" type="text/css" href="css/master_admin.css?crc=223606753"/>
-  <link rel="stylesheet" type="text/css" href="css/takeout_loan_work.css?crc=165970972" id="pagesheet"/>
-	  <style type="text/css">
+  <link rel="stylesheet" type="text/css" href="css/master_admin.css?crc=20483078"/>
+  <link rel="stylesheet" type="text/css" href="css/takeout_loan_work.css?crc=393191469" id="pagesheet"/>
+	 
+	 <style type="text/css">
   body,td,th {
 	font-family: "Frutiger LT Std 55 Roman";
 	  font-size: 30;
@@ -177,6 +179,12 @@ tr td:hover { background: #666; color:#000F0F; }
 /* Hover cell effect! */
 
   </style> 
+	 
+  <!-- IE-only CSS -->
+  <!--[if lt IE 9]>
+  <link rel="stylesheet" type="text/css" href="css/nomq_preview_master_admin.css?crc=93109966"/>
+  <link rel="stylesheet" type="text/css" href="css/nomq_takeout_loan_work.css?crc=420692505" id="nomq_pagesheet"/>
+  <![endif]-->
   <!-- JS includes -->
   <!--[if lt IE 9]>
   <script src="scripts/html5shiv.js?crc=4241844378" type="text/javascript"></script>
@@ -184,44 +192,50 @@ tr td:hover { background: #666; color:#000F0F; }
    </head>
  <body>
 
-  <div class="clearfix borderbox" id="page"><!-- column -->
-   <div class="clearfix colelem" id="pu24324"><!-- group -->
-    <div class="clip_frame grpelem" id="u24324"><!-- image -->
-     <img class="block" id="u24324_img" src="images/cash-change-coins-banner-crop-u24324.jpg?crc=4139890737" alt="" data-heightwidthratio="0.13279132791327913" data-image-width="1107" data-image-height="147"/>
+  <div class="breakpoint active" id="bp_infinity" data-min-width="949"><!-- responsive breakpoint node -->
+   <div class="clearfix borderbox" id="page"><!-- column -->
+    <div class="clearfix colelem" id="pu30744"><!-- group -->
+     <div class="clip_frame grpelem" id="u30744"><!-- image -->
+      <img class="block temp_no_img_src" id="u30744_img" data-orig-src="images/cash-change-coins-banner-crop-u30744.jpg?crc=4139890737" alt="" data-heightwidthratio="0.13279132791327913" data-image-width="1107" data-image-height="147" src="images/blank.gif?crc=4208392903"/>
+     </div>
+     <img class="grpelem temp_no_img_src" id="u30746-4" alt="Dork's Bank" data-orig-src="images/u30746-4.png?crc=3877500381" data-image-width="273" src="images/blank.gif?crc=4208392903"/><!-- rasterized frame -->
+     <img class="grpelem temp_no_img_src" id="u30747-4" alt="WE'VE GOT YOUR MONEY." data-orig-src="images/u30747-4.png?crc=4016458241" data-image-width="208" src="images/blank.gif?crc=4208392903"/><!-- rasterized frame -->
+     <nav class="MenuBar clearfix grpelem" id="menuu30748"><!-- horizontal box -->
+      <div class="MenuItemContainer clearfix grpelem" id="u30749"><!-- vertical box -->
+       <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox transition clearfix colelem" id="u30787" href="reports.php"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem" id="u30788"><!-- state-based BG images --><img alt="Reports" src="images/blank.gif?crc=4208392903" class="shared_content" data-content-guid="u30788_0_content"/><div class="fluid_height_spacer shared_content" data-content-guid="u30788_1_content"></div></div><div class="grpelem" id="u30789"><!-- content --></div></a>
+       <div class="SubMenu MenuLevel1 clearfix" id="u30750"><!-- vertical box -->
+        <ul class="SubMenuView clearfix colelem" id="u30751"><!-- vertical box -->
+         <li class="MenuItemContainer clearfix colelem" id="u30780"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem" id="u30783" href="top-users.php"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u30784-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><div id="u30784-3" class="shared_content" data-content-guid="u30784-3_content"><p>Top Users</p></div></div><div class="grpelem" id="u30786"><!-- content --></div></a></li>
+         <li class="MenuItemContainer clearfix colelem" id="u30773"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem" id="u30776" href="checking_report.php"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u30778-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><div id="u30778-3" class="shared_content" data-content-guid="u30778-3_content"><p>Checking</p></div></div><div class="grpelem" id="u30779"><!-- content --></div></a></li>
+         <li class="MenuItemContainer clearfix colelem" id="u30759"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem" id="u30762" href="saving_report.php"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u30765-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><div id="u30765-3" class="shared_content" data-content-guid="u30765-3_content"><p>Savings</p></div></div><div class="grpelem" id="u30763"><!-- content --></div></a></li>
+         <li class="MenuItemContainer clearfix colelem" id="u30766"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem" id="u30767" href="loans_report.php"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u30770-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><div id="u30770-3" class="shared_content" data-content-guid="u30770-3_content"><p>Loan</p></div></div><div class="grpelem" id="u30769"><!-- content --></div></a></li>
+         <li class="MenuItemContainer clearfix colelem" id="u30752"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem" id="u30755" href="top-users.php"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u30757-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><div id="u30757-3" class="shared_content" data-content-guid="u30757-3_content"><p>Transactions</p></div></div><div class="grpelem" id="u30758"><!-- content --></div></a></li>
+         <li class="MenuItemContainer clearfix colelem" id="u33633"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem" id="u33634" href="demographics.php"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u33637-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><div id="u33637-3" class="shared_content" data-content-guid="u33637-3_content"><p>Demographics</p></div></div><div class="grpelem" id="u33635"><!-- content --></div></a></li>
+         <li class="MenuItemContainer clearfix colelem" id="u33577"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem" id="u33578" href="phone_test.php"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u33581-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><div id="u33581-3" class="shared_content" data-content-guid="u33581-3_content"><p>Email All</p></div></div><div class="grpelem" id="u33579"><!-- content --></div></a></li>
+        </ul>
+       </div>
+      </div>
+      <div class="MenuItemContainer clearfix grpelem" id="u30791"><!-- vertical box -->
+       <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox transition clearfix colelem" id="u30836" href="account_settings.php"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem" id="u30837"><!-- state-based BG images --><img alt="Dork" src="images/blank.gif?crc=4208392903" class="shared_content" data-content-guid="u30837_0_content"/><div class="fluid_height_spacer shared_content" data-content-guid="u30837_1_content"></div></div><div class="grpelem" id="u30838"><!-- content --></div></a>
+       <div class="SubMenu MenuLevel1 clearfix" id="u30792"><!-- vertical box -->
+        <ul class="SubMenuView clearfix colelem" id="u30793"><!-- vertical box -->
+         <li class="MenuItemContainer clearfix colelem" id="u30822"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem" id="u30823" href="account_setup.php"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u30826-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><div id="u30826-3" class="shared_content" data-content-guid="u30826-3_content"><p>Account Setup</p></div></div><div class="grpelem" id="u30824"><!-- content --></div></a></li>
+         <li class="MenuItemContainer clearfix colelem" id="u30808"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem" id="u30811" href="takeout_loan.php"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u30814-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><div id="u30814-3" class="shared_content" data-content-guid="u30814-3_content"><p>Loan Admin</p></div></div><div class="grpelem" id="u30813"><!-- content --></div></a></li>
+         <li class="MenuItemContainer clearfix colelem" id="u30829"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem" id="u30830" href="update_info.php"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u30832-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><div id="u30832-3" class="shared_content" data-content-guid="u30832-3_content"><p>Update</p></div></div><div class="grpelem" id="u30833"><!-- content --></div></a></li>
+         <li class="MenuItemContainer clearfix colelem" id="u30794"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem" id="u30795" href="update_info.php"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u30796-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><div id="u30796-3" class="shared_content" data-content-guid="u30796-3_content"><p>Withdraw/Deposit</p></div></div><div class="grpelem" id="u30798"><!-- content --></div></a></li>
+         <li class="MenuItemContainer clearfix colelem" id="u30801"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem" id="u30804" href="deactivate_users.php"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u30805-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><div id="u30805-3" class="shared_content" data-content-guid="u30805-3_content"><p>Activate/Deactivate</p></div></div><div class="grpelem" id="u30807"><!-- content --></div></a></li>
+        </ul>
+       </div>
+      </div>
+      <div class="MenuItemContainer clearfix grpelem" id="u30840"><!-- vertical box -->
+       <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox transition clearfix colelem" id="u30841" href="logout.php"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem" id="u30843"><!-- state-based BG images --><img alt="Logout" src="images/blank.gif?crc=4208392903" class="shared_content" data-content-guid="u30843_0_content"/><div class="fluid_height_spacer shared_content" data-content-guid="u30843_1_content"></div></div><div class="grpelem" id="u30844"><!-- content --></div></a>
+      </div>
+     </nav>
     </div>
-    <img class="grpelem" id="u24327-4" alt="Dork's Bank" src="images/u24327-4.png?crc=3766499476" data-image-width="214"/><!-- rasterized frame -->
-    <img class="grpelem" id="u24326-4" alt="WE'VE GOT YOUR MONEY." src="images/u24326-4.png?crc=209820837" data-image-width="261"/><!-- rasterized frame -->
-    <nav class="MenuBar clearfix grpelem" id="menuu26511"><!-- horizontal box -->
-     <div class="MenuItemContainer clearfix grpelem" id="u26519"><!-- vertical box -->
-      <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox transition clearfix colelem" id="u26520" href="reports.php"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem" id="u26523"><!-- state-based BG images --><img alt="Reports" src="images/blank.gif?crc=4208392903"/><div class="fluid_height_spacer"></div></div><div class="grpelem" id="u26521"><!-- content --></div></a>
-      <div class="SubMenu MenuLevel1 clearfix" id="u26524"><!-- vertical box -->
-       <ul class="SubMenuView clearfix colelem" id="u26525"><!-- vertical box -->
-        <li class="MenuItemContainer clearfix colelem" id="u26540"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem" id="u26543" href="top-users.php"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u26544-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><div id="u26544-3"><p>TopUsers</p></div></div><div class="grpelem" id="u26546"><!-- content --></div></a></li>
-        <li class="MenuItemContainer clearfix colelem" id="u26547"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem" id="u26548" href="checking_report.php"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u26551-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><div id="u26551-3"><p>Checking</p></div></div><div class="grpelem" id="u26549"><!-- content --></div></a></li>
-        <li class="MenuItemContainer clearfix colelem" id="u26533"><!-- horizontal box --><div class="MenuItem MenuItemWithSubMenu clearfix grpelem" id="u26536"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u26539-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><div id="u26539-3"><p>Savings</p></div></div><div class="grpelem" id="u26537"><!-- content --></div></div></li>
-        <li class="MenuItemContainer clearfix colelem" id="u26526"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem" id="u26529" href="loans_report.php"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u26531-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><div id="u26531-3"><p>Loan</p></div></div><div class="grpelem" id="u26532"><!-- content --></div></a></li>
-       </ul>
-      </div>
-     </div>
-     <div class="MenuItemContainer clearfix grpelem" id="u26561"><!-- vertical box -->
-      <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox transition clearfix colelem" id="u26562" href="account_settings.php"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem" id="u26565"><!-- state-based BG images --><img alt="Dork" src="images/blank.gif?crc=4208392903"/><div class="fluid_height_spacer"></div></div><div class="grpelem" id="u26564"><!-- content --></div></a>
-      <div class="SubMenu MenuLevel1 clearfix" id="u26566"><!-- vertical box -->
-       <ul class="SubMenuView clearfix colelem" id="u26567"><!-- vertical box -->
-        <li class="MenuItemContainer clearfix colelem" id="u26568"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem" id="u26571" href="account_setup.php"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u26573-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><div id="u26573-3"><p>Account_Setup</p></div></div><div class="grpelem" id="u26572"><!-- content --></div></a></li>
-        <li class="MenuItemContainer clearfix colelem" id="u26582"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem" id="u26583" href="loans_report.php"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u26586-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><div id="u26586-3"><p>Loan_Admin</p></div></div><div class="grpelem" id="u26584"><!-- content --></div></a></li>
-        <li class="MenuItemContainer clearfix colelem" id="u26575"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem" id="u26578" href="update_info.php"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u26580-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><div id="u26580-3"><p>Update</p></div></div><div class="grpelem" id="u26579"><!-- content --></div></a></li>
-        <li class="MenuItemContainer clearfix colelem" id="u29234"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem" id="u29235" href="withdraw.php"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u29238-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><div id="u29238-3"><p>Withdraw</p></div></div><div class="grpelem" id="u29237"><!-- content --></div></a></li>
-       </ul>
-      </div>
-     </div>
-     <div class="MenuItemContainer clearfix grpelem" id="u26554"><!-- vertical box -->
-      <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox transition clearfix colelem" id="u26557" href="logout.php"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem" id="u26559"><!-- state-based BG images --><img alt="Logout" src="images/blank.gif?crc=4208392903"/><div class="fluid_height_spacer"></div></div><div class="grpelem" id="u26560"><!-- content --></div></a>
-     </div>
-    </nav>
-   </div>
-   <div class="clearfix colelem" id="u24358"><!-- group -->
-    <div class="grpelem" id="u24328"><!-- simple frame -->
-	   <!--CUSTOMERS-->
+    <div class="clearfix colelem shared_content" id="u24358" data-content-guid="u24358_content"><!-- group -->
+     <div class="grpelem" id="u24328"><!-- simple frame -->
+		
+		<!--CUSTOMERS-->
 	<table class="table" style="position:center;">
         <tr class="row-header">
 			<td class="cell" colspan="1" style="text-align:left;">Customer ID</td>
@@ -282,17 +296,68 @@ tr td:hover { background: #666; color:#000F0F; }
 		</p>
 		<br>
 		<p>
-			<input style="font-size: 150%; background-color: #0000FF; color: #fff; width: 375;" name="send" type="submit" value="Update">
+			<input style="font-size: 100%;background-color: #0000FF; color:antiquewhite; width: 375; height: 45px; margin-bottom: 15px;" name="send" type="submit" value="Update">
 		</p>
 		</form></center>
-	   </div>
+		
+		</div>
+    </div>
+    <div class="verticalspacer" data-offset-top="0" data-content-above-spacer="1210" data-content-below-spacer="0" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"></div>
    </div>
-   <div class="verticalspacer" data-offset-top="0" data-content-above-spacer="1210" data-content-below-spacer="0" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"></div>
+   <div class="preload_images">
+    <img class="preload temp_no_img_src" data-orig-src="images/u30788-a.png?crc=286736856" alt="" src="images/blank.gif?crc=4208392903"/>
+    <img class="preload temp_no_img_src" data-orig-src="images/u30837-a.png?crc=4233768770" alt="" src="images/blank.gif?crc=4208392903"/>
+    <img class="preload temp_no_img_src" data-orig-src="images/u30843-a.png?crc=3925028500" alt="" src="images/blank.gif?crc=4208392903"/>
+   </div>
   </div>
-  <div class="preload_images">
-   <img class="preload" src="images/u26523-a.png?crc=286736856" alt=""/>
-   <img class="preload" src="images/u26565-a.png?crc=4233768770" alt=""/>
-   <img class="preload" src="images/u26559-a.png?crc=3925028500" alt=""/>
+  <div class="breakpoint" id="bp_948" data-max-width="948"><!-- responsive breakpoint node -->
+   <div class="clearfix borderbox temp_no_id" data-orig-id="page"><!-- column -->
+    <div class="clearfix colelem temp_no_id" data-orig-id="pu30744"><!-- group -->
+     <div class="clip_frame grpelem temp_no_id" data-orig-id="u30744"><!-- image -->
+      <img class="block temp_no_id temp_no_img_src" data-orig-src="images/cash-change-coins-banner-crop-u30744.jpg?crc=4139890737" alt="" data-heightwidthratio="0.13285024154589373" data-image-width="828" data-image-height="110" data-orig-id="u30744_img" src="images/blank.gif?crc=4208392903"/>
+     </div>
+     <img class="grpelem temp_no_id temp_no_img_src" alt="Dork's Bank" data-orig-src="images/u30746-4.png?crc=3877500381" data-image-width="266" data-orig-id="u30746-4" src="images/blank.gif?crc=4208392903"/><!-- rasterized frame -->
+     <img class="grpelem temp_no_id temp_no_img_src" alt="WE'VE GOT YOUR MONEY." data-orig-src="images/u30747-4.png?crc=4016458241" data-image-width="214" data-orig-id="u30747-4" src="images/blank.gif?crc=4208392903"/><!-- rasterized frame -->
+     <nav class="MenuBar clearfix grpelem temp_no_id" data-orig-id="menuu30748"><!-- horizontal box -->
+      <div class="MenuItemContainer clearfix grpelem temp_no_id" data-orig-id="u30749"><!-- vertical box -->
+       <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox transition clearfix colelem temp_no_id" href="reports.php" data-orig-id="u30787"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u30788"><!-- state-based BG images --><span class="placeholder" data-placeholder-for="u30788_0_content"><!-- placeholder node --></span><span class="fluid_height_spacer placeholder" data-placeholder-for="u30788_1_content"><!-- placeholder node --></span></div><div class="grpelem temp_no_id" data-orig-id="u30789"><!-- content --></div></a>
+       <div class="SubMenu MenuLevel1 clearfix temp_no_id" data-orig-id="u30750"><!-- vertical box -->
+        <ul class="SubMenuView clearfix colelem temp_no_id" data-orig-id="u30751"><!-- vertical box -->
+         <li class="MenuItemContainer clearfix colelem temp_no_id" data-orig-id="u30780"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem temp_no_id" href="top-users.php" data-orig-id="u30783"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem temp_no_id" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true" data-orig-id="u30784-4"><!-- content --><span class="placeholder" data-placeholder-for="u30784-3_content"><!-- placeholder node --></span></div><div class="grpelem temp_no_id" data-orig-id="u30786"><!-- content --></div></a></li>
+         <li class="MenuItemContainer clearfix colelem temp_no_id" data-orig-id="u30773"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem temp_no_id" href="checking_report.php" data-orig-id="u30776"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem temp_no_id" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true" data-orig-id="u30778-4"><!-- content --><span class="placeholder" data-placeholder-for="u30778-3_content"><!-- placeholder node --></span></div><div class="grpelem temp_no_id" data-orig-id="u30779"><!-- content --></div></a></li>
+         <li class="MenuItemContainer clearfix colelem temp_no_id" data-orig-id="u30759"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem temp_no_id" href="saving_report.php" data-orig-id="u30762"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem temp_no_id" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true" data-orig-id="u30765-4"><!-- content --><span class="placeholder" data-placeholder-for="u30765-3_content"><!-- placeholder node --></span></div><div class="grpelem temp_no_id" data-orig-id="u30763"><!-- content --></div></a></li>
+         <li class="MenuItemContainer clearfix colelem temp_no_id" data-orig-id="u30766"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem temp_no_id" href="loans_report.php" data-orig-id="u30767"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem temp_no_id" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true" data-orig-id="u30770-4"><!-- content --><span class="placeholder" data-placeholder-for="u30770-3_content"><!-- placeholder node --></span></div><div class="grpelem temp_no_id" data-orig-id="u30769"><!-- content --></div></a></li>
+         <li class="MenuItemContainer clearfix colelem temp_no_id" data-orig-id="u30752"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem temp_no_id" href="top-users.php" data-orig-id="u30755"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem temp_no_id" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true" data-orig-id="u30757-4"><!-- content --><span class="placeholder" data-placeholder-for="u30757-3_content"><!-- placeholder node --></span></div><div class="grpelem temp_no_id" data-orig-id="u30758"><!-- content --></div></a></li>
+         <li class="MenuItemContainer clearfix colelem temp_no_id" data-orig-id="u33633"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem temp_no_id" href="demographics.php" data-orig-id="u33634"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem temp_no_id" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true" data-orig-id="u33637-4"><!-- content --><span class="placeholder" data-placeholder-for="u33637-3_content"><!-- placeholder node --></span></div><div class="grpelem temp_no_id" data-orig-id="u33635"><!-- content --></div></a></li>
+         <li class="MenuItemContainer clearfix colelem temp_no_id" data-orig-id="u33577"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem temp_no_id" href="phone_test.php.php" data-orig-id="u33578"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem temp_no_id" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true" data-orig-id="u33581-4"><!-- content --><span class="placeholder" data-placeholder-for="u33581-3_content"><!-- placeholder node --></span></div><div class="grpelem temp_no_id" data-orig-id="u33579"><!-- content --></div></a></li>
+        </ul>
+       </div>
+      </div>
+      <div class="MenuItemContainer clearfix grpelem temp_no_id" data-orig-id="u30791"><!-- vertical box -->
+       <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox transition clearfix colelem temp_no_id" href="account_settings.php" data-orig-id="u30836"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u30837"><!-- state-based BG images --><span class="placeholder" data-placeholder-for="u30837_0_content"><!-- placeholder node --></span><span class="fluid_height_spacer placeholder" data-placeholder-for="u30837_1_content"><!-- placeholder node --></span></div><div class="grpelem temp_no_id" data-orig-id="u30838"><!-- content --></div></a>
+       <div class="SubMenu MenuLevel1 clearfix temp_no_id" data-orig-id="u30792"><!-- vertical box -->
+        <ul class="SubMenuView clearfix colelem temp_no_id" data-orig-id="u30793"><!-- vertical box -->
+         <li class="MenuItemContainer clearfix colelem temp_no_id" data-orig-id="u30822"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem temp_no_id" href="account_setup.php" data-orig-id="u30823"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem temp_no_id" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true" data-orig-id="u30826-4"><!-- content --><span class="placeholder" data-placeholder-for="u30826-3_content"><!-- placeholder node --></span></div><div class="grpelem temp_no_id" data-orig-id="u30824"><!-- content --></div></a></li>
+         <li class="MenuItemContainer clearfix colelem temp_no_id" data-orig-id="u30808"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem temp_no_id" href="takeout_loan.php" data-orig-id="u30811"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem temp_no_id" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true" data-orig-id="u30814-4"><!-- content --><span class="placeholder" data-placeholder-for="u30814-3_content"><!-- placeholder node --></span></div><div class="grpelem temp_no_id" data-orig-id="u30813"><!-- content --></div></a></li>
+         <li class="MenuItemContainer clearfix colelem temp_no_id" data-orig-id="u30829"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem temp_no_id" href="update_info.php" data-orig-id="u30830"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem temp_no_id" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true" data-orig-id="u30832-4"><!-- content --><span class="placeholder" data-placeholder-for="u30832-3_content"><!-- placeholder node --></span></div><div class="grpelem temp_no_id" data-orig-id="u30833"><!-- content --></div></a></li>
+         <li class="MenuItemContainer clearfix colelem temp_no_id" data-orig-id="u30794"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem temp_no_id" href="update_info.php" data-orig-id="u30795"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem temp_no_id" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true" data-orig-id="u30796-4"><!-- content --><span class="placeholder" data-placeholder-for="u30796-3_content"><!-- placeholder node --></span></div><div class="grpelem temp_no_id" data-orig-id="u30798"><!-- content --></div></a></li>
+         <li class="MenuItemContainer clearfix colelem temp_no_id" data-orig-id="u30801"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem temp_no_id" href="deactivate_users.php" data-orig-id="u30804"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem temp_no_id" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true" data-orig-id="u30805-4"><!-- content --><span class="placeholder" data-placeholder-for="u30805-3_content"><!-- placeholder node --></span></div><div class="grpelem temp_no_id" data-orig-id="u30807"><!-- content --></div></a></li>
+        </ul>
+       </div>
+      </div>
+      <div class="MenuItemContainer clearfix grpelem temp_no_id" data-orig-id="u30840"><!-- vertical box -->
+       <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox transition clearfix colelem temp_no_id" href="logout.php" data-orig-id="u30841"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u30843"><!-- state-based BG images --><span class="placeholder" data-placeholder-for="u30843_0_content"><!-- placeholder node --></span><span class="fluid_height_spacer placeholder" data-placeholder-for="u30843_1_content"><!-- placeholder node --></span></div><div class="grpelem temp_no_id" data-orig-id="u30844"><!-- content --></div></a>
+      </div>
+     </nav>
+    </div>
+    <span class="clearfix colelem placeholder" data-placeholder-for="u24358_content"><!-- placeholder node --></span>
+    <div class="verticalspacer" data-offset-top="0" data-content-above-spacer="1205" data-content-below-spacer="0" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"></div>
+   </div>
+   <div class="preload_images">
+    <img class="preload temp_no_img_src" data-orig-src="images/u30788-a.png?crc=286736856" alt="" src="images/blank.gif?crc=4208392903"/>
+    <img class="preload temp_no_img_src" data-orig-src="images/u30837-a.png?crc=4233768770" alt="" src="images/blank.gif?crc=4208392903"/>
+    <img class="preload temp_no_img_src" data-orig-src="images/u30843-a.png?crc=3925028500" alt="" src="images/blank.gif?crc=4208392903"/>
+   </div>
   </div>
   <!-- Other scripts -->
   <script type="text/javascript">
@@ -305,14 +370,14 @@ var suppressMissingFileError = false
 l[1]:null,l=l&&l[2]?l[2]:null;switch(l.toLowerCase()){case "css":k=k.replace(/\W/gi,"_").replace(/^([^a-z])/gi,"_$1");f.className+=" "+k;k=a(c(f,"color"));l=a(c(f,"backgroundColor"));k!=0||l!=0?(Muse.assets.required.splice(h,1),"undefined"!=typeof b[i]&&(k!=b[i]>>>24||l!=(b[i]&16777215))&&Muse.assets.outOfDate.push(i)):h++;f.className="version";break;case "js":h++;break;default:throw Error("Unsupported file type: "+l);}}d?d().jquery!="1.8.3"&&Muse.assets.outOfDate.push("jquery-1.8.3.min.js"):Muse.assets.required.push("jquery-1.8.3.min.js");
 f.parentNode.removeChild(f);if(Muse.assets.outOfDate.length||Muse.assets.required.length)f="Some files on the server may be missing or incorrect. Clear browser cache and try again. If the problem persists please contact website author.",g&&Muse.assets.outOfDate.length&&(f+="\nOut of date: "+Muse.assets.outOfDate.join(",")),g&&Muse.assets.required.length&&(f+="\nMissing: "+Muse.assets.required.join(",")),suppressMissingFileError?(f+="\nUse SuppressMissingFileError key in AppPrefs.xml to show missing file error pop up.",console.log(f)):alert(f)};location&&location.search&&location.search.match&&location.search.match(/muse_debug/gi)?
 setTimeout(function(){g(!0)},5E3):g()}};
-var muse_init=function(){require.config({baseUrl:""});require(["jquery","museutils","whatinput","jquery.musemenu","jquery.watch"],function(d){var $ = d;$(document).ready(function(){try{
+var muse_init=function(){require.config({baseUrl:""});require(["jquery","museutils","whatinput","jquery.musemenu","jquery.watch","jquery.museresponsive"],function(d){var $ = d;$(document).ready(function(){try{
 window.Muse.assets.check($);/* body */
 Muse.Utils.transformMarkupToFixBrowserProblemsPreInit();/* body */
 Muse.Utils.prepHyperlinks(true);/* body */
 Muse.Utils.makeButtonsVisibleAfterSettingMinWidth();/* body */
-Muse.Utils.initWidget('.MenuBar', ['#bp_infinity'], function(elem) { return $(elem).museMenu(); });/* unifiedNavBar */
+Muse.Utils.initWidget('.MenuBar', ['#bp_infinity', '#bp_948'], function(elem) { return $(elem).museMenu(); });/* unifiedNavBar */
 Muse.Utils.fullPage('#page');/* 100% height page */
-Muse.Utils.showWidgetsWhenReady();/* body */
+$( '.breakpoint' ).registerBreakpoint();/* Register breakpoints */
 Muse.Utils.transformMarkupToFixBrowserProblems();/* body */
 }catch(b){if(b&&"function"==typeof b.notify?b.notify():Muse.Assert.fail("Error calling selector function: "+b),false)throw b;}})})};
 

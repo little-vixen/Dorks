@@ -11,14 +11,14 @@
 document.documentElement.className = document.documentElement.className.replace(/\bnojs\b/g, 'js');
 
 // Check that all required assets are uploaded and up-to-date
-if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required":["museutils.js", "museconfig.js", "jquery.musemenu.js", "jquery.watch.js", "jquery.museresponsive.js", "require.js", "logout.css"], "outOfDate":[]};
+if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required":["museutils.js", "museconfig.js", "jquery.musemenu.js", "jquery.watch.js", "jquery.museresponsive.js", "require.js", "acct_created.css"], "outOfDate":[]};
 </script>
   
-  <title>logout</title>
+  <title>acct_created</title>
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="css/site_global.css?crc=444006867"/>
   <link rel="stylesheet" type="text/css" href="css/master_helpabout.css?crc=3807616762"/>
-  <link rel="stylesheet" type="text/css" href="css/logout.css?crc=3765139618" id="pagesheet"/>
+  <link rel="stylesheet" type="text/css" href="css/acct_created.css?crc=389623134" id="pagesheet"/>
 	 
 	 <style type="text/css">
   body,td,th {
@@ -79,11 +79,10 @@ tr td:hover { background: #666; color:#000F0F; }
 /* Hover cell effect! */
 
   </style> 
-	 
   <!-- IE-only CSS -->
   <!--[if lt IE 9]>
   <link rel="stylesheet" type="text/css" href="css/nomq_preview_master_helpabout.css?crc=202716667"/>
-  <link rel="stylesheet" type="text/css" href="css/nomq_logout.css?crc=79417547" id="nomq_pagesheet"/>
+  <link rel="stylesheet" type="text/css" href="css/nomq_acct_created.css?crc=423210667" id="nomq_pagesheet"/>
   <![endif]-->
   <!-- JS includes -->
   <!--[if lt IE 9]>
@@ -102,44 +101,32 @@ tr td:hover { background: #666; color:#000F0F; }
      <img class="grpelem temp_no_img_src" id="u24072-4" alt="Dork's Bank" data-orig-src="images/u24072-4.png?crc=4278239847" data-image-width="577" src="images/blank.gif?crc=4208392903"/><!-- rasterized frame -->
      <nav class="MenuBar clearfix grpelem" id="menuu27150"><!-- horizontal box -->
       <div class="MenuItemContainer clearfix grpelem" id="u27200"><!-- vertical box -->
-       <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox transition clearfix colelem" id="u27201" href="index.php"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem" id="u27204"><!-- state-based BG images --><img alt="Home" src="images/blank.gif?crc=4208392903" class="shared_content" data-content-guid="u27204_0_content"/><div class="fluid_height_spacer shared_content" data-content-guid="u27204_1_content"></div></div><div class="grpelem" id="u27202"><!-- content --></div></a>
+       <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox transition clearfix colelem" id="u27201" href="index.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem" id="u27204"><!-- state-based BG images --><img alt="Home" src="images/blank.gif?crc=4208392903" class="shared_content" data-content-guid="u27204_0_content"/><div class="fluid_height_spacer shared_content" data-content-guid="u27204_1_content"></div></div><div class="grpelem" id="u27202"><!-- content --></div></a>
       </div>
       <div class="MenuItemContainer clearfix grpelem" id="u32866"><!-- vertical box -->
-       <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox transition clearfix colelem" id="u32867" href="account_info.php"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem" id="u32868"><!-- state-based BG images --><img alt="Account" src="images/blank.gif?crc=4208392903" class="shared_content" data-content-guid="u32868_0_content"/><div class="fluid_height_spacer shared_content" data-content-guid="u32868_1_content"></div></div><div class="grpelem" id="u32869"><!-- content --></div></a>
+       <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox transition clearfix colelem" id="u32867" href="account_info.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem" id="u32868"><!-- state-based BG images --><img alt="Account" src="images/blank.gif?crc=4208392903" class="shared_content" data-content-guid="u32868_0_content"/><div class="fluid_height_spacer shared_content" data-content-guid="u32868_1_content"></div></div><div class="grpelem" id="u32869"><!-- content --></div></a>
       </div>
       <div class="MenuItemContainer clearfix grpelem" id="u32837"><!-- vertical box -->
-       <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox transition clearfix colelem" id="u32838" href="logout.php"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem" id="u32839"><!-- state-based BG images --><img alt="Logout" src="images/blank.gif?crc=4208392903" class="shared_content" data-content-guid="u32839_0_content"/><div class="fluid_height_spacer shared_content" data-content-guid="u32839_1_content"></div></div><div class="grpelem" id="u32840"><!-- content --></div></a>
+       <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox transition clearfix colelem" id="u32838" href="assets/logout.php"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem" id="u32839"><!-- state-based BG images --><img alt="Logout" src="images/blank.gif?crc=4208392903" class="shared_content" data-content-guid="u32839_0_content"/><div class="fluid_height_spacer shared_content" data-content-guid="u32839_1_content"></div></div><div class="grpelem" id="u32840"><!-- content --></div></a>
       </div>
      </nav>
     </div>
     <div class="grpelem shared_content" id="u24070" data-content-guid="u24070_content"><!-- simple frame -->
 	   
 	    <?php
-	require_once './includes/reg_conn.php';
-	require './includes/header.php';
 	/*
-	logout.php
+	acct_created.php
 	
 	Dork's Bank
 	
-	Logs users out. Destroys session variables.
+	Account creation confirmation for users.
 	*/
-	if (isset($_SESSION['cid']) || isset($_SESSION['aid'])) {
-		$username = $_SESSION['cid'];
-		$first = $_SESSION['fn'];
-		$last = $_SESSION['ln'];
-		$_SESSION = array();
-		session_destroy();
-		echo "<main><center><label style='font-size: 250%;color: #0000FF;text-shadow: -1px -1px 0 #fff,1px -1px 0 #fff,-1px 1px 0 #fff,1px 1px 0 #fff;'>You are now logged out $first $last .</label>
-		<br>
-		<label style='font-size: 250%;color: #0000FF;text-shadow: -1px -1px 0 #fff,1px -1px 0 #fff,-1px 1px 0 #fff,1px 1px 0 #fff;'>See you next time.</label></center></main>";
-		$username = '';
-	} else {
-		echo "<main><center><label style='font-size: 250%;color: #0000FF;text-shadow: -1px -1px 0 #fff,1px -1px 0 #fff,-1px 1px 0 #fff,1px 1px 0 #fff;'>Cannot log out, no one is logged in.</label></center></main>";
-	}
-	include './includes/footer.php'; 
+	require 'includes/header.php';
+	echo '<main><center><h2 style="font-size: 250%; color: #0000FF; text-shadow: -1px -1px 0 #fff,1px -1px 0 #fff,-1px 1px 0 #fff,1px 1px 0 #fff;">Thank you for registering</h2><h3 style="font-size: 250%; color: #0000FF; text-shadow: -1px -1px 0 #fff,1px -1px 0 #fff,-1px 1px 0 #fff,1px 1px 0 #fff;">We have saved your information</h3>
+	<h3 style="font-size: 250%; color: #0000FF; text-shadow: -1px -1px 0 #fff,1px -1px 0 #fff,-1px 1px 0 #fff,1px 1px 0 #fff;">We recommend that you login</h3></center></main>';
 ?>
-		
+	   
+	   
 	   </div>
     <div class="verticalspacer" data-offset-top="0" data-content-above-spacer="1033" data-content-below-spacer="1033" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"></div>
    </div>
@@ -160,13 +147,13 @@ tr td:hover { background: #666; color:#000F0F; }
       <img class="colelem temp_no_id temp_no_img_src" alt="We've got your money." data-orig-src="images/u24071-4.png?crc=3983403244" data-image-width="265" data-orig-id="u24071-4" src="images/blank.gif?crc=4208392903"/><!-- rasterized frame -->
       <nav class="MenuBar clearfix colelem temp_no_id" data-orig-id="menuu27150"><!-- horizontal box -->
        <div class="MenuItemContainer clearfix grpelem temp_no_id" data-orig-id="u27200"><!-- vertical box -->
-        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox transition clearfix colelem temp_no_id" href="index.php" data-orig-id="u27201"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u27204"><!-- state-based BG images --><span class="placeholder" data-placeholder-for="u27204_0_content"><!-- placeholder node --></span><span class="fluid_height_spacer placeholder" data-placeholder-for="u27204_1_content"><!-- placeholder node --></span></div><div class="grpelem temp_no_id" data-orig-id="u27202"><!-- content --></div></a>
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox transition clearfix colelem temp_no_id" href="index.html" data-orig-id="u27201"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u27204"><!-- state-based BG images --><span class="placeholder" data-placeholder-for="u27204_0_content"><!-- placeholder node --></span><span class="fluid_height_spacer placeholder" data-placeholder-for="u27204_1_content"><!-- placeholder node --></span></div><div class="grpelem temp_no_id" data-orig-id="u27202"><!-- content --></div></a>
        </div>
        <div class="MenuItemContainer clearfix grpelem temp_no_id" data-orig-id="u32866"><!-- vertical box -->
-        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox transition clearfix colelem temp_no_id" href="account_info.php" data-orig-id="u32867"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u32868"><!-- state-based BG images --><span class="placeholder" data-placeholder-for="u32868_0_content"><!-- placeholder node --></span><span class="fluid_height_spacer placeholder" data-placeholder-for="u32868_1_content"><!-- placeholder node --></span></div><div class="grpelem temp_no_id" data-orig-id="u32869"><!-- content --></div></a>
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox transition clearfix colelem temp_no_id" href="account_info.html" data-orig-id="u32867"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u32868"><!-- state-based BG images --><span class="placeholder" data-placeholder-for="u32868_0_content"><!-- placeholder node --></span><span class="fluid_height_spacer placeholder" data-placeholder-for="u32868_1_content"><!-- placeholder node --></span></div><div class="grpelem temp_no_id" data-orig-id="u32869"><!-- content --></div></a>
        </div>
        <div class="MenuItemContainer clearfix grpelem temp_no_id" data-orig-id="u32837"><!-- vertical box -->
-        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox transition clearfix colelem temp_no_id" href="logout.php" data-orig-id="u32838"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u32839"><!-- state-based BG images --><span class="placeholder" data-placeholder-for="u32839_0_content"><!-- placeholder node --></span><span class="fluid_height_spacer placeholder" data-placeholder-for="u32839_1_content"><!-- placeholder node --></span></div><div class="grpelem temp_no_id" data-orig-id="u32840"><!-- content --></div></a>
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox transition clearfix colelem temp_no_id" href="assets/logout.php" data-orig-id="u32838"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u32839"><!-- state-based BG images --><span class="placeholder" data-placeholder-for="u32839_0_content"><!-- placeholder node --></span><span class="fluid_height_spacer placeholder" data-placeholder-for="u32839_1_content"><!-- placeholder node --></span></div><div class="grpelem temp_no_id" data-orig-id="u32840"><!-- content --></div></a>
        </div>
       </nav>
      </div>
