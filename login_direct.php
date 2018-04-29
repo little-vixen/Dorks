@@ -19,6 +19,6 @@
 		$value = $_SESSION['aid'];
 		$expire = time()+60*60*24*30;
 		setcookie($username, $value, $expire, "/");
-		header('Location: logged_in.php');
+		header('Location: admin_logged_in.php');
 	}
 ?>

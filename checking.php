@@ -1,3 +1,4 @@
+
 <?php
 	session_start();
 	require_once '../pdo_config.php';
@@ -44,7 +45,6 @@
 	}
 	require './includes/header.php';
 ?>
-
 <!DOCTYPE html>
 <html class="nojs html css_verticalspacer" lang="en-GB">
  <head>
@@ -65,12 +65,12 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="css/site_global.css?crc=444006867"/>
   <link rel="stylesheet" type="text/css" href="css/master_accountsrouting.css?crc=86596428"/>
-  <link rel="stylesheet" type="text/css" href="css/checking.css?crc=3967602405" id="pagesheet"/>
-	 
-	 <style type="text/css">
+  <link rel="stylesheet" type="text/css" href="css/checking.css?crc=3849883743" id="pagesheet"/>
+  
+  <style type="text/css">
   body,td,th {
 	font-family: "Frutiger LT Std 55 Roman";
-	  font-size: 30;
+	  font-size: 30px;
 	font-weight: bold;
 	color: #0000FF;
 	  line-height: 1.0;
@@ -83,7 +83,7 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
 	box-shadow: 0 1px 3px rgba(0,0,0,1.0);
     display:table;
     font-family: "Frutiger LT Std 55 Roman";
-	font-size: 30;
+	font-size: 30px;
 }
 
 .row {
@@ -126,11 +126,11 @@ tr td:hover { background: #666; color:#000F0F; }
 /* Hover cell effect! */
 
   </style> 
-	 
+
   <!-- IE-only CSS -->
   <!--[if lt IE 9]>
   <link rel="stylesheet" type="text/css" href="css/nomq_preview_master_accountsrouting.css?crc=487786325"/>
-  <link rel="stylesheet" type="text/css" href="css/nomq_checking.css?crc=3851866123" id="nomq_pagesheet"/>
+  <link rel="stylesheet" type="text/css" href="css/nomq_checking.css?crc=311165190" id="nomq_pagesheet"/>
   <![endif]-->
   <!-- JS includes -->
   <!--[if lt IE 9]>
@@ -143,7 +143,7 @@ tr td:hover { background: #666; color:#000F0F; }
    <div class="clearfix borderbox" id="page"><!-- column -->
     <div class="clearfix colelem" id="pu23584"><!-- group -->
      <div class="clip_frame grpelem" id="u23584"><!-- image -->
-      <img class="block temp_no_img_src" id="u23584_img" data-orig-src="images/cash-change-coins-banner-crop-u23584.jpg?crc=273604942" alt="" data-heightwidthratio="0.13333333333333333" data-image-width="1410" data-image-height="188" src="images/blank.gif?crc=4208392903"/>
+      <img class="block temp_no_img_src" id="u23584_img" data-orig-src="images/cash-change-coins-banner-crop-u23584.jpg?crc=63359190" alt="" data-heightwidthratio="0.13333333333333333" data-image-width="1410" data-image-height="188" src="images/blank.gif?crc=4208392903"/>
      </div>
      <img class="grpelem temp_no_img_src" id="u23574-4" alt="Dork's Bank" data-orig-src="images/u23574-4.png?crc=3887892894" data-image-width="330" src="images/blank.gif?crc=4208392903"/><!-- rasterized frame -->
      <img class="grpelem temp_no_img_src" id="u23575-4" alt="WE'VE GOT YOUR MONEY." data-orig-src="images/u23575-4.png?crc=3987375930" data-image-width="210" src="images/blank.gif?crc=4208392903"/><!-- rasterized frame -->
@@ -173,8 +173,7 @@ tr td:hover { background: #666; color:#000F0F; }
        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox transition clearfix colelem" id="u23598" href="logout.php"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem" id="u23600"><!-- state-based BG images --><img alt="Logout" src="images/blank.gif?crc=4208392903" class="shared_content" data-content-guid="u23600_0_content"/><div class="fluid_height_spacer shared_content" data-content-guid="u23600_1_content"></div></div><div class="grpelem" id="u23601"><!-- content --></div></a>
       </div>
      </nav>
-     <div class="grpelem shared_content" id="u39598" data-content-guid="u39598_content"><!-- simple frame --></div>
-    </div>
+</div>
     <div class="clearfix colelem" id="u23571"><!-- column -->
      <div class="clearfix colelem" id="u23681"><!-- group -->
       <img class="grpelem temp_no_img_src" id="u39551-5" alt="Account Balance:" data-orig-src="images/u39551-5.png?crc=3876900525" data-image-width="175" src="images/blank.gif?crc=4208392903"/><!-- rasterized frame -->
@@ -198,16 +197,18 @@ tr td:hover { background: #666; color:#000F0F; }
 		</tr>
 		<?php } ?>
 	  </table></center>
-		  
+		 
+		 
       </div>
      </div>
      <div class="clearfix colelem" id="u23572"><!-- group -->
-      <!-- simple frame  because the old one was butt -->
+
+<!-- simple frame  because the old one was butt -->
 		 
-		  <center><!--CHECKING TRANSACTIONS-->
+<center><!--CHECKING TRANSACTIONS-->
 	<table class="table" style="position:center;">
         <tr class="row-header">
-			<td class="cell" colspan="4" style="text-align:left; font-size: 30; position:center;"><strong>Detailed Transactions</strong></td>
+			<td class="cell" colspan="4" style="text-align:left; font-size: 30px; position:center;"><strong>Detailed Transactions</strong></td>
         </tr>
 		<tr class="row-header">
 			<td class="cell" colspan="1" style="text-align:left;">Transaction ID</td>
@@ -224,11 +225,9 @@ tr td:hover { background: #666; color:#000F0F; }
 		</tr>
 		<?php } ?>
     </table></center>
-		 
+
+      
      </div>
-	   
-	   
-	   
     </div>
     <div class="verticalspacer" data-offset-top="598" data-content-above-spacer="1250" data-content-below-spacer="0" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"></div>
    </div>
@@ -242,7 +241,7 @@ tr td:hover { background: #666; color:#000F0F; }
    <div class="clearfix borderbox temp_no_id" data-orig-id="page"><!-- column -->
     <div class="clearfix colelem temp_no_id" data-orig-id="pu23584"><!-- group -->
      <div class="clip_frame grpelem temp_no_id" data-orig-id="u23584"><!-- image -->
-      <img class="block temp_no_id temp_no_img_src" data-orig-src="images/cash-change-coins-banner-crop-u23584.jpg?crc=273604942" alt="" data-heightwidthratio="0.13309352517985612" data-image-width="1112" data-image-height="148" data-orig-id="u23584_img" src="images/blank.gif?crc=4208392903"/>
+      <img class="block temp_no_id temp_no_img_src" data-orig-src="images/cash-change-coins-banner-crop-u23584.jpg?crc=63359190" alt="" data-heightwidthratio="0.13309352517985612" data-image-width="1112" data-image-height="148" data-orig-id="u23584_img" src="images/blank.gif?crc=4208392903"/>
      </div>
      <img class="grpelem temp_no_id temp_no_img_src" alt="Dork's Bank" data-orig-src="images/u23574-4.png?crc=3887892894" data-image-width="275" data-orig-id="u23574-4" src="images/blank.gif?crc=4208392903"/><!-- rasterized frame -->
      <img class="grpelem temp_no_id temp_no_img_src" alt="WE'VE GOT YOUR MONEY." data-orig-src="images/u23575-4.png?crc=3987375930" data-image-width="203" data-orig-id="u23575-4" src="images/blank.gif?crc=4208392903"/><!-- rasterized frame -->
@@ -295,7 +294,7 @@ tr td:hover { background: #666; color:#000F0F; }
    <div class="clearfix borderbox temp_no_id" data-orig-id="page"><!-- column -->
     <div class="clearfix colelem temp_no_id" data-orig-id="pu23584"><!-- group -->
      <div class="clip_frame grpelem temp_no_id" data-orig-id="u23584"><!-- image -->
-      <img class="block temp_no_id temp_no_img_src" data-orig-src="images/cash-change-coins-banner-crop-u23584.jpg?crc=273604942" alt="" data-heightwidthratio="0.1332133213321332" data-image-width="1111" data-image-height="148" data-orig-id="u23584_img" src="images/blank.gif?crc=4208392903"/>
+      <img class="block temp_no_id temp_no_img_src" data-orig-src="images/cash-change-coins-banner-crop-u23584.jpg?crc=63359190" alt="" data-heightwidthratio="0.1332133213321332" data-image-width="1111" data-image-height="148" data-orig-id="u23584_img" src="images/blank.gif?crc=4208392903"/>
      </div>
      <img class="grpelem temp_no_id temp_no_img_src" alt="Dork's Bank" data-orig-src="images/u23574-4.png?crc=3887892894" data-image-width="274" data-orig-id="u23574-4" src="images/blank.gif?crc=4208392903"/><!-- rasterized frame -->
      <img class="grpelem temp_no_id temp_no_img_src" alt="WE'VE GOT YOUR MONEY." data-orig-src="images/u23575-4.png?crc=3987375930" data-image-width="202" data-orig-id="u23575-4" src="images/blank.gif?crc=4208392903"/><!-- rasterized frame -->
@@ -348,7 +347,7 @@ tr td:hover { background: #666; color:#000F0F; }
    <div class="clearfix borderbox temp_no_id" data-orig-id="page"><!-- column -->
     <div class="clearfix colelem temp_no_id" data-orig-id="pu23584"><!-- group -->
      <div class="clip_frame grpelem temp_no_id" data-orig-id="u23584"><!-- image -->
-      <img class="block temp_no_id temp_no_img_src" data-orig-src="images/cash-change-coins-banner-crop-u23584.jpg?crc=273604942" alt="" data-heightwidthratio="0.13356562137049943" data-image-width="861" data-image-height="115" data-orig-id="u23584_img" src="images/blank.gif?crc=4208392903"/>
+      <img class="block temp_no_id temp_no_img_src" data-orig-src="images/cash-change-coins-banner-crop-u23584.jpg?crc=63359190" alt="" data-heightwidthratio="0.13356562137049943" data-image-width="861" data-image-height="115" data-orig-id="u23584_img" src="images/blank.gif?crc=4208392903"/>
      </div>
      <img class="grpelem temp_no_id temp_no_img_src" alt="Dork's Bank" data-orig-src="images/u23574-4.png?crc=3887892894" data-image-width="213" data-orig-id="u23574-4" src="images/blank.gif?crc=4208392903"/><!-- rasterized frame -->
      <img class="grpelem temp_no_id temp_no_img_src" alt="WE'VE GOT YOUR MONEY." data-orig-src="images/u23575-4.png?crc=3987375930" data-image-width="157" data-orig-id="u23575-4" src="images/blank.gif?crc=4208392903"/><!-- rasterized frame -->
@@ -389,7 +388,7 @@ tr td:hover { background: #666; color:#000F0F; }
       <img class="grpelem temp_no_id temp_no_img_src" alt="Transaction History:" data-orig-src="images/u39595-44.png?crc=421540838" data-image-width="110" data-orig-id="u39595-4" src="images/blank.gif?crc=4208392903"/><!-- rasterized frame -->
      </div>
     </div>
-    <div class="verticalspacer" data-offset-top="562" data-content-above-spacer="1190" data-content-below-spacer="0" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"></div>
+    <div class="verticalspacer" data-offset-top="562" data-content-above-spacer="1190" data-content-below-spacer="19" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"></div>
    </div>
    <div class="preload_images">
     <img class="preload temp_no_img_src" data-orig-src="images/u23614-a.png?crc=3879757298" alt="" src="images/blank.gif?crc=4208392903"/>
@@ -401,7 +400,7 @@ tr td:hover { background: #666; color:#000F0F; }
    <div class="clearfix borderbox temp_no_id" data-orig-id="page"><!-- column -->
     <div class="clearfix colelem temp_no_id" data-orig-id="pu23584"><!-- group -->
      <div class="clip_frame grpelem temp_no_id" data-orig-id="u23584"><!-- image -->
-      <img class="block temp_no_id temp_no_img_src" data-orig-src="images/cash-change-coins-banner-crop-u23584.jpg?crc=273604942" alt="" data-heightwidthratio="0.13372093023255813" data-image-width="860" data-image-height="115" data-orig-id="u23584_img" src="images/blank.gif?crc=4208392903"/>
+      <img class="block temp_no_id temp_no_img_src" data-orig-src="images/cash-change-coins-banner-crop-u23584.jpg?crc=63359190" alt="" data-heightwidthratio="0.13372093023255813" data-image-width="860" data-image-height="115" data-orig-id="u23584_img" src="images/blank.gif?crc=4208392903"/>
      </div>
      <img class="grpelem temp_no_id temp_no_img_src" alt="Dork's Bank" data-orig-src="images/u23574-4.png?crc=3887892894" data-image-width="264" data-orig-id="u23574-4" src="images/blank.gif?crc=4208392903"/><!-- rasterized frame -->
      <img class="grpelem temp_no_id temp_no_img_src" alt="WE'VE GOT YOUR MONEY." data-orig-src="images/u23575-4.png?crc=3987375930" data-image-width="205" data-orig-id="u23575-4" src="images/blank.gif?crc=4208392903"/><!-- rasterized frame -->
@@ -453,7 +452,7 @@ tr td:hover { background: #666; color:#000F0F; }
   <!-- Other scripts -->
   <script type="text/javascript">
    // Decide weather to suppress missing file error or not based on preference setting
-var suppressMissingFileError = false
+var suppressMissingFileError = true
 </script>
   <script type="text/javascript">
    window.Muse.assets.check=function(d){if(!window.Muse.assets.checked){window.Muse.assets.checked=!0;var b={},c=function(a,b){if(window.getComputedStyle){var c=window.getComputedStyle(a,null);return c&&c.getPropertyValue(b)||c&&c[b]||""}if(document.documentElement.currentStyle)return(c=a.currentStyle)&&c[b]||a.style&&a.style[b]||"";return""},a=function(a){if(a.match(/^rgb/))return a=a.replace(/\s+/g,"").match(/([\d\,]+)/gi)[0].split(","),(parseInt(a[0])<<16)+(parseInt(a[1])<<8)+parseInt(a[2]);if(a.match(/^\#/))return parseInt(a.substr(1),

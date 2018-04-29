@@ -2,7 +2,7 @@
 <html class="nojs html css_verticalspacer" lang="en-GB">
  <head>
 
-  <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   <meta name="generator" content="2018.0.0.379"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   
@@ -18,7 +18,15 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="css/site_global.css?crc=444006867"/>
   <link rel="stylesheet" type="text/css" href="css/master_helpabout.css?crc=3807616762"/>
-  <link rel="stylesheet" type="text/css" href="css/about-us.css?crc=273932620" id="pagesheet"/>
+  <link rel="stylesheet" type="text/css" href="css/about-us.css?crc=498170235" id="pagesheet"/>
+  <style type="text/css">
+  body,td,th {
+	color: #0000ff;
+}
+body {
+	background-color: #093648;
+}
+  </style>
   <!-- IE-only CSS -->
   <!--[if lt IE 9]>
   <link rel="stylesheet" type="text/css" href="css/nomq_preview_master_helpabout.css?crc=202716667"/>
@@ -119,7 +127,7 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
   <div class="breakpoint" id="bp_1299" data-min-width="1298" data-max-width="1299"><!-- responsive breakpoint node -->
    <div class="clearfix borderbox temp_no_id" data-orig-id="page"><!-- group -->
     <div class="clip_frame grpelem temp_no_id" data-orig-id="u23972"><!-- image -->
-     <img class="block temp_no_id temp_no_img_src" data-orig-src="images/cash-change-coins-106152.jpg?crc=3877446195" alt="" data-heightwidthratio="0.6666666666666666" data-image-width="1260" data-image-height="840" data-orig-id="u23972_img" src="images/blank.gif?crc=4208392903"/>
+     <img class="block temp_no_id temp_no_img_src" data-orig-src="images/cash-change-coins-106152.jpg?crc=3877446195" alt="" data-heightwidthratio="0.6664556962025316" data-image-width="1580" data-image-height="1053" data-orig-id="u23972_img" src="images/blank.gif?crc=4208392903"/>
     </div>
     <div class="rgba-background clearfix grpelem temp_no_id" data-orig-id="u24069"><!-- group -->
      <img class="grpelem temp_no_id temp_no_img_src" alt="Dork's Bank" data-orig-src="images/u24072-4.png?crc=4278239847" data-image-width="469" data-orig-id="u24072-4" src="images/blank.gif?crc=4208392903"/><!-- rasterized frame -->
@@ -178,7 +186,7 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
       </div>
      </div>
     </div>
-    <div class="verticalspacer" data-offset-top="736" data-content-above-spacer="839" data-content-below-spacer="102" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"></div>
+    <div class="verticalspacer" data-offset-top="736" data-content-above-spacer="1053" data-content-below-spacer="662" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"></div>
    </div>
    <div class="preload_images">
     <img class="preload temp_no_img_src" data-orig-src="images/u27204-a.png?crc=312175258" alt="" src="images/blank.gif?crc=4208392903"/>
@@ -190,7 +198,7 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
   <div class="breakpoint" id="bp_1297" data-max-width="1297"><!-- responsive breakpoint node -->
    <div class="clearfix borderbox temp_no_id" data-orig-id="page"><!-- group -->
     <div class="clip_frame grpelem temp_no_id" data-orig-id="u23972"><!-- image -->
-     <img class="block temp_no_id temp_no_img_src" data-orig-src="images/cash-change-coins-106152.jpg?crc=3877446195" alt="" data-heightwidthratio="0.6669316375198728" data-image-width="1258" data-image-height="839" data-orig-id="u23972_img" src="images/blank.gif?crc=4208392903"/>
+     <img class="block temp_no_id temp_no_img_src" data-orig-src="images/cash-change-coins-106152.jpg?crc=3877446195" alt="" data-heightwidthratio="0.6664552948636652" data-image-width="1577" data-image-height="1051" data-orig-id="u23972_img" src="images/blank.gif?crc=4208392903"/>
     </div>
     <div class="rgba-background clearfix grpelem temp_no_id" data-orig-id="u24069"><!-- group -->
      <img class="grpelem temp_no_id temp_no_img_src" alt="Dork's Bank" data-orig-src="images/u24072-4.png?crc=4278239847" data-image-width="468" data-orig-id="u24072-4" src="images/blank.gif?crc=4208392903"/><!-- rasterized frame -->
@@ -255,7 +263,7 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
       </div>
      </div>
     </div>
-    <div class="verticalspacer" data-offset-top="736" data-content-above-spacer="838" data-content-below-spacer="101" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"></div>
+    <div class="verticalspacer" data-offset-top="736" data-content-above-spacer="1051" data-content-below-spacer="662" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"></div>
    </div>
    <div class="preload_images">
     <img class="preload temp_no_img_src" data-orig-src="images/u27204-a.png?crc=312175258" alt="" src="images/blank.gif?crc=4208392903"/>
@@ -267,7 +275,7 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
   <!-- Other scripts -->
   <script type="text/javascript">
    // Decide weather to suppress missing file error or not based on preference setting
-var suppressMissingFileError = false
+var suppressMissingFileError = true
 </script>
   <script type="text/javascript">
    window.Muse.assets.check=function(d){if(!window.Muse.assets.checked){window.Muse.assets.checked=!0;var b={},c=function(a,b){if(window.getComputedStyle){var c=window.getComputedStyle(a,null);return c&&c.getPropertyValue(b)||c&&c[b]||""}if(document.documentElement.currentStyle)return(c=a.currentStyle)&&c[b]||a.style&&a.style[b]||"";return""},a=function(a){if(a.match(/^rgb/))return a=a.replace(/\s+/g,"").match(/([\d\,]+)/gi)[0].split(","),(parseInt(a[0])<<16)+(parseInt(a[1])<<8)+parseInt(a[2]);if(a.match(/^\#/))return parseInt(a.substr(1),

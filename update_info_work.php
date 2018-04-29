@@ -104,7 +104,7 @@
 <html class="nojs html css_verticalspacer" lang="en-GB">
  <head>
 
-  <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   <meta name="generator" content="2018.0.0.379"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   
@@ -125,10 +125,10 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
 	 <style type="text/css">
   body,td,th {
 	font-family: "Frutiger LT Std 55 Roman";
-	  font-size: 30;
+	font-size: 20px;
 	font-weight: bold;
 	color: #0000FF;
-	  line-height: 1.0;
+	line-height: 1.0;
 }
 	
 
@@ -138,7 +138,7 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
 	box-shadow: 0 1px 3px rgba(0,0,0,1.0);
     display:table;
     font-family: "Frutiger LT Std 55 Roman";
-	font-size: 30;
+	font-size: 20px;
 }
 
 .row {
@@ -180,7 +180,10 @@ tr:nth-child(odd) td { background:#5F6E83; }
 tr td:hover { background: #666; color:#000F0F; }  
 /* Hover cell effect! */
 
-  </style> 
+  body {
+	background-color: #093648;
+}
+     </style> 
 	 
   <!-- IE-only CSS -->
   <!--[if lt IE 9]>
@@ -204,7 +207,7 @@ tr td:hover { background: #666; color:#000F0F; }
      <img class="grpelem temp_no_img_src" id="u31469-4" alt="WE'VE GOT YOUR MONEY." data-orig-src="images/u31469-4.png?crc=209820837" data-image-width="261" src="images/blank.gif?crc=4208392903"/><!-- rasterized frame -->
      <nav class="MenuBar clearfix grpelem" id="menuu31470"><!-- horizontal box -->
       <div class="MenuItemContainer clearfix grpelem" id="u31471"><!-- vertical box -->
-       <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox transition clearfix colelem" id="u31509" href="reports.php"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem" id="u31510"><!-- state-based BG images --><img alt="Reports" src="images/blank.gif?crc=4208392903" class="shared_content" data-content-guid="u31510_0_content"/><div class="fluid_height_spacer shared_content" data-content-guid="u31510_1_content"></div></div><div class="grpelem" id="u31511"><!-- content --></div></a>
+       <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox transition clearfix colelem" id="u31509" href="by_city.php"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem" id="u31510"><!-- state-based BG images --><img alt="Reports" src="images/blank.gif?crc=4208392903" class="shared_content" data-content-guid="u31510_0_content"/><div class="fluid_height_spacer shared_content" data-content-guid="u31510_1_content"></div></div><div class="grpelem" id="u31511"><!-- content --></div></a>
        <div class="SubMenu MenuLevel1 clearfix" id="u31472"><!-- vertical box -->
         <ul class="SubMenuView clearfix colelem" id="u31473"><!-- vertical box -->
          <li class="MenuItemContainer clearfix colelem" id="u31502"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem" id="u31505" href="top-users.php"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u31506-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><div id="u31506-3" class="shared_content" data-content-guid="u31506-3_content"><p>Top Users</p></div></div><div class="grpelem" id="u31508"><!-- content --></div></a></li>
@@ -213,7 +216,7 @@ tr td:hover { background: #666; color:#000F0F; }
          <li class="MenuItemContainer clearfix colelem" id="u31488"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem" id="u31489" href="loans_report.php"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u31492-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><div id="u31492-3" class="shared_content" data-content-guid="u31492-3_content"><p>Loan</p></div></div><div class="grpelem" id="u31491"><!-- content --></div></a></li>
          <li class="MenuItemContainer clearfix colelem" id="u31474"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem" id="u31477" href="loans_report.php"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u31479-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><div id="u31479-3" class="shared_content" data-content-guid="u31479-3_content"><p>Transactions</p></div></div><div class="grpelem" id="u31480"><!-- content --></div></a></li>
          <li class="MenuItemContainer clearfix colelem" id="u33353"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem" id="u33356" href="demographics.php"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u33359-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><div id="u33359-3" class="shared_content" data-content-guid="u33359-3_content"><p>Demographics</p></div></div><div class="grpelem" id="u33358"><!-- content --></div></a></li>
-         <li class="MenuItemContainer clearfix colelem" id="u33409"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem" id="u33412" href="phone_test.php.php"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u33413-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><div id="u33413-3" class="shared_content" data-content-guid="u33413-3_content"><p>Email All</p></div></div><div class="grpelem" id="u33414"><!-- content --></div></a></li>
+         <li class="MenuItemContainer clearfix colelem" id="u33409"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem" id="u33412" href="phone_test.php"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u33413-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><div id="u33413-3" class="shared_content" data-content-guid="u33413-3_content"><p>Email All</p></div></div><div class="grpelem" id="u33414"><!-- content --></div></a></li>
         </ul>
        </div>
       </div>
@@ -268,7 +271,7 @@ tr td:hover { background: #666; color:#000F0F; }
 		<p>
 			<center><label style="font-size: 150%;color: #0000FF;"> Street Number: </label>
 			<br><br>
-			<input name="streetnum" type="text" value=<?php echo "$streetnum";?>
+			<input style="width:375px; height:40px;" name="streetnum" type="text" value=<?php echo "$streetnum";?>
 				<?php if (isset($streetnum)) {
 					echo 'value="' . htmlentities($streetnum) . '"';
 				} ?>>
@@ -278,39 +281,39 @@ tr td:hover { background: #666; color:#000F0F; }
 		<p>
 			<label style="font-size: 150%;color: #0000FF;">Street Name: </label>
 			<br><br>
-			<input name="streetname" type="text" value=<?php echo "$streetname";?>>
+			<input style="width:375px; height:40px;" name="streetname" type="text" value=<?php echo "$streetname";?>>
 		</p>
 		<br>
 		<!--City-->
 		<p>
 			<label style="font-size: 150%;color: #0000FF;">City: </label>
 			<br><br>
-			<input name="city" type="text" value=<?php echo "$city";?>>
+			<input style="width:375px; height:40px;" name="city" type="text" value=<?php echo "$city";?>>
 		</p>
 		<br>
 		<!--State-->
 		<p>
 			<label style="font-size: 150%;color: #0000FF;">State: </label>
 			<br><br>
-			<input name="state" type="text" value=<?php echo "$state";?>>
+			<input style="width:375px; height:40px;" name="state" type="text" value=<?php echo "$state";?>>
 		</p>
 		<br>
 		<!--Zip-->
 		<p>
 			<label style="font-size: 150%;color: #0000FF;">Zip: </label>
 			<br><br>
-			<input name="zip" type="text" value=<?php echo "$zip";?>>
+			<input style="width:375px; height:40px;" name="zip" type="text" value=<?php echo "$zip";?>>
 		</p>
 		<br>
 		<!--Country-->
 		<p>
 			<label style="font-size: 150%;color: #0000FF;">Country: </label>
 			<br><br>
-			<input name="country" type="text" value=<?php echo "$country";?>>
+			<input style="width:375px; height:40px;" name="country" type="text" value=<?php echo "$country";?>>
 		</p>
 		<br>
 		<p>
-			<input sstyle="font-size: 100%;background-color: #0000FF; color:antiquewhite; width: 375; height: 45px;" name="send" type="submit" value="Update">
+		<input style="font-size: 130%;background-color: #0000FF; color:antiquewhite; width: 375px; height: 40px; margin-bottom: 15px;" name="send" type="submit" value="Update">
 		</p>
 	</form></center>
  
@@ -372,7 +375,7 @@ tr td:hover { background: #666; color:#000F0F; }
      <img class="grpelem temp_no_id temp_no_img_src" alt="WE'VE GOT YOUR MONEY." data-orig-src="images/u31469-4.png?crc=209820837" data-image-width="204" data-orig-id="u31469-4" src="images/blank.gif?crc=4208392903"/><!-- rasterized frame -->
      <nav class="MenuBar clearfix grpelem temp_no_id" data-orig-id="menuu31470"><!-- horizontal box -->
       <div class="MenuItemContainer clearfix grpelem temp_no_id" data-orig-id="u31471"><!-- vertical box -->
-       <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox transition clearfix colelem temp_no_id" href="reports.php" data-orig-id="u31509"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u31510"><!-- state-based BG images --><span class="placeholder" data-placeholder-for="u31510_0_content"><!-- placeholder node --></span><span class="fluid_height_spacer placeholder" data-placeholder-for="u31510_1_content"><!-- placeholder node --></span></div><div class="grpelem temp_no_id" data-orig-id="u31511"><!-- content --></div></a>
+       <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox transition clearfix colelem temp_no_id" href="by_city.php" data-orig-id="u31509"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u31510"><!-- state-based BG images --><span class="placeholder" data-placeholder-for="u31510_0_content"><!-- placeholder node --></span><span class="fluid_height_spacer placeholder" data-placeholder-for="u31510_1_content"><!-- placeholder node --></span></div><div class="grpelem temp_no_id" data-orig-id="u31511"><!-- content --></div></a>
        <div class="SubMenu MenuLevel1 clearfix temp_no_id" data-orig-id="u31472"><!-- vertical box -->
         <ul class="SubMenuView clearfix colelem temp_no_id" data-orig-id="u31473"><!-- vertical box -->
          <li class="MenuItemContainer clearfix colelem temp_no_id" data-orig-id="u31502"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem temp_no_id" href="top-users.php" data-orig-id="u31505"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem temp_no_id" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true" data-orig-id="u31506-4"><!-- content --><span class="placeholder" data-placeholder-for="u31506-3_content"><!-- placeholder node --></span></div><div class="grpelem temp_no_id" data-orig-id="u31508"><!-- content --></div></a></li>
@@ -381,7 +384,7 @@ tr td:hover { background: #666; color:#000F0F; }
          <li class="MenuItemContainer clearfix colelem temp_no_id" data-orig-id="u31488"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem temp_no_id" href="loans_report.php" data-orig-id="u31489"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem temp_no_id" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true" data-orig-id="u31492-4"><!-- content --><span class="placeholder" data-placeholder-for="u31492-3_content"><!-- placeholder node --></span></div><div class="grpelem temp_no_id" data-orig-id="u31491"><!-- content --></div></a></li>
          <li class="MenuItemContainer clearfix colelem temp_no_id" data-orig-id="u31474"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem temp_no_id" href="loans_report.php" data-orig-id="u31477"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem temp_no_id" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true" data-orig-id="u31479-4"><!-- content --><span class="placeholder" data-placeholder-for="u31479-3_content"><!-- placeholder node --></span></div><div class="grpelem temp_no_id" data-orig-id="u31480"><!-- content --></div></a></li>
          <li class="MenuItemContainer clearfix colelem temp_no_id" data-orig-id="u33353"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem temp_no_id" href="demographics.php" data-orig-id="u33356"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem temp_no_id" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true" data-orig-id="u33359-4"><!-- content --><span class="placeholder" data-placeholder-for="u33359-3_content"><!-- placeholder node --></span></div><div class="grpelem temp_no_id" data-orig-id="u33358"><!-- content --></div></a></li>
-         <li class="MenuItemContainer clearfix colelem temp_no_id" data-orig-id="u33409"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem temp_no_id" href="phone_test.php.php" data-orig-id="u33412"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem temp_no_id" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true" data-orig-id="u33413-4"><!-- content --><span class="placeholder" data-placeholder-for="u33413-3_content"><!-- placeholder node --></span></div><div class="grpelem temp_no_id" data-orig-id="u33414"><!-- content --></div></a></li>
+         <li class="MenuItemContainer clearfix colelem temp_no_id" data-orig-id="u33409"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem temp_no_id" href="phone_test.php" data-orig-id="u33412"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem temp_no_id" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true" data-orig-id="u33413-4"><!-- content --><span class="placeholder" data-placeholder-for="u33413-3_content"><!-- placeholder node --></span></div><div class="grpelem temp_no_id" data-orig-id="u33414"><!-- content --></div></a></li>
         </ul>
        </div>
       </div>
@@ -587,7 +590,7 @@ tr td:hover { background: #666; color:#000F0F; }
   <!-- Other scripts -->
   <script type="text/javascript">
    // Decide weather to suppress missing file error or not based on preference setting
-var suppressMissingFileError = false
+var suppressMissingFileError = true
 </script>
   <script type="text/javascript">
    window.Muse.assets.check=function(d){if(!window.Muse.assets.checked){window.Muse.assets.checked=!0;var b={},c=function(a,b){if(window.getComputedStyle){var c=window.getComputedStyle(a,null);return c&&c.getPropertyValue(b)||c&&c[b]||""}if(document.documentElement.currentStyle)return(c=a.currentStyle)&&c[b]||a.style&&a.style[b]||"";return""},a=function(a){if(a.match(/^rgb/))return a=a.replace(/\s+/g,"").match(/([\d\,]+)/gi)[0].split(","),(parseInt(a[0])<<16)+(parseInt(a[1])<<8)+parseInt(a[2]);if(a.match(/^\#/))return parseInt(a.substr(1),

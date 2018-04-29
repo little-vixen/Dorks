@@ -154,11 +154,12 @@
 
 require './includes/header.php';
 ?>
+
 <!DOCTYPE html>
 <html class="nojs html css_verticalspacer" lang="en-GB">
  <head>
 
-  <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   <meta name="generator" content="2018.0.0.379"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   
@@ -167,21 +168,21 @@ require './includes/header.php';
 document.documentElement.className = document.documentElement.className.replace(/\bnojs\b/g, 'js');
 
 // Check that all required assets are uploaded and up-to-date
-if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required":["museutils.js", "museconfig.js", "jquery.musemenu.js", "jquery.watch.js", "require.js", "checking_report.css"], "outOfDate":[]};
+if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required":["museutils.js", "museconfig.js", "jquery.musemenu.js", "jquery.watch.js", "jquery.museresponsive.js", "require.js", "create_acct.css"], "outOfDate":[]};
 </script>
   
-  <title>checking_report</title>
+  <title>create_acct</title>
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="css/site_global.css?crc=444006867"/>
-  <link rel="stylesheet" type="text/css" href="css/master_admin.css?crc=223606753"/>
-  <link rel="stylesheet" type="text/css" href="css/checking_report.css?crc=165970972" id="pagesheet"/>
-	 <style type="text/css">
+  <link rel="stylesheet" type="text/css" href="css/master_helpabout.css?crc=13923039"/>
+  <link rel="stylesheet" type="text/css" href="css/create_acct.css?crc=347402159" id="pagesheet"/>
+  <style type="text/css">
   body,td,th {
 	font-family: "Frutiger LT Std 55 Roman";
-	  font-size: 30;
+	font-size: 30px;
 	font-weight: bold;
 	color: #0000FF;
-	  line-height: 1.0;
+	line-height: 1.0;
 }
 	
 
@@ -191,7 +192,7 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
 	box-shadow: 0 1px 3px rgba(0,0,0,1.0);
     display:table;
     font-family: "Frutiger LT Std 55 Roman";
-	font-size: 30;
+	font-size: 30px;
 }
 
 .row {
@@ -221,6 +222,9 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
 	background:rgba(127,127,127,0.5);
 	color:white;
 }
+		 	 .input{
+			 margin-left: auto;margin-right: auto;
+		 }
 /* Cells in even rows (2,4,6...) are one color */        
 tr:nth-child(even) td { background:#8C8AEE; }   
 
@@ -229,12 +233,25 @@ tr:nth-child(odd) td { background:#5F6E83; }
 
 tr td:hover { background: #666; color:#000F0F; }  
 /* Hover cell effect! */
-	 .input{
-			 margin-left: auto;margin-right: auto;
-		 
-		 }
+
+  body {
+	background-color: #062725;
+	  
+	  
+	  }
+	  u23972_img {
+		  position:relative;
+	  }
+	  
 	
   </style> 
+
+
+  <!-- IE-only CSS -->
+  <!--[if lt IE 9]>
+  <link rel="stylesheet" type="text/css" href="css/nomq_preview_master_helpabout.css?crc=4016803318"/>
+  <link rel="stylesheet" type="text/css" href="css/nomq_create_acct.css?crc=4081190823" id="nomq_pagesheet"/>
+  <![endif]-->
   <!-- JS includes -->
   <!--[if lt IE 9]>
   <script src="scripts/html5shiv.js?crc=4241844378" type="text/javascript"></script>
@@ -242,45 +259,44 @@ tr td:hover { background: #666; color:#000F0F; }
    </head>
  <body>
 
-  <div class="clearfix borderbox" id="page"><!-- column -->
-   <div class="clearfix colelem" id="pu24324"><!-- group -->
-    <div class="clip_frame grpelem" id="u24324"><!-- image -->
-     <img class="block" id="u24324_img" src="images/cash-change-coins-banner-crop-u24324.jpg?crc=4139890737" alt="" data-heightwidthratio="0.13279132791327913" data-image-width="1107" data-image-height="147"/>
+  <!--HTML Widget code-->
+  
+<script>
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+
+  
+  <div class="breakpoint active" id="bp_infinity" data-min-width="1300"><!-- responsive breakpoint node -->
+   <div class="clearfix borderbox" id="page"><!-- group -->
+    <div class="clip_frame grpelem" style="height:850px; background-repeat:repeat-y;" id="u23972"><!-- image -->
     </div>
-    <img class="grpelem" id="u24327-4" alt="Dork's Bank" src="images/u24327-4.png?crc=3766499476" data-image-width="214"/><!-- rasterized frame -->
-    <img class="grpelem" id="u24326-4" alt="WE'VE GOT YOUR MONEY." src="images/u24326-4.png?crc=209820837" data-image-width="261"/><!-- rasterized frame -->
-    <nav class="MenuBar clearfix grpelem" id="menuu26511"><!-- horizontal box -->
-     <div class="MenuItemContainer clearfix grpelem" id="u26519"><!-- vertical box -->
-      <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox transition clearfix colelem" id="u26520" href="reports.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem" id="u26523"><!-- state-based BG images --><img alt="Reports" src="images/blank.gif?crc=4208392903"/><div class="fluid_height_spacer"></div></div><div class="grpelem" id="u26521"><!-- content --></div></a>
-      <div class="SubMenu MenuLevel1 clearfix" id="u26524"><!-- vertical box -->
-       <ul class="SubMenuView clearfix colelem" id="u26525"><!-- vertical box -->
-        <li class="MenuItemContainer clearfix colelem" id="u26540"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem" id="u26543" href="top-users.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u26544-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><div id="u26544-3"><p>TopUsers</p></div></div><div class="grpelem" id="u26546"><!-- content --></div></a></li>
-        <li class="MenuItemContainer clearfix colelem" id="u26547"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu MuseMenuActive clearfix grpelem" id="u26548" href="checking_report.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u26551-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><div id="u26551-3"><p>Checking</p></div></div><div class="grpelem" id="u26549"><!-- content --></div></a></li>
-        <li class="MenuItemContainer clearfix colelem" id="u26533"><!-- horizontal box --><div class="MenuItem MenuItemWithSubMenu clearfix grpelem" id="u26536"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u26539-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><div id="u26539-3"><p>Savings</p></div></div><div class="grpelem" id="u26537"><!-- content --></div></div></li>
-        <li class="MenuItemContainer clearfix colelem" id="u26526"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem" id="u26529" href="loans_report.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u26531-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><div id="u26531-3"><p>Loan</p></div></div><div class="grpelem" id="u26532"><!-- content --></div></a></li>
-       </ul>
+	   
+    <div class="clearfix grpelem" id="u24069"><!-- group -->
+     <img class="grpelem temp_no_img_src" id="u24071-4" alt="We've got your money." data-orig-src="images/u24071-4.png?crc=3983403244" data-image-width="538" src="images/blank.gif?crc=4208392903"/><!-- rasterized frame -->
+     <img class="grpelem temp_no_img_src" id="u24072-4" alt="Dork's Bank" data-orig-src="images/u24072-4.png?crc=4278239847" data-image-width="577" src="images/blank.gif?crc=4208392903"/><!-- rasterized frame -->
+     <nav class="MenuBar clearfix grpelem" id="menuu27150"><!-- horizontal box -->
+      <div class="MenuItemContainer clearfix grpelem" id="u27200"><!-- vertical box -->
+       <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox transition clearfix colelem" id="u27201" href="index.php"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem" id="u27204"><!-- state-based BG images --><img alt="Home" src="images/blank.gif?crc=4208392903" class="shared_content" data-content-guid="u27204_0_content"/><div class="fluid_height_spacer shared_content" data-content-guid="u27204_1_content"></div></div><div class="grpelem" id="u27202"><!-- content --></div></a>
       </div>
-     </div>
-     <div class="MenuItemContainer clearfix grpelem" id="u26561"><!-- vertical box -->
-      <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox transition clearfix colelem" id="u26562" href="account_settings.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem" id="u26565"><!-- state-based BG images --><img alt="Dork" src="images/blank.gif?crc=4208392903"/><div class="fluid_height_spacer"></div></div><div class="grpelem" id="u26564"><!-- content --></div></a>
-      <div class="SubMenu MenuLevel1 clearfix" id="u26566"><!-- vertical box -->
-       <ul class="SubMenuView clearfix colelem" id="u26567"><!-- vertical box -->
-        <li class="MenuItemContainer clearfix colelem" id="u26568"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem" id="u26571" href="account_setup.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u26573-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><div id="u26573-3"><p>Account_Setup</p></div></div><div class="grpelem" id="u26572"><!-- content --></div></a></li>
-        <li class="MenuItemContainer clearfix colelem" id="u26582"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem" id="u26583" href="loans_report.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u26586-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><div id="u26586-3"><p>Loan_Admin</p></div></div><div class="grpelem" id="u26584"><!-- content --></div></a></li>
-        <li class="MenuItemContainer clearfix colelem" id="u26575"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem" id="u26578" href="update_info.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u26580-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><div id="u26580-3"><p>Update</p></div></div><div class="grpelem" id="u26579"><!-- content --></div></a></li>
-        <li class="MenuItemContainer clearfix colelem" id="u29234"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem" id="u29235" href="withdraw.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u29238-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><div id="u29238-3"><p>Withdraw</p></div></div><div class="grpelem" id="u29237"><!-- content --></div></a></li>
-       </ul>
+      <div class="MenuItemContainer clearfix grpelem" id="u32866"><!-- vertical box -->
+       <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox transition clearfix colelem" id="u32867" href="account_info.php"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem" id="u32868"><!-- state-based BG images --><img alt="Account" src="images/blank.gif?crc=4208392903" class="shared_content" data-content-guid="u32868_0_content"/><div class="fluid_height_spacer shared_content" data-content-guid="u32868_1_content"></div></div><div class="grpelem" id="u32869"><!-- content --></div></a>
       </div>
-     </div>
-     <div class="MenuItemContainer clearfix grpelem" id="u26554"><!-- vertical box -->
-      <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox transition clearfix colelem" id="u26557" href="logout.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem" id="u26559"><!-- state-based BG images --><img alt="Logout" src="images/blank.gif?crc=4208392903"/><div class="fluid_height_spacer"></div></div><div class="grpelem" id="u26560"><!-- content --></div></a>
-     </div>
-    </nav>
-   </div>
-   <div class="clearfix colelem" id="u24358"><!-- group -->
-    <div class="grpelem" id="u24328"><!-- simple frame -->
-	   	<!--MAIN FORM-->
-	<center><form method="post" action="create_acct.php">
+      <div class="MenuItemContainer clearfix grpelem" id="u32837"><!-- vertical box -->
+       <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox transition clearfix colelem" id="u32838" href="logout.php"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem" id="u32839"><!-- state-based BG images --><img alt="Logout" src="images/blank.gif?crc=4208392903" class="shared_content" data-content-guid="u32839_0_content"/><div class="fluid_height_spacer shared_content" data-content-guid="u32839_1_content"></div></div><div class="grpelem" id="u32840"><!-- content --></div></a>
+      </div>
+     </nav>
+    </div>
+    <div class="clearfix grpelem" style="height:750px;" id="u24070"><!-- group -->
+     <div class="grpelem shared_content" id="u5194" data-content-guid="u5194_content"><!-- simple frame -->
+		
+		<!--MAIN FORM-->
+	<center><form method="post" action="create_acct.php" >
 		<fieldset>
 			<legend>Register</legend><br></br>
 			<?php if ($missing || $errors) { ?>
@@ -293,8 +309,8 @@ tr td:hover { background: #666; color:#000F0F; }
 				<?php if ($missing && in_array('firstName', $missing)) { ?>
 					<span class = "warning"> Please enter your first name </span>
 				<?php } ?></label><br>
-				<input name="firstName" type="text"
-					<?php if (isset($firstName)) {
+				<input name="firstName" type="text" style="width:375px; height:40px; color:antiquewhite;"					
+					   <?php if (isset($firstName)) {
 						echo 'value="' . htmlentities($firstName) . '"';
 					} ?>>
 			</p>
@@ -306,7 +322,7 @@ tr td:hover { background: #666; color:#000F0F; }
 				<?php if ($missing && in_array('lastName', $missing)) { ?>
 					<span class = "warning"> Please enter your first name </span>
 				<?php } ?></label><br>
-				<input name="lastName" type="text"
+				<input name="lastName" type="text" style="width:375px; height:40px; color:antiquewhite;"
 					<?php if (isset($lastName)) {
 						echo 'value="' . htmlentities($lastName) . '"';
 					} ?>>
@@ -319,7 +335,7 @@ tr td:hover { background: #666; color:#000F0F; }
 					<?php if ($missing && in_array('streetnum', $missing)) { ?>
 						<span class = "warning"> Please enter your Street Number </span>
 					<?php } ?></label><br>
-					<input name="streetnum" type="text"
+					<input name="streetnum" type="text" style="width:375px; height:40px; color:antiquewhite;"
 						<?php if (isset($streetnum)) {
 							echo 'value="' . htmlentities($streetnum) . '"';
 						} ?>>
@@ -332,7 +348,7 @@ tr td:hover { background: #666; color:#000F0F; }
 					<?php if ($missing && in_array('streetname', $missing)) { ?>
 						<span class = "warning"> Please enter your Street Name </span>
 					<?php } ?></label><br>
-					<input name="streetname" type="text"
+					<input name="streetname" type="text" style="width:375px; height:40px; color:antiquewhite;"
 						<?php if (isset($streetname)) {
 							echo 'value="' . htmlentities($streetname) . '"';
 						} ?>>
@@ -345,7 +361,7 @@ tr td:hover { background: #666; color:#000F0F; }
 					<?php if ($missing && in_array('country', $missing)) { ?>
 						<span class = "warning"> Please enter your Country </span>
 					<?php } ?></label><br>
-					<input name="country" type="text"
+					<input name="country" type="text" style="width:375px; height:40px; color:antiquewhite;"
 						<?php if (isset($country)) {
 							echo 'value="' . htmlentities($country) . '"';
 						} ?>>
@@ -358,7 +374,7 @@ tr td:hover { background: #666; color:#000F0F; }
 					<?php if ($missing && in_array('postcode', $missing)) { ?>
 						<span class = "warning"> Please enter your Postcode</span>
 					<?php } ?></label><br>
-					<input name="postcode" type="text"
+					<input name="postcode" type="text" style="width:375px; height:40px; color:antiquewhite;"
 						<?php if (isset($postcode)) {
 							echo 'value="' . htmlentities($postcode) . '"';
 						} ?>>
@@ -371,7 +387,7 @@ tr td:hover { background: #666; color:#000F0F; }
 					<?php if ($missing && in_array('state', $missing)) { ?>
 						<span class = "warning"> Please enter your State </span>
 					<?php } ?></label><br>
-					<input name="state" type="text"
+					<input name="state" type="text" style="width:375px; height:40px; color:antiquewhite;"
 						<?php if (isset($state)) {
 							echo 'value="' . htmlentities($state) . '"';
 						} ?>>
@@ -384,7 +400,7 @@ tr td:hover { background: #666; color:#000F0F; }
 					<?php if ($missing && in_array('city', $missing)) { ?>
 						<span class = "warning"> Please enter your City </span>
 					<?php } ?></label><br>
-					<input name="city" type="text"
+					<input name="city" type="text" style="width:375px; height:40px; color:antiquewhite;"
 						<?php if (isset($city)) {
 							echo 'value="' . htmlentities($city) . '"';
 						} ?>>
@@ -397,7 +413,7 @@ tr td:hover { background: #666; color:#000F0F; }
 					<?php if ($missing && in_array('username', $missing)) { ?>
 						<span class = "warning"> Please enter your Username </span>
 					<?php } ?></label><br>
-					<input name="username" type="text"
+					<input name="username" type="text" style="width:375px; height:40px; color:antiquewhite;"
 						<?php if (isset($username)) {
 							echo 'value="' . htmlentities($username) . '"';
 						} ?>>
@@ -410,7 +426,7 @@ tr td:hover { background: #666; color:#000F0F; }
 					<?php if ($missing && in_array('password', $missing)) { ?>
 						<span class = "warning"> Please enter your password </span>
 					<?php } ?></label><br>
-				<input name="password" type="password">
+				<input name="password" type="password" style="width:375px; height:40px; color:antiquewhite;">
 			</p>
 			<br>
 			
@@ -423,54 +439,92 @@ tr td:hover { background: #666; color:#000F0F; }
 					<?php if ($errors && in_array('passCheck', $errors)) { ?>
 						<span class = "warning"> Password not the same </span>
 					<?php } ?></label><br>
-				<input name="passCheck" type="password">
+				<input name="passCheck" type="password" style="width:375px; height:40px; color:antiquewhite;">
 			</p>
 			<br>
 			
 			<!-- SUBMIT -->
 			<p>
-				<input style="font-size: 120%;background-color: #0000FF; color: #fff; width: 375; width:375;" type="submit" name="send" id="button" value="Register">
+				<input style="font-size: 120%;background-color: #0000FF; color:antiquewhite; width: 375px; height:40px;" type="submit" name="send" id="button" value="Register">
 			</p>
 		</fieldset>
 		</form></center>
+		<?php
+			include './includes/footer.php';
+		?>
+		
+		</div>
+    </div>
+    <div class="size_fixed grpelem shared_content" id="u5233" data-sizePolicy="fixed" data-pintopage="page_fluidx" data-content-guid="u5233_content"><!-- custom html -->
+     
+<div class="fb-like" data-href="http://DorksBank.php/create_acct.php" data-send="true" data-width="344" data-show-faces="false" data-colorscheme="dark" data-layout="button_count" data-action="like"></div>
 
+    </div>
+    <div class="size_fixed grpelem shared_content" id="u5234" data-sizePolicy="fixed" data-pintopage="page_fluidx" data-content-guid="u5234_content"><!-- custom html -->
+     
+<a href="https://twitter.com/littlevixen" class="twitter-follow-button" data-lang="en" data-show-screen-name="false" data-size="medium"></a>
 
-<?php 
-	include './includes/footer.php';
-?>
-	   </div>
+    </div>
+    <div class="verticalspacer" data-offset-top="855" data-content-above-spacer="1033" data-content-below-spacer="177" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"></div>
    </div>
-   <div class="verticalspacer" data-offset-top="0" data-content-above-spacer="1210" data-content-below-spacer="0" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"></div>
+   <div class="preload_images">
+    <img class="preload temp_no_img_src" data-orig-src="images/u27204-a.png?crc=312175258" alt="" src="images/blank.gif?crc=4208392903"/>
+    <img class="preload temp_no_img_src" data-orig-src="images/u32868-a.png?crc=413361760" alt="" src="images/blank.gif?crc=4208392903"/>
+    <img class="preload temp_no_img_src" data-orig-src="images/u32839-a.png?crc=4140319941" alt="" src="images/blank.gif?crc=4208392903"/>
+   </div>
   </div>
-  <div class="preload_images">
-   <img class="preload" src="images/u26523-a.png?crc=286736856" alt=""/>
-   <img class="preload" src="images/u26565-a.png?crc=4233768770" alt=""/>
-   <img class="preload" src="images/u26559-a.png?crc=3925028500" alt=""/>
+  <div class="breakpoint" id="bp_1299" data-max-width="1299"><!-- responsive breakpoint node -->
+   <div class="clearfix borderbox temp_no_id" data-orig-id="page"><!-- group -->
+    <div class="clip_frame grpelem temp_no_id" data-orig-id="u23972"><!-- image -->
+     <img class="block temp_no_id temp_no_img_src" data-orig-src="images/cash-change-coins-106152.jpg?crc=3877446195" alt="" data-heightwidthratio="0.6664556962025316" data-image-width="1580" data-image-height="1053" data-orig-id="u23972_img" src="images/blank.gif?crc=4208392903"/>
+    </div>
+    <div class="clearfix grpelem temp_no_id" data-orig-id="u24069"><!-- group -->
+     <img class="grpelem temp_no_id temp_no_img_src" alt="Dork's Bank" data-orig-src="images/u24072-4.png?crc=4278239847" data-image-width="469" data-orig-id="u24072-4" src="images/blank.gif?crc=4208392903"/><!-- rasterized frame -->
+     <div class="clearfix grpelem" id="pu24071-4"><!-- column -->
+      <img class="colelem temp_no_id temp_no_img_src" alt="We've got your money." data-orig-src="images/u24071-4.png?crc=3983403244" data-image-width="265" data-orig-id="u24071-4" src="images/blank.gif?crc=4208392903"/><!-- rasterized frame -->
+      <nav class="MenuBar clearfix colelem temp_no_id" data-orig-id="menuu27150"><!-- horizontal box -->
+       <div class="MenuItemContainer clearfix grpelem temp_no_id" data-orig-id="u27200"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox transition clearfix colelem temp_no_id" href="index.php" data-orig-id="u27201"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u27204"><!-- state-based BG images --><span class="placeholder" data-placeholder-for="u27204_0_content"><!-- placeholder node --></span><span class="fluid_height_spacer placeholder" data-placeholder-for="u27204_1_content"><!-- placeholder node --></span></div><div class="grpelem temp_no_id" data-orig-id="u27202"><!-- content --></div></a>
+       </div>
+       <div class="MenuItemContainer clearfix grpelem temp_no_id" data-orig-id="u32866"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox transition clearfix colelem temp_no_id" href="account_info.php" data-orig-id="u32867"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u32868"><!-- state-based BG images --><span class="placeholder" data-placeholder-for="u32868_0_content"><!-- placeholder node --></span><span class="fluid_height_spacer placeholder" data-placeholder-for="u32868_1_content"><!-- placeholder node --></span></div><div class="grpelem temp_no_id" data-orig-id="u32869"><!-- content --></div></a>
+       </div>
+       <div class="MenuItemContainer clearfix grpelem temp_no_id" data-orig-id="u32837"><!-- vertical box -->
+        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox transition clearfix colelem temp_no_id" href="logout.php" data-orig-id="u32838"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem temp_no_id" data-orig-id="u32839"><!-- state-based BG images --><span class="placeholder" data-placeholder-for="u32839_0_content"><!-- placeholder node --></span><span class="fluid_height_spacer placeholder" data-placeholder-for="u32839_1_content"><!-- placeholder node --></span></div><div class="grpelem temp_no_id" data-orig-id="u32840"><!-- content --></div></a>
+       </div>
+      </nav>
+     </div>
+    </div>
+    <div class="clearfix grpelem temp_no_id" data-orig-id="u24070"><!-- group -->
+     <span class="size_fixed grpelem placeholder" data-placeholder-for="u5234_content"><!-- placeholder node --></span>
+     <div class="clearfix grpelem" id="pu5194"><!-- column -->
+      <span class="colelem placeholder" data-placeholder-for="u5194_content"><!-- placeholder node --></span>
+      <span class="size_fixed colelem placeholder" data-placeholder-for="u5233_content"><!-- placeholder node --></span>
+     </div>
+    </div>
+    <div class="verticalspacer" data-offset-top="855" data-content-above-spacer="1053" data-content-below-spacer="543" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"></div>
+   </div>
+   <div class="preload_images">
+    <img class="preload temp_no_img_src" data-orig-src="images/u27204-a.png?crc=312175258" alt="" src="images/blank.gif?crc=4208392903"/>
+    <img class="preload temp_no_img_src" data-orig-src="images/u32868-a.png?crc=413361760" alt="" src="images/blank.gif?crc=4208392903"/>
+    <img class="preload temp_no_img_src" data-orig-src="images/u32839-a.png?crc=4140319941" alt="" src="images/blank.gif?crc=4208392903"/>
+   </div>
   </div>
+  <!-- JS includes -->
+  <script type="text/javascript">
+   if (document.location.protocol != 'https:') document.write('\x3Cscript src="http://musecdn.businesscatalyst.com/scripts/4.0/jquery-1.8.3.min.js" type="text/javascript">\x3C/script>');
+</script>
+  <script type="text/javascript">
+   window.jQuery || document.write('\x3Cscript src="scripts/jquery-1.8.3.min.js?crc=209076791" type="text/javascript">\x3C/script>');
+</script>
   <!-- Other scripts -->
-  <script type="text/javascript">
-   // Decide weather to suppress missing file error or not based on preference setting
-var suppressMissingFileError = false
-</script>
-  <script type="text/javascript">
-   window.Muse.assets.check=function(d){if(!window.Muse.assets.checked){window.Muse.assets.checked=!0;var b={},c=function(a,b){if(window.getComputedStyle){var c=window.getComputedStyle(a,null);return c&&c.getPropertyValue(b)||c&&c[b]||""}if(document.documentElement.currentStyle)return(c=a.currentStyle)&&c[b]||a.style&&a.style[b]||"";return""},a=function(a){if(a.match(/^rgb/))return a=a.replace(/\s+/g,"").match(/([\d\,]+)/gi)[0].split(","),(parseInt(a[0])<<16)+(parseInt(a[1])<<8)+parseInt(a[2]);if(a.match(/^\#/))return parseInt(a.substr(1),
-16);return 0},g=function(g){for(var f=document.getElementsByTagName("link"),h=0;h<f.length;h++)if("text/css"==f[h].type){var i=(f[h].href||"").match(/\/?css\/([\w\-]+\.css)\?crc=(\d+)/);if(!i||!i[1]||!i[2])break;b[i[1]]=i[2]}f=document.createElement("div");f.className="version";f.style.cssText="display:none; width:1px; height:1px;";document.getElementsByTagName("body")[0].appendChild(f);for(h=0;h<Muse.assets.required.length;){var i=Muse.assets.required[h],l=i.match(/([\w\-\.]+)\.(\w+)$/),k=l&&l[1]?
-l[1]:null,l=l&&l[2]?l[2]:null;switch(l.toLowerCase()){case "css":k=k.replace(/\W/gi,"_").replace(/^([^a-z])/gi,"_$1");f.className+=" "+k;k=a(c(f,"color"));l=a(c(f,"backgroundColor"));k!=0||l!=0?(Muse.assets.required.splice(h,1),"undefined"!=typeof b[i]&&(k!=b[i]>>>24||l!=(b[i]&16777215))&&Muse.assets.outOfDate.push(i)):h++;f.className="version";break;case "js":h++;break;default:throw Error("Unsupported file type: "+l);}}d?d().jquery!="1.8.3"&&Muse.assets.outOfDate.push("jquery-1.8.3.min.js"):Muse.assets.required.push("jquery-1.8.3.min.js");
-f.parentNode.removeChild(f);if(Muse.assets.outOfDate.length||Muse.assets.required.length)f="Some files on the server may be missing or incorrect. Clear browser cache and try again. If the problem persists please contact website author.",g&&Muse.assets.outOfDate.length&&(f+="\nOut of date: "+Muse.assets.outOfDate.join(",")),g&&Muse.assets.required.length&&(f+="\nMissing: "+Muse.assets.required.join(",")),suppressMissingFileError?(f+="\nUse SuppressMissingFileError key in AppPrefs.xml to show missing file error pop up.",console.log(f)):alert(f)};location&&location.search&&location.search.match&&location.search.match(/muse_debug/gi)?
-setTimeout(function(){g(!0)},5E3):g()}};
-var muse_init=function(){require.config({baseUrl:""});require(["jquery","museutils","whatinput","jquery.musemenu","jquery.watch"],function(d){var $ = d;$(document).ready(function(){try{
-window.Muse.assets.check($);/* body */
-Muse.Utils.transformMarkupToFixBrowserProblemsPreInit();/* body */
-Muse.Utils.prepHyperlinks(true);/* body */
-Muse.Utils.makeButtonsVisibleAfterSettingMinWidth();/* body */
-Muse.Utils.initWidget('.MenuBar', ['#bp_infinity'], function(elem) { return $(elem).museMenu(); });/* unifiedNavBar */
-Muse.Utils.fullPage('#page');/* 100% height page */
-Muse.Utils.showWidgetsWhenReady();/* body */
-Muse.Utils.transformMarkupToFixBrowserProblems();/* body */
-}catch(b){if(b&&"function"==typeof b.notify?b.notify():Muse.Assert.fail("Error calling selector function: "+b),false)throw b;}})})};
-
-</script>
+ 
   <!-- RequireJS script -->
   <script src="scripts/require.js?crc=4157109226" type="text/javascript" async data-main="scripts/museconfig.js?crc=380897831" onload="if (requirejs) requirejs.onError = function(requireType, requireModule) { if (requireType && requireType.toString && requireType.toString().indexOf && 0 <= requireType.toString().indexOf('#scripterror')) window.Muse.assets.check(); }" onerror="window.Muse.assets.check();"></script>
+  
+  <!--HTML Widget code-->
+  
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
    </body>
 </html>

@@ -165,7 +165,7 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
 	 <style type="text/css">
   body,td,th {
 	font-family: "Frutiger LT Std 55 Roman";
-	  font-size: 30;
+	  font-size: 30px;
 	font-weight: bold;
 	color: #0000FF;
 	  line-height: 1.0;
@@ -178,7 +178,7 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
 	box-shadow: 0 1px 3px rgba(0,0,0,1.0);
     display:table;
     font-family: "Frutiger LT Std 55 Roman";
-	font-size: 30;
+	font-size: 30px;
 }
 
 .row {
@@ -259,6 +259,7 @@ tr td:hover { background: #666; color:#000F0F; }
          <li class="MenuItemContainer clearfix colelem" id="u26301"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem" id="u26303" href="checking.php"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u26307-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><div id="u26307-3" class="shared_content" data-content-guid="u26307-3_content"><p>Checking</p></div></div><div class="grpelem" id="u26309"><!-- content --></div></a></li>
          <li class="MenuItemContainer clearfix colelem" id="u26322"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem" id="u26323" href="savings.php"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u26324-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><div id="u26324-3" class="shared_content" data-content-guid="u26324-3_content"><p>Savings</p></div></div><div class="grpelem" id="u26325"><!-- content --></div></a></li>
          <li class="MenuItemContainer clearfix colelem" id="u26343"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu MuseMenuActive clearfix grpelem" id="u26344" href="loan.php"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u26346-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><div id="u26346-3" class="shared_content" data-content-guid="u26346-3_content"><p>Loan</p></div></div><div class="grpelem" id="u26345"><!-- content --></div></a></li>
+ 		
          <li class="MenuItemContainer clearfix colelem" id="u30655"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem" id="u30658" href="detailed-transactions.php"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u30660-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><div id="u30660-3" class="shared_content" data-content-guid="u30660-3_content"><p>Transactions</p></div></div><div class="grpelem" id="u30659"><!-- content --></div></a></li>
          <li class="MenuItemContainer clearfix colelem" id="u32425"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem" id="u32426" href="routing-info.php"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u32429-4" data-muse-temp-textContainer-sizePolicy="true" data-muse-temp-textContainer-pinning="true"><!-- content --><div id="u32429-3" class="shared_content" data-content-guid="u32429-3_content"><p>Routing Info</p></div></div><div class="grpelem" id="u32427"><!-- content --></div></a></li>
         </ul>
@@ -268,8 +269,7 @@ tr td:hover { background: #666; color:#000F0F; }
        <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox transition clearfix colelem" id="u23598" href="logout.php"><!-- horizontal box --><div class="MenuItemLabel NoWrap grpelem" id="u23600"><!-- state-based BG images --><img alt="Logout" src="images/blank.gif?crc=4208392903" class="shared_content" data-content-guid="u23600_0_content"/><div class="fluid_height_spacer shared_content" data-content-guid="u23600_1_content"></div></div><div class="grpelem" id="u23601"><!-- content --></div></a>
       </div>
      </nav>
-     <div class="grpelem shared_content" id="u39846" data-content-guid="u39846_content"><!-- simple frame --></div>
-    </div>
+</div>
     <div class="clearfix colelem" id="u23571"><!-- column -->
      <div class="clearfix colelem" id="u23681"><!-- group -->
       <!-- rasterized frame -->
@@ -327,7 +327,7 @@ tr td:hover { background: #666; color:#000F0F; }
 						<input type="hidden" name="checkid" value="<?php echo $row['checkid']; ?>">
 						<input type="hidden" name="bal" value="<?php echo $row['bal']; ?>">
 						<input type="hidden" name="api" value="<?php echo $row['api']; ?>">
-						<input style="font-size: 100%;background-color: #0000FF; color:antiquewhite; width: 375; height: 45px; margin-bottom: 15px;" type='submit' name ="send2" value="Transfer Funds">
+						<input style="font-size: 100%;background-color: #0000FF; color:antiquewhite; width: 375px; height: 40px; margin-bottom: 15px;" type='submit' name ="send2" value="Transfer Funds">
 					</form>
 				</td>
 			</tr>
@@ -359,7 +359,7 @@ tr td:hover { background: #666; color:#000F0F; }
 			<input name="checkid" type="hidden" value="<?php echo $_POST['checkid']; ?>">
 			<input name="loanid" type="hidden" value="<?php echo $_POST['loanid']; ?>">
 			<input name="cid" type="hidden" value="<?php echo $_POST['cid']; ?>">
-		 <center><label style="margin-bottom: 50; font-size: 150%;color: #0000FF;text-shadow: -1px -1px 0 #fff,1px -1px 0 #fff,-1px 1px 0 #fff,1px 1px 0 #fff;">Amount: </label><input style="width: 375px; height: 45px;" name="amount" type="number">&nbsp;&nbsp;&nbsp;<input style="font-size: 100%;background-color: #0000FF; color:antiquewhite; width: 375px; height: 45px; margin-bottom: 15px; align-self:center;" name="payoff" type="submit" value="Payoff"></center>
+		 <center><label style="margin-bottom: 50; font-size: 150%;color: #0000FF;text-shadow: -1px -1px 0 #fff,1px -1px 0 #fff,-1px 1px 0 #fff,1px 1px 0 #fff;">Amount: </label><input style="width: 375px; height: 40px;" name="amount" type="number">&nbsp;&nbsp;&nbsp;<input style="font-size: 100%;background-color: #0000FF; color:antiquewhite; width: 375px; height: 40px; margin-bottom: 15px; align-self:center;" name="payoff" type="submit" value="Payoff"></center>
 		</form><br>
 	<?php } ?>
 	
@@ -387,7 +387,7 @@ tr td:hover { background: #666; color:#000F0F; }
 							<input type="hidden" name="remBal" value="<?php echo $row['remBal']; ?>">
 							<input type="hidden" name="term" value="<?php echo $row['term']; ?>">
 							<input type="hidden" name="apr" value="<?php echo $row['apr']; ?>">
-							<input style="font-size: 100%;background-color: #0000FF; color:antiquewhite; width: 175px; height: 45px; " type='submit' name ="send" value="Pay">
+							<input style="font-size: 100%;background-color: #0000FF; color:antiquewhite; width: 175px; height: 40px; " type='submit' name ="send" value="Pay">
 						</form></center></br>
 					</td>
 				<?php } ?>
@@ -400,7 +400,7 @@ tr td:hover { background: #666; color:#000F0F; }
       </div>
      </div>
      <div class="clearfix colelem" id="u23572"><!-- group -->
-      <img class="grpelem temp_no_img_src" id="u39858-4" alt="Transaction History:" data-orig-src="images/u39858-4.png?crc=63206294" data-image-width="181" src="images/blank.gif?crc=4208392903"/><!-- rasterized frame -->
+      
 		 
 		 <!--DISPLAY TRANSACTIONS-->
 		<center><table class="table" style="position:center;">
@@ -650,7 +650,7 @@ tr td:hover { background: #666; color:#000F0F; }
   <!-- Other scripts -->
   <script type="text/javascript">
    // Decide weather to suppress missing file error or not based on preference setting
-var suppressMissingFileError = false
+var suppressMissingFileError = true
 </script>
   <script type="text/javascript">
    window.Muse.assets.check=function(d){if(!window.Muse.assets.checked){window.Muse.assets.checked=!0;var b={},c=function(a,b){if(window.getComputedStyle){var c=window.getComputedStyle(a,null);return c&&c.getPropertyValue(b)||c&&c[b]||""}if(document.documentElement.currentStyle)return(c=a.currentStyle)&&c[b]||a.style&&a.style[b]||"";return""},a=function(a){if(a.match(/^rgb/))return a=a.replace(/\s+/g,"").match(/([\d\,]+)/gi)[0].split(","),(parseInt(a[0])<<16)+(parseInt(a[1])<<8)+parseInt(a[2]);if(a.match(/^\#/))return parseInt(a.substr(1),

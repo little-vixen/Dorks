@@ -87,6 +87,9 @@ require './includes/header.php';
 	font-weight: bold;
 	color: #0000FF;
 }
+  body {
+	background-color: #093648;
+}
   </style>
   
 </head>
@@ -130,7 +133,7 @@ require './includes/header.php';
     </div>
     <!-- MAIN FORM-->
 		
-     <form method="post" action="admin-login.php" style="margin-top:40px;
+     <form method="post" action="admin_login.php" style="margin-top:40px;
 	   margin-left:100px;">
 			
 			<!--Admin ID-->
@@ -151,7 +154,7 @@ require './includes/header.php';
 			  <br><br><br>
 				<input name="username" type="text" style = "height: 30px;"<?php if (isset($username) && !$errors['username']) {
                     echo 'value="' . htmlspecialchars($username) . '"';
-                } ?>>>
+                } ?>>
 				<br><br>
 			</p>
 <br>
