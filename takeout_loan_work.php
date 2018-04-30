@@ -290,7 +290,7 @@ tr td:hover { background: #666; color:#000F0F; }
 		<br>
 		<!--CURPAY-->
 		<p>
-			<label style="font-size: 150%;color: #0000FF;">Curpay: </label>
+			<label style="font-size: 150%;color: #0000FF;">Monthly Payments: </label>
 			<br><br>
 			<input style="width: 375px; height: 40px;" name="curpay" type="text" value=<?php echo "$curpay";?>
 				<?php if (isset($curpay)) {
@@ -299,7 +299,7 @@ tr td:hover { background: #666; color:#000F0F; }
 		</p>
 		<br>
 		<p>
-			<input style="font-size: 150%; background-color: #0000FF; color:antiquewhite; width: 375px; height: 40px; margin-bottom: 15px;" name="send" type="submit" value="Update">
+			<input style="font-size: 120%; background-color: #0000FF; color:antiquewhite; width: 375px; height: 45px; margin-bottom: 15px;" name="send" type="submit" value="Update">
 		</p>
 		</form></center>
 		
