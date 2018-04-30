@@ -179,7 +179,7 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
   <style type="text/css">
   body,td,th {
 	font-family: "Frutiger LT Std 55 Roman";
-	font-size: 30px;
+	font-size: 20px;
 	font-weight: bold;
 	color: #0000FF;
 	line-height: 1.0;
@@ -192,7 +192,7 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
 	box-shadow: 0 1px 3px rgba(0,0,0,1.0);
     display:table;
     font-family: "Frutiger LT Std 55 Roman";
-	font-size: 30px;
+	font-size: 20px;
 }
 
 .row {
@@ -296,21 +296,23 @@ tr td:hover { background: #666; color:#000F0F; }
      <div class="grpelem shared_content" id="u5194" data-content-guid="u5194_content"><!-- simple frame -->
 		
 		<!--MAIN FORM-->
-	<center><form method="post" action="create_acct.php" >
+	<center><form method="post" action="create_acct.php"  >
 		<fieldset>
 			<legend>Register</legend><br></br>
 			<?php if ($missing || $errors) { ?>
-				<p class="warning"> Please fix the item(s) indicated.</p>
+				
 			<?php } ?>
 				
-			<!-- FIRST NAME -->
+			<!-- FIRST NAME --> <br>
+			
 			<p>
+				
 				<label id="firstName">First Name:
 				<?php if ($missing && in_array('firstName', $missing)) { ?>
 					<span class = "warning"> Please enter your first name </span>
 				<?php } ?></label><br>
-				<input name="firstName" type="text" style="width:375px; height:40px; color:antiquewhite;"					
-					   <?php if (isset($firstName)) {
+				<input name="firstName" type="text" style="width:375px; height:40px; color:#0000ff;"
+					<?php if (isset($firstName)) {
 						echo 'value="' . htmlentities($firstName) . '"';
 					} ?>>
 			</p>
@@ -322,7 +324,7 @@ tr td:hover { background: #666; color:#000F0F; }
 				<?php if ($missing && in_array('lastName', $missing)) { ?>
 					<span class = "warning"> Please enter your first name </span>
 				<?php } ?></label><br>
-				<input name="lastName" type="text" style="width:375px; height:40px; color:antiquewhite;"
+				<input name="lastName" type="text" style="width:375px; height:40px; color:#0000ff;"
 					<?php if (isset($lastName)) {
 						echo 'value="' . htmlentities($lastName) . '"';
 					} ?>>
@@ -335,7 +337,7 @@ tr td:hover { background: #666; color:#000F0F; }
 					<?php if ($missing && in_array('streetnum', $missing)) { ?>
 						<span class = "warning"> Please enter your Street Number </span>
 					<?php } ?></label><br>
-					<input name="streetnum" type="text" style="width:375px; height:40px; color:antiquewhite;"
+					<input name="streetnum" type="text" style="width:375px; height:40px; color:#0000ff;"
 						<?php if (isset($streetnum)) {
 							echo 'value="' . htmlentities($streetnum) . '"';
 						} ?>>
@@ -348,7 +350,7 @@ tr td:hover { background: #666; color:#000F0F; }
 					<?php if ($missing && in_array('streetname', $missing)) { ?>
 						<span class = "warning"> Please enter your Street Name </span>
 					<?php } ?></label><br>
-					<input name="streetname" type="text" style="width:375px; height:40px; color:antiquewhite;"
+					<input name="streetname" type="text" style="width:375px; height:40px; color:#0000ff;"
 						<?php if (isset($streetname)) {
 							echo 'value="' . htmlentities($streetname) . '"';
 						} ?>>
@@ -361,7 +363,7 @@ tr td:hover { background: #666; color:#000F0F; }
 					<?php if ($missing && in_array('country', $missing)) { ?>
 						<span class = "warning"> Please enter your Country </span>
 					<?php } ?></label><br>
-					<input name="country" type="text" style="width:375px; height:40px; color:antiquewhite;"
+					<input name="country" type="text" style="width:375px; height:40px; color:#0000ff;"
 						<?php if (isset($country)) {
 							echo 'value="' . htmlentities($country) . '"';
 						} ?>>
@@ -374,7 +376,7 @@ tr td:hover { background: #666; color:#000F0F; }
 					<?php if ($missing && in_array('postcode', $missing)) { ?>
 						<span class = "warning"> Please enter your Postcode</span>
 					<?php } ?></label><br>
-					<input name="postcode" type="text" style="width:375px; height:40px; color:antiquewhite;"
+					<input name="postcode" type="text" style="width:375px; height:40px; color:#0000ff;"
 						<?php if (isset($postcode)) {
 							echo 'value="' . htmlentities($postcode) . '"';
 						} ?>>
@@ -383,11 +385,11 @@ tr td:hover { background: #666; color:#000F0F; }
 			
 			<!-- STATE -->
 			<p>
-				<label id="state">State:
+				<label id="state">State Abbreviation:
 					<?php if ($missing && in_array('state', $missing)) { ?>
 						<span class = "warning"> Please enter your State </span>
 					<?php } ?></label><br>
-					<input name="state" type="text" style="width:375px; height:40px; color:antiquewhite;"
+					<input name="state" type="text" style="width:375px; height:40px; color:#0000ff;"
 						<?php if (isset($state)) {
 							echo 'value="' . htmlentities($state) . '"';
 						} ?>>
@@ -400,7 +402,7 @@ tr td:hover { background: #666; color:#000F0F; }
 					<?php if ($missing && in_array('city', $missing)) { ?>
 						<span class = "warning"> Please enter your City </span>
 					<?php } ?></label><br>
-					<input name="city" type="text" style="width:375px; height:40px; color:antiquewhite;"
+					<input name="city" type="text" style="width:375px; height:40px; color:#0000ff;"
 						<?php if (isset($city)) {
 							echo 'value="' . htmlentities($city) . '"';
 						} ?>>
@@ -413,7 +415,7 @@ tr td:hover { background: #666; color:#000F0F; }
 					<?php if ($missing && in_array('username', $missing)) { ?>
 						<span class = "warning"> Please enter your Username </span>
 					<?php } ?></label><br>
-					<input name="username" type="text" style="width:375px; height:40px; color:antiquewhite;"
+					<input name="username" type="text" style="width:375px; height:40px; color:#0000ff;"
 						<?php if (isset($username)) {
 							echo 'value="' . htmlentities($username) . '"';
 						} ?>>
@@ -426,7 +428,7 @@ tr td:hover { background: #666; color:#000F0F; }
 					<?php if ($missing && in_array('password', $missing)) { ?>
 						<span class = "warning"> Please enter your password </span>
 					<?php } ?></label><br>
-				<input name="password" type="password" style="width:375px; height:40px; color:antiquewhite;">
+				<input name="password" type="password" style="width:375px; height:40px; color:#0000ff;">
 			</p>
 			<br>
 			
@@ -439,7 +441,7 @@ tr td:hover { background: #666; color:#000F0F; }
 					<?php if ($errors && in_array('passCheck', $errors)) { ?>
 						<span class = "warning"> Password not the same </span>
 					<?php } ?></label><br>
-				<input name="passCheck" type="password" style="width:375px; height:40px; color:antiquewhite;">
+				<input name="passCheck" type="password" style="width:375px; height:40px; color:#0000ff;">
 			</p>
 			<br>
 			

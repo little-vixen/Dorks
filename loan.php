@@ -359,7 +359,7 @@ tr td:hover { background: #666; color:#000F0F; }
 			<input name="checkid" type="hidden" value="<?php echo $_POST['checkid']; ?>">
 			<input name="loanid" type="hidden" value="<?php echo $_POST['loanid']; ?>">
 			<input name="cid" type="hidden" value="<?php echo $_POST['cid']; ?>">
-		 <center><label style="margin-bottom: 50; font-size: 150%;color: #0000FF;text-shadow: -1px -1px 0 #fff,1px -1px 0 #fff,-1px 1px 0 #fff,1px 1px 0 #fff;">Amount: </label><input style="width: 375px; height: 40px;" name="amount" type="number">&nbsp;&nbsp;&nbsp;<input style="font-size: 100%;background-color: #0000FF; color:antiquewhite; width: 375px; height: 40px; margin-bottom: 15px; align-self:center;" name="payoff" type="submit" value="Payoff"></center>
+		 <center><label style="margin-bottom: 50; font-size: 150%;color: #0000FF;text-shadow: -1px -1px 0 #fff,1px -1px 0 #fff,-1px 1px 0 #fff,1px 1px 0 #fff;">Amount: </label><input style="width: 375px; height: 40px;margin-bottom: 15px;" name="amount" type="number">&nbsp;&nbsp;&nbsp;<input style="font-size: 100%;background-color: #0000FF; color:antiquewhite; width: 550px; height: 40px; margin-bottom: 15px; align-self:center;" name="payoff" type="submit" value="Make Payment"></center>
 		</form><br>
 	<?php } ?>
 	
@@ -371,7 +371,7 @@ tr td:hover { background: #666; color:#000F0F; }
 				<td class="cell" colspan="1" style="text-align:left;">Remaining Balance</td>
 				<td class="cell" colspan="1" style="text-align:left;">Term</td>
 				<td class="cell" colspan="1" style="text-align:left;">APR</td>
-				<td class="cell" colspan="1" style="text-align:left;width:175px;">Payoff</td>
+				<td class="cell" colspan="1" style="text-align:left;width:175px;margin-bottom: 15px;">Payment</td>
 			</tr>
 			<?php foreach ($rows as $row) { ?>
 			<tr>
